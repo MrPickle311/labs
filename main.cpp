@@ -44,7 +44,7 @@ int main()
     start.at(3,0) = 1;
 
 
-    GaussSeidelSolver j{A,V};
+    GaussSeidelSolver j{A,V,true};
     j();
     j((size_t)10);
     cout << j.getSolutions() << endl; 

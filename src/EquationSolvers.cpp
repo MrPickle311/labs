@@ -37,12 +37,12 @@ bool Solver::isFirstIteration() const
     return iteration_ == 0;
 }
 
-arma::mat Solver::getSubstep() 
+arma::mat Solver::getSubstep() const
 {
     return right_side_vector_ - cooficient_matrix_ * solutions_vector_;
 }
 
-arma::mat Solver::getStep()
+arma::mat Solver::getStep() const
 {
     return preconditioner_ * getSubstep();
 }
@@ -54,14 +54,19 @@ void Solver::iterationEngine()
     solutions_vector_ += relax_ *  getStep();
 }
 
-double getNumerator() const;
-inline double getEnumerator() const;
+double Solver::getNumerator() const
+{
+    return arma::dot(arma::trans( getSubstep()), cooficient_matrix_ *  getStep());
+}
+double Solver::getEnumerator() const
+{
+    return arma::dot(arma::trans(cooficient_matrix_ *  getStep()), 
+                                 cooficient_matrix_ *  getStep());
+}
 
 void Solver::modifyRelax()
 {
-    relax_ =  ( arma::trans(getSubstep()) * cooficient_matrix_ *  getStep() ) / 
-              ( arma::trans(cooficient_matrix_ *  getStep()) * 
-                                            cooficient_matrix_ *  getStep() ) ;  
+    relax_ =  getNumerator() / getEnumerator();
 }
 
 bool Solver::isDiagZeroVector() const
@@ -83,7 +88,7 @@ Solver::Solver(arma::mat const& cooficient_matrix,
                arma::colvec const& start_positions_vector):
         cooficient_matrix_{cooficient_matrix},
         right_side_vector_{right_side_vector},
-        dynamic_relaxing_flag_{start_relax},
+        dynamic_relaxing_flag_{enable_dynamic_relax},
         preconditioner_{},
         iteration_{0},
         relax_{start_relax}
@@ -140,6 +145,11 @@ arma::colvec Solver::getSolutions()
     return solutions_vector_;
 }
 
+size_t Solver::getIteration() const
+{
+    return iteration_;
+}
+
 void JacobiSolver::setPreconditioner()
 {
     //get diagonal of matrix
@@ -152,3 +162,4 @@ void GaussSeidelSolver::setPreconditioner()
     preconditioner_ = arma::trimatl(cooficient_matrix_,0);
     preconditioner_ = arma::inv(preconditioner_);
 }
+
