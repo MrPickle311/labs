@@ -1,10 +1,12 @@
 #pragma once
 #include <armadillo>
 #include <string>
+#include <cmath>
+#include <iostream>
 /*
 TODO:
-1. Zaimplementować metodę Jacobiego
-2. Zaimplementować podrelaksację dla MJ
+1. Zaimplementować metodę Jacobiego DONE
+2. Zaimplementować podrelaksację dla MJ DONE
 3. Zaimplementować metodę Gaussa-Seidla i SOR
 4. Zaimplementować MINRES
 5. Przeanalizować wyniki:
@@ -12,35 +14,29 @@ TODO:
 • Jak wpływa na zbieżność współczynnik podrelaksacji?
 */
 
-class JacobiSolver
+class Solver
 {
 private:
-    arma::mat cooficient_matrix_;
+    size_t iteration_;
     arma::colvec right_side_vector_;
     arma::colvec solutions_vector_;
-    arma::mat diagonal_;
-    size_t iteration_;
+    double relax_;
+protected:
+    arma::mat cooficient_matrix_;
+    arma::mat preconditioner_;
 private:
-    void throwError(std::string msg) const noexcept(false) 
+    inline bool vectorHasBadLength() const
     {
-        throw std::runtime_error(msg);
+        return right_side_vector_.n_elem != cooficient_matrix_.n_rows;
     }
-    bool isDiagZeroVector(arma::mat  const& diagonal) const
-    {
-        for(auto&& e: diagonal)
-            if(e != 0) return false;
-        return true;
-    } 
     void checkSystemValid() const
     {
-        if(cooficient_matrix_.n_rows != cooficient_matrix_.n_cols)
+        if(!cooficient_matrix_.is_square())
             throwError(std::string{"Passed matrix is not square !"});
-        if(right_side_vector_.n_elem != cooficient_matrix_.n_rows)
+        if(vectorHasBadLength())
             throwError(std::string{"Vector length != matrix size !"});
-        if(isDiagZeroVector(diagonal_))
-            throwError(std::string{"Diagonal of cooficients is zero vector !"});
     }
-    bool isStartVectorEmpty() const
+    inline bool isStartVectorEmpty() const
     {
         return solutions_vector_.empty();
     }
@@ -52,39 +48,40 @@ private:
     }
     void initSolver()
     {
-        //decomposition to 2 triangles
-        arma::mat upper_triangle {arma::trimatu(cooficient_matrix_,1)};
-        arma::mat lower_triangle {arma::trimatl(cooficient_matrix_,-1)};
-        
-        //invert diagonal matrix
-        diagonal_ = diagonal_.i();
-
-        //create a new cooficient matrix
-        cooficient_matrix_ = -1*diagonal_ * ( upper_triangle + lower_triangle );
+        setPreconditioner();
     }
-    bool isFirstIteration() const
+    inline bool isFirstIteration() const
     {
         return iteration_ == 0;
     }
     //x_n+1 = Mx + Nb
-    void iterationEngine()
+    inline void iterationEngine()
     {
-        //in a single iteration vector of solutions is constant
-        arma::colvec temp {solutions_vector_};
-        solutions_vector_ = cooficient_matrix_ * solutions_vector_ + 
-        // for(auto&& x_i : temp)
-        // {
-        //     for()
-        // }
+        solutions_vector_ += relax_ * preconditioner_ * ( right_side_vector_ - cooficient_matrix_ * solutions_vector_);
+    }
+protected:
+    virtual void setPreconditioner() = 0;
+    virtual void setCooficientMatrix() = 0;
+    bool isDiagZeroVector() const
+    {
+        for(auto&& e: preconditioner_)
+            if(e != 0) return false;
+        return true;
+    }
+    inline void throwError(std::string msg) const noexcept(false) 
+    {
+        throw std::runtime_error(msg);
     }
 public:
-    JacobiSolver(arma::mat const& cooficient_matrix,
-                 arma::colvec const& right_side_vector,
-                 arma::colvec const& start_positions_vector = {}):
+    Solver(arma::mat const& cooficient_matrix,
+           arma::colvec const& right_side_vector,
+           double relax = 1.0,
+           arma::colvec const& start_positions_vector = {}):
         cooficient_matrix_{cooficient_matrix},
         right_side_vector_{right_side_vector},
-        diagonal_{cooficient_matrix.diag()},
-        iteration_{0}
+        preconditioner_{},
+        iteration_{0},
+        relax_{relax}
     {
         checkSystemValid();
         if(isStartVectorEmpty())
@@ -95,15 +92,79 @@ public:
     {
         if(isFirstIteration())
             initSolver();
-        
+        iterationEngine();
         ++iteration_;
     }
-    void operator() (double accuracy)
+    inline bool hasGoodPrecision(double left,double right,double precision)
     {
-        
+        return fabs(left-right) < precision;
     }
+    bool isInsufficientPrecision(double precision,arma::colvec const& temp)
+    {
+        size_t vector_size {temp.n_elem};
+        size_t precise_solutions {0};
+        for(size_t i{0}; i < vector_size ; ++i)
+            if(hasGoodPrecision(temp.at(i,0),solutions_vector_.at(i,0),precision))
+                ++precise_solutions;
+        if(precise_solutions == vector_size)
+            return false; // sufficient solutions
+        return true;//bad solutions
+    }
+    void operator() (size_t count)
+    {
+        for(size_t i{0}; i < count; ++i)
+            (*this)();
+    } 
+    void operator() (double precision)
+    {
+        arma::colvec temp {solutions_vector_};
+        (*this)();
+        while (isInsufficientPrecision(precision,temp))
+        {
+            temp = solutions_vector_;
+            (*this)();
+        }
+        
+    }   
     arma::colvec getSolutions()
     {
         return solutions_vector_;
     }
 };
+
+class JacobiSolver:
+    public Solver
+{
+protected:
+    virtual void setCooficientMatrix()
+    {
+        
+    }
+    virtual void setPreconditioner()
+    {
+        //get diagonal of matrix
+        preconditioner_ =  arma::diagmat(cooficient_matrix_).i();
+        if(isDiagZeroVector())
+            throwError(std::string{"Diagonal of cooficients is zero vector !"});
+    }
+public:
+    using Solver::Solver;
+};
+
+class GaussSeidelSolver:
+    public Solver
+{
+protected:
+    virtual void setCooficientMatrix()
+    {
+
+    }
+    virtual void setPreconditioner()
+    {
+        //get lower triangular parts
+        preconditioner_ = arma::trimatl(cooficient_matrix_,0);
+    }
+public:
+    using Solver::Solver;
+};
+
