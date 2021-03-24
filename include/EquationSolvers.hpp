@@ -1,4 +1,5 @@
 #pragma once
+//#define ARMA_DONT_USE_WRAPPER
 #include <armadillo>
 #include <string>
 #include <cmath>
@@ -81,7 +82,7 @@ public:
     {
         res_ = std::move(res);
     }
-     inline MatrixType getSubstep() const
+    inline MatrixType getSubstep() const
     {
         return res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
     }
@@ -96,7 +97,7 @@ public:
     inline double getEnumerator() const
     {
         return arma::dot(arma::trans(res_->cooficient_matrix_ *  getStep()), 
-                                 res_->cooficient_matrix_ *  getStep());
+                                     res_->cooficient_matrix_ *  getStep());
     }
     inline double getRelax()
     {
