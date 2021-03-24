@@ -44,11 +44,12 @@ int main()
     start.at(3,0) = 1;
 
 
-    GaussSeidelSolver j{A,V,true};
+    GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,true};
     j();
     j((size_t)10);
     cout << j.getSolutions() << endl; 
-    JacobiSolver g{A,V};
+    
+    JacobiSolver<DenseMatrix,DenseVector> g{A,V};
     g();
     g();
     cout << g.getSolutions() << endl; 
