@@ -1,5 +1,19 @@
 #include "../include/EquationSolvers.hpp"
 
+template<typename MatrixType,typename VectorType>
+DenseSharedResources<MatrixType,VectorType>::
+DenseSharedResources(MatrixType const& preconditioner,
+                     MatrixType const& cooficient_matrix,
+                     VectorType const& right_side_vector,
+                     VectorType const& solutions_vector):
+        preconditioner_{preconditioner},
+        cooficient_matrix_{cooficient_matrix},
+        right_side_vector_{right_side_vector},
+        solutions_vector_{right_side_vector}
+{}
+
+
+
 bool Solver::vectorHasBadLength() const
 {
     return right_side_vector_.n_elem != cooficient_matrix_.n_rows;

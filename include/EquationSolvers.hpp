@@ -2,52 +2,52 @@
 #include <armadillo>
 #include <string>
 #include <cmath>
+#include <tbb/concurrent_vector.h>
 
-class HelperObject
+using DenseMatrix = arma::mat;
+using SpareMatrix = arma::sp_mat;
+using DenseVector = arma::colvec;
+using SparseVector = arma::sp_colvec;
+
+template<typename MatrixType,typename VectorType>
+class DenseSharedResources
 {
 protected:
-    arma::mat    const& preconditioner_;
-    arma::mat    const& cooficient_matrix_;
-    arma::colvec const& right_side_vector_;
-    arma::colvec const& solutions_vector_;
+    MatrixType     preconditioner_;
+    MatrixType     cooficient_matrix_;
+    VectorType     right_side_vector_;
+    VectorType     solutions_vector_;
 public:
-    HelperObject(arma::mat const& preconditioner,
-                 arma::mat const& cooficient_matrix,
-                 arma::colvec const& right_side_vector,
-                 arma::colvec const& solutions_vector):
-        preconditioner_{preconditioner},
-        cooficient_matrix_{cooficient_matrix},
-        right_side_vector_{right_side_vector},
-        solutions_vector_{right_side_vector}
-    {}
+    DenseSharedResources(){}
+    DenseSharedResources(MatrixType const& preconditioner,
+                         MatrixType const& cooficient_matrix,
+                         VectorType const& right_side_vector,
+                         VectorType const& solutions_vector);
 };
 
-class SystemChecker:
-    protected HelperObject
+template<typename MatrixType,typename VectorType>
+class SystemChecker
 {
-public:
-    using HelperObject::HelperObject;
+private:
+   
 };
 
-class RelaxModifier:
-    protected HelperObject
+template<typename MatrixType,typename VectorType>
+class RelaxModifier
 {
-public:
-    using HelperObject::HelperObject;
+
 };
 
 class Solver
 {
 private:
+    DenseSharedResources<DenseMatrix,SparseVector> xd;
     bool dynamic_relaxing_flag_; 
     size_t iteration_;
+    double relax_;
+protected:
     arma::colvec right_side_vector_;
     arma::colvec solutions_vector_;
-    double relax_;
-
-    RelaxModifier relax_modifier_;
-    SystemChecker sys_checker_;
-protected:
     arma::mat cooficient_matrix_;
     arma::mat preconditioner_;
 private:
