@@ -1,19 +1,24 @@
 #include "../include/EquationSolvers.hpp"
 
-bool Solver::vectorHasBadLength() const
+bool SystemChecker::vectorHasBadLength() const
 {
     return right_side_vector_.n_elem != cooficient_matrix_.n_rows;
 }
 
 void Solver::checkSystemValid() const
 {
-    if(!cooficient_matrix_.is_square())
-        throwError(std::string{"Passed matrix is not square !"});
-    if(vectorHasBadLength())
-        throwError(std::string{"Vector length != matrix size !"});
+    sys_checker_.checkWhetherMatrixIsSquare();
+    if(sys_checker_.vectorHasBadLength())
+        sys_checker_.throwError(std::string{"Vector length != matrix size !"});
 }
 
-bool Solver::isStartVectorEmpty() const
+void SystemChecker::checkWhetherMatrixIsSquare() const
+{
+    if(!cooficient_matrix_.is_square())
+        throwError(std::string{"Passed matrix is not square !"});
+}
+
+bool SystemChecker::isStartVectorEmpty() const
 {
     return solutions_vector_.empty();
 }
@@ -28,8 +33,8 @@ void Solver::fillStartVectorWithZero()
 void Solver::initSolver()
 {
     setPreconditioner();
-    if(isDiagZeroVector())
-        throwError(std::string{"Diagonal of cooficients is zero vector !"});
+    if(sys_checker_.isDiagZeroVector())
+        sys_checker_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
 }
 
 bool Solver::isFirstIteration() const
@@ -37,12 +42,12 @@ bool Solver::isFirstIteration() const
     return iteration_ == 0;
 }
 
-arma::mat Solver::getSubstep() const
+arma::mat RelaxModifier::getSubstep() const
 {
     return right_side_vector_ - cooficient_matrix_ * solutions_vector_;
 }
 
-arma::mat Solver::getStep() const
+arma::mat RelaxModifier::getStep() const
 {
     return preconditioner_ * getSubstep();
 }
@@ -51,32 +56,37 @@ void Solver::iterationEngine()
 {
     if(dynamic_relaxing_flag_ == true)
         modifyRelax();
-    solutions_vector_ += relax_ *  getStep();
+    solutions_vector_ += relax_ *  relax_modifier_.getStep();
 }
 
-double Solver::getNumerator() const
+double RelaxModifier::getNumerator() const
 {
     return arma::dot(arma::trans( getSubstep()), cooficient_matrix_ *  getStep());
 }
-double Solver::getEnumerator() const
+double RelaxModifier::getEnumerator() const
 {
     return arma::dot(arma::trans(cooficient_matrix_ *  getStep()), 
                                  cooficient_matrix_ *  getStep());
 }
 
-void Solver::modifyRelax()
+double RelaxModifier::getNewRelaxValue() const
 {
-    relax_ =  getNumerator() / getEnumerator();
+    return getNumerator() / getEnumerator();
 }
 
-bool Solver::isDiagZeroVector() const
+void Solver::modifyRelax()
+{
+    relax_ =  relax_modifier_.getNewRelaxValue();
+}
+
+bool SystemChecker::isDiagZeroVector() const
 {
     for(auto&& e: preconditioner_)
         if(e != 0) return false;
     return true;
 }
 
-void Solver::throwError(std::string msg) const noexcept(false) 
+void SystemChecker::throwError(std::string msg) const noexcept(false) 
 {
     throw std::runtime_error(msg);
 }
@@ -91,10 +101,14 @@ Solver::Solver(arma::mat const& cooficient_matrix,
         dynamic_relaxing_flag_{enable_dynamic_relax},
         preconditioner_{},
         iteration_{0},
-        relax_{start_relax}
+        relax_{start_relax},
+        relax_modifier_{preconditioner_,cooficient_matrix_,
+                      right_side_vector_,solutions_vector_},
+        sys_checker_{preconditioner_,cooficient_matrix_,
+                      right_side_vector_,solutions_vector_}
 {
     checkSystemValid();
-    if(isStartVectorEmpty())
+    if(sys_checker_.isStartVectorEmpty())
         fillStartVectorWithZero();
 }
 

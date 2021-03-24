@@ -2,6 +2,7 @@
 #include <armadillo>
 #include <string>
 #include <cmath>
+#include <iostream>
 
 class HelperObject
 {
@@ -27,13 +28,24 @@ class SystemChecker:
 {
 public:
     using HelperObject::HelperObject;
+    inline bool vectorHasBadLength() const;
+    inline bool isStartVectorEmpty() const;
+    inline void checkWhetherMatrixIsSquare() const;
+    bool isDiagZeroVector() const;
+    inline void throwError(std::string msg) const noexcept(false);
 };
 
 class RelaxModifier:
     protected HelperObject
 {
+private:
+    inline double getNumerator() const;
+    inline double getEnumerator() const;
 public:
     using HelperObject::HelperObject;
+    inline arma::mat getStep() const;
+    inline arma::mat getSubstep() const; 
+    inline double getNewRelaxValue() const;
 };
 
 class Solver
@@ -51,25 +63,12 @@ protected:
     arma::mat cooficient_matrix_;
     arma::mat preconditioner_;
 private:
-    inline bool vectorHasBadLength() const;
-    inline bool isStartVectorEmpty() const;
-    void fillStartVectorWithZero();
-    bool isDiagZeroVector() const;
-    inline void throwError(std::string msg) const noexcept(false);
-
-     void checkSystemValid() const;
-
+    void checkSystemValid() const;
     void initSolver();
+    void fillStartVectorWithZero();
     inline bool isFirstIteration() const;
     inline void iterationEngine();
-    
-    inline arma::mat getStep() const;
-    inline arma::mat getSubstep() const; 
-    inline double getNumerator() const;
-    inline double getEnumerator() const;
-
     inline void modifyRelax();
-    
     inline bool hasGoodPrecision(double left,double right,double precision);
     bool isInsufficientPrecision(double precision,arma::colvec const& temp);
 protected:
