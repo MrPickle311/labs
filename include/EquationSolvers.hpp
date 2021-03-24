@@ -17,7 +17,6 @@ struct SharedResources
     MatrixType     cooficient_matrix_;
     VectorType     right_side_vector_;
     VectorType     solutions_vector_;
-    SharedResources(){}
     SharedResources(MatrixType const& preconditioner,
                          MatrixType const& cooficient_matrix,
                          VectorType const& right_side_vector,
@@ -26,7 +25,7 @@ struct SharedResources
         cooficient_matrix_{cooficient_matrix},
         right_side_vector_{right_side_vector},
         solutions_vector_{right_side_vector}
-{}
+    {}
 };
 
 template<typename MatrixType,typename VectorType>
@@ -41,15 +40,42 @@ class RelaxModifier
 {
 private:
    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
+public:
+    RelaxModifier(std::shared_ptr<SharedResources<MatrixType,VectorType>> res):
+        res_{res}
+    {}
+     inline arma::mat getSubstep() const
+    {
+        return res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
+    }
+    inline arma::mat getStep() const
+    {
+        return res_->preconditioner_ * getSubstep();
+    }
+    inline double getNumerator() const
+    {
+        return arma::dot(arma::trans( getSubstep()), res_->cooficient_matrix_ *  getStep());
+    }
+    inline double getEnumerator() const
+    {
+        return arma::dot(arma::trans(res_->cooficient_matrix_ *  getStep()), 
+                                 res_->cooficient_matrix_ *  getStep());
+    }
+    inline double getRelax()
+    {
+        return getNumerator() / getEnumerator();
+    }
 };
 
 template<typename MatrixType,typename VectorType>
 class Solver
 {
 private:
+    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
     bool dynamic_relaxing_flag_; 
     size_t iteration_;
     double relax_;
+    RelaxModifier<MatrixType,VectorType> relax_modifier_;
 protected:
     arma::colvec right_side_vector_;
     arma::colvec solutions_vector_;
@@ -87,6 +113,7 @@ private:
         if(vectorHasBadLength())
             throwError(std::string{"Vector length != matrix size !"});
     }
+    //relax
     inline arma::mat getSubstep() const
     {
         return right_side_vector_ - cooficient_matrix_ * solutions_vector_;
@@ -95,6 +122,7 @@ private:
     {
         return preconditioner_ * getSubstep();
     }
+    //
     void initSolver()
     {
         setPreconditioner();
@@ -111,7 +139,7 @@ private:
             modifyRelax();
         solutions_vector_ += relax_ *  getStep();
     }
-    
+    //relax
     inline double getNumerator() const
     {
         return arma::dot(arma::trans( getSubstep()), cooficient_matrix_ *  getStep());
@@ -125,7 +153,7 @@ private:
     {
         relax_ =  getNumerator() / getEnumerator();
     }
-    
+    //
     inline bool hasGoodPrecision(double left,double right,double precision)
     {
         return fabs(left-right) < precision;
@@ -154,7 +182,12 @@ public:
         dynamic_relaxing_flag_{enable_dynamic_relax},
         preconditioner_{},
         iteration_{0},
-        relax_{start_relax}
+        relax_{start_relax},
+        res_{new SharedResources<MatrixType,VectorType>
+                                    {cooficient_matrix,{},
+                                    right_side_vector,
+                                    start_positions_vector}},
+        relax_modifier_{res_}
     {
         checkSystemValid();
         if(isStartVectorEmpty())
