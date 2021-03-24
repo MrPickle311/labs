@@ -3,7 +3,7 @@
 #include <armadillo>
 #include <string>
 #include <cmath>
-#include <tbb/concurrent_vector.h>
+
 #include <memory>
 
 using DenseMatrix = arma::mat;

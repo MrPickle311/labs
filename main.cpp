@@ -76,8 +76,8 @@ int main()
     std::cout << "MES_START\n";
 
     //wymiary siatki
-	int const mx{ 10 };
-	int const my{ 20 };
+	int const mx{ 100 };
+	int const my{ 200 };
 
     size_t node_matrix_size{ 8 };	//rozmiar macierzy K
 
@@ -99,8 +99,8 @@ int main()
 
     GaussSeidelSolver<DenseMatrix,DenseVector> solver{K_glob,forces,false};
     solver();
-    solver(size_t(20));
-    // shifts = solver.getSolutions();
+    solver(0.01);
+    shifts = solver.getSolutions();
 
 
     std::cout << "MES_END\n\n\n";
