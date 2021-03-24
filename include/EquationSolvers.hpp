@@ -17,11 +17,9 @@ struct SharedResources
     MatrixType     cooficient_matrix_;
     VectorType     right_side_vector_;
     VectorType     solutions_vector_;
-    SharedResources(MatrixType const& preconditioner,
-                         MatrixType const& cooficient_matrix,
-                         VectorType const& right_side_vector,
-                         VectorType const& solutions_vector):
-        preconditioner_{preconditioner},
+    SharedResources(MatrixType const& cooficient_matrix,
+                    VectorType const& right_side_vector,
+                    VectorType const& solutions_vector):
         cooficient_matrix_{cooficient_matrix},
         right_side_vector_{right_side_vector},
         solutions_vector_{right_side_vector}
@@ -29,10 +27,47 @@ struct SharedResources
 };
 
 template<typename MatrixType,typename VectorType>
-class SystemChecker
+class SystemMonitor
 {
 private:
    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
+public:
+   SystemMonitor(){}
+   void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
+   {
+        res_ = std::move(res);
+   }
+   inline bool vectorHasBadLength() const
+    {
+        return res_->right_side_vector_.n_elem != res_->cooficient_matrix_.n_rows;
+    }
+    inline bool isStartVectorEmpty() const
+    {
+        return res_->solutions_vector_.empty();
+    }
+    void fillStartVectorWithZero()
+    {
+        res_->solutions_vector_.resize(res_->right_side_vector_.n_elem);
+        for(auto&& x_i : res_->solutions_vector_)
+            x_i = 0;
+    }
+    bool isDiagZeroVector() const
+    {
+        for(auto&& e: res_->preconditioner_)
+            if(e != 0) return false;
+        return true;
+    }
+    inline void throwError(std::string msg) const noexcept(false)
+    {
+        throw std::logic_error(msg);
+    }
+    void checkSystemValid() const
+    {
+        if(!res_->cooficient_matrix_.is_square())
+            throwError(std::string{"Passed matrix is not square !"});
+        if(vectorHasBadLength())
+            throwError(std::string{"Vector length != matrix size !"});
+    }
 };
 
 template<typename MatrixType,typename VectorType>
@@ -41,14 +76,16 @@ class RelaxModifier
 private:
    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 public:
-    RelaxModifier(std::shared_ptr<SharedResources<MatrixType,VectorType>> res):
-        res_{res}
-    {}
-     inline arma::mat getSubstep() const
+    RelaxModifier(){}
+    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
+    {
+        res_ = std::move(res);
+    }
+     inline MatrixType getSubstep() const
     {
         return res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
     }
-    inline arma::mat getStep() const
+    inline MatrixType getStep() const
     {
         return res_->preconditioner_ * getSubstep();
     }
@@ -67,67 +104,25 @@ public:
     }
 };
 
+
+
 template<typename MatrixType,typename VectorType>
 class Solver
 {
 private:
-    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
     bool dynamic_relaxing_flag_; 
     size_t iteration_;
     double relax_;
     RelaxModifier<MatrixType,VectorType> relax_modifier_;
+    SystemMonitor<MatrixType,VectorType> checker_;
 protected:
-    arma::colvec right_side_vector_;
-    arma::colvec solutions_vector_;
-    arma::mat cooficient_matrix_;
-    arma::mat preconditioner_;
+    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 private:
-    inline bool vectorHasBadLength() const
-    {
-        return right_side_vector_.n_elem != cooficient_matrix_.n_rows;
-    }
-    inline bool isStartVectorEmpty() const
-    {
-        return solutions_vector_.empty();
-    }
-    void fillStartVectorWithZero()
-    {
-        solutions_vector_.resize(right_side_vector_.n_elem);
-        for(auto&& x_i : solutions_vector_)
-            x_i = 0;
-    }
-    bool isDiagZeroVector() const
-    {
-        for(auto&& e: preconditioner_)
-            if(e != 0) return false;
-        return true;
-    }
-    inline void throwError(std::string msg) const noexcept(false)
-    {
-        throw std::runtime_error(msg);
-    }
-    void checkSystemValid() const
-    {
-        if(!cooficient_matrix_.is_square())
-            throwError(std::string{"Passed matrix is not square !"});
-        if(vectorHasBadLength())
-            throwError(std::string{"Vector length != matrix size !"});
-    }
-    //relax
-    inline arma::mat getSubstep() const
-    {
-        return right_side_vector_ - cooficient_matrix_ * solutions_vector_;
-    }
-    inline arma::mat getStep() const
-    {
-        return preconditioner_ * getSubstep();
-    }
-    //
     void initSolver()
     {
         setPreconditioner();
-        if(isDiagZeroVector())
-            throwError(std::string{"Diagonal of cooficients is zero vector !"});
+        if(checker_.isDiagZeroVector())
+            checker_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
     }
     inline bool isFirstIteration() const
     {
@@ -137,33 +132,22 @@ private:
     {
         if(dynamic_relaxing_flag_ == true)
             modifyRelax();
-        solutions_vector_ += relax_ *  getStep();
-    }
-    //relax
-    inline double getNumerator() const
-    {
-        return arma::dot(arma::trans( getSubstep()), cooficient_matrix_ *  getStep());
-    }
-    inline double getEnumerator() const
-    {
-        return arma::dot(arma::trans(cooficient_matrix_ *  getStep()), 
-                                 cooficient_matrix_ *  getStep());
+        res_->solutions_vector_ += relax_ *  relax_modifier_.getStep();
     }
     inline void modifyRelax()
     {
-        relax_ =  getNumerator() / getEnumerator();
+        relax_ = relax_modifier_.getRelax(); 
     }
-    //
     inline bool hasGoodPrecision(double left,double right,double precision)
     {
         return fabs(left-right) < precision;
     }
-    bool isInsufficientPrecision(double precision,arma::colvec const& temp)
+    bool isInsufficientPrecision(double precision,VectorType const& temp)
     {
         size_t vector_size {temp.n_elem};
         size_t precise_solutions {0};
         for(size_t i{0}; i < vector_size ; ++i)
-            if(hasGoodPrecision(temp.at(i,0),solutions_vector_.at(i,0),precision))
+            if(hasGoodPrecision(temp.at(i,0),res_->solutions_vector_.at(i,0),precision))
                 ++precise_solutions;
         if(precise_solutions == vector_size)
             return false; // sufficient solutions
@@ -172,26 +156,26 @@ private:
 protected:
     virtual void setPreconditioner() = 0; // hook 
 public:
-    Solver(arma::mat const& cooficient_matrix,
-           arma::colvec const& right_side_vector,
+    //ugly constructor , but it works 
+    explicit Solver(MatrixType const& cooficient_matrix,
+           VectorType const& right_side_vector,
            bool enable_dynamic_relax = false,
            double start_relax = 1.0,
-           arma::colvec const& start_positions_vector = {}):
-        cooficient_matrix_{cooficient_matrix},
-        right_side_vector_{right_side_vector},
-        dynamic_relaxing_flag_{enable_dynamic_relax},
-        preconditioner_{},
+           VectorType const& start_positions_vector = {}):
         iteration_{0},
         relax_{start_relax},
         res_{new SharedResources<MatrixType,VectorType>
-                                    {cooficient_matrix,{},
+                                    {cooficient_matrix,
                                     right_side_vector,
                                     start_positions_vector}},
-        relax_modifier_{res_}
+        relax_modifier_{},
+        checker_{}
     {
-        checkSystemValid();
-        if(isStartVectorEmpty())
-            fillStartVectorWithZero();
+        relax_modifier_.setRes(res_);
+        checker_.setRes(res_);
+        checker_.checkSystemValid();
+        if(checker_.isStartVectorEmpty())
+            checker_.fillStartVectorWithZero();
     }
     void operator() () // one iteration
     {
@@ -208,17 +192,17 @@ public:
     } 
     void operator() (double precision)//counting while all |x_i+1 - x_i| < precision  
     {
-        arma::colvec temp {solutions_vector_};
+        VectorType temp {res_->solutions_vector_};
         (*this)();
         while (isInsufficientPrecision(precision,temp))
         {
-            temp = solutions_vector_;
+            temp = res_->solutions_vector_;
             (*this)();
         }
     }
-    arma::colvec getSolutions()
+    VectorType getSolutions()
     {
-        return solutions_vector_;
+        return res_->solutions_vector_;
     }
     size_t getIteration() const
     {
@@ -236,7 +220,7 @@ protected:
     virtual void setPreconditioner()
     {
         //get diagonal of matrix
-        preconditioner_ =  arma::diagmat(cooficient_matrix_).i();
+        res_->preconditioner_ =  arma::diagmat(res_->cooficient_matrix_).i();
 }
 public:
     using Solver<DenseMatrix,DenseVector>::Solver;
@@ -250,8 +234,8 @@ protected:
     virtual void setPreconditioner()
     {
         //get lower triangular parts
-        preconditioner_ = arma::trimatl(cooficient_matrix_,0);
-        preconditioner_ = arma::inv(preconditioner_);
+        res_->preconditioner_ = arma::trimatl(res_->cooficient_matrix_,0);
+        res_->preconditioner_ = arma::inv(res_->preconditioner_);
     }
 public:
     using Solver<DenseMatrix,DenseVector>::Solver;

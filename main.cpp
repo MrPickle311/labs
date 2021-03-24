@@ -43,16 +43,17 @@ int main()
     start.at(2,0) = 1;
     start.at(3,0) = 1;
 
+    JacobiSolver<DenseMatrix,DenseVector> g{A,V,true};
+    g();
+    g((size_t)10);
+    cout << g.getSolutions() << endl; 
 
-    GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,true};
+    GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,false};
     j();
     j((size_t)10);
     cout << j.getSolutions() << endl; 
     
-    JacobiSolver<DenseMatrix,DenseVector> g{A,V};
-    g();
-    g();
-    cout << g.getSolutions() << endl; 
+    
 
     mat U  = trimatu(A);
     mat L  = trimatl(A);
