@@ -37,12 +37,11 @@ public:
     }  
 };
 
-class GradientSolver
+class GradientSolver:
+    public Solver
 {
 private:
-    CommonResources res_;
     GradientConvergenceChecker checker_;
-    PrecisionChekcer precision_checker_;
 
     Vector helper_vector_;
 
@@ -52,15 +51,9 @@ private:
 
     Vector p_vector_;//p
 
-    size_t iteration_;
-    double relax_;
     double beta_cooficient_;
 private:
-    inline bool isFirstIteration() const
-    {
-        return iteration_ == 0;
-    }
-    inline void initSolver()
+    void initSolver()
     {
         r_main_vector_ = res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
         p_vector_ = r_main_vector_;
@@ -107,62 +100,22 @@ private:
         r_old_vector_ = r_main_vector_;
     }
 public:
-    GradientSolver(Matrix cooficient_matrix,Vector right_side_vector,
+    GradientSolver(Matrix cooficient_matrix,
+                   Vector right_side_vector,
                    Vector start_position_vector = {}):
-            res_{ new SharedResources{ cooficient_matrix,
-                                       right_side_vector,
-                                       start_position_vector}
-                },
-            checker_{},
-            r_main_vector_{},
-            r_old_vector_{},
-            r_new_vector_{},
-            iteration_{0},
-            relax_{1},
-            beta_cooficient_{0},
-            precision_checker_{},
-            helper_vector_{}
+        Solver{cooficient_matrix,
+               right_side_vector,
+               start_position_vector
+               },
+        checker_{},
+        r_main_vector_{},
+        r_old_vector_{},
+        r_new_vector_{},
+        beta_cooficient_{0},
+        helper_vector_{}
     {
         checker_.setRes(res_);
-        precision_checker_.setRes(res_);
 
         checker_.checkConvergence();
     }
-    void operator() ()
-    {
-        if(isFirstIteration());
-            initSolver();
-        iterationEngine();
-        ++iteration_;
-    }
-    void operator() (size_t count) // several iterations 
-    {
-        for(size_t i{0}; i < count; ++i)
-            (*this)();
-    } 
-    double operator() (double precision)//counting while all |x_i+1 - x_i| < precision  
-    {
-        auto start = std::chrono::steady_clock::now();
-        Vector temp {res_->solutions_vector_};
-        (*this)();
-        while (precision_checker_.isInsufficientPrecision(precision,temp))
-        {
-            temp = res_->solutions_vector_;
-            (*this)();
-        }
-        auto end = std::chrono::steady_clock::now();
-        std::chrono::duration<double> seconds {end - start};
-        return seconds.count();
-    }
-
-    arma::colvec getResults()
-    {
-        return res_->solutions_vector_;
-    }
-
-    size_t getIteration() const
-    {
-        return iteration_;
-    }
-
 };

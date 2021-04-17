@@ -73,8 +73,6 @@ void resizeAll(VectorType& forces, std::vector<bool>& fix,int n)
 //JEŚLI COŚ NIE DZIAŁA ,TO ZAMIEŃ NA DENSITY
 int main()
 {
-
-    /*
     mat A(4, 4);
     //manual
     //row-col 
@@ -114,15 +112,10 @@ int main()
 
     JacobiSolver g{A,V,true};
     g();
-    //g((size_t)10);
     std::cout << "Time : " << g(0.001) << std::endl; 
-    cout << g.getSolutions() << endl; 
+    cout << g.getResults() << endl; 
     cout << "Liczba iteracji : " << g.getIteration() << std::endl; 
-    // GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,false};
-    // j();
-    // j((size_t)10);
-    // cout << j.getSolutions() << endl; 
-    */
+    
     mat AC(3,3);
 
     AC.at(0,0) = 4;

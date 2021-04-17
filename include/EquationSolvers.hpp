@@ -157,83 +157,40 @@ public:
 
 class Solver
 {
-private:
-    
-};
-
-class IterationSolver
-{
-private:
-    bool                         dynamic_relaxing_flag_; 
-    size_t                       iteration_;
-    double                       relax_;
-    RelaxModifier                relax_modifier_;
-    SystemMonitor                system_monitor_;
-    ConvergenceChecker           convergence_checker_;
-    PrecisionChekcer             precision_checker_; 
 protected:
-    CommonResources res_;
-private:
-    void initSolver()
+    CommonResources res_; 
+    PrecisionChekcer precision_checker_;
+    size_t iteration_;
+    double relax_;
+public:
+    Solver(Matrix cooficient_matrix,
+           Vector right_side_vector,
+           Vector start_position_vector = {},
+           double start_relax = 1.0):
+        res_{ new SharedResources{ cooficient_matrix,
+                                   right_side_vector,
+                                   start_position_vector}
+            },        
+        iteration_{0},    
+        precision_checker_{},
+        relax_{start_relax}
     {
-        setPreconditioner();
-        if(system_monitor_.isDiagZeroVector())
-            system_monitor_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
-    }
+        precision_checker_.setRes(res_);
+    }       
     inline bool isFirstIteration() const
     {
         return iteration_ == 0;
     }
-    inline void iterationEngine()
-    {
-        if(dynamic_relaxing_flag_ == true)
-            modifyRelax();
-        res_->solutions_vector_ += relax_ *  relax_modifier_.getStep();
-    }
-    inline void modifyRelax()
-    {
-        relax_ = relax_modifier_.getRelax(); 
-    }
-protected:
-    virtual void setPreconditioner() = 0; // hook 
-public:
-    //ugly constructor , but it works 
-    explicit IterationSolver(Matrix const& cooficient_matrix,
-                    Vector const& right_side_vector,
-                    bool   enable_dynamic_relax = false,
-                    double start_relax = 1.0,
-                    Vector const& start_positions_vector = {}):
-        iteration_{0},
-        relax_{start_relax},
-        res_{new SharedResources
-                            {cooficient_matrix,
-                            right_side_vector,
-                            start_positions_vector}},
-        relax_modifier_{},
-        system_monitor_{},
-        convergence_checker_{},
-        precision_checker_{}
-    {
-        relax_modifier_.setRes(res_);
-        system_monitor_.setRes(res_);
-        convergence_checker_.setRes(res_);
-        precision_checker_.setRes(res_);
 
-        system_monitor_.checkSystemValid();
-        if(!convergence_checker_.isConvergence())
-            throw std::logic_error{"Matrix is not convergence!\n"};
-        if(system_monitor_.isStartVectorEmpty())
-            system_monitor_.fillStartVectorWithZero();
-        
-    }
-    void operator() () // one iteration
+    virtual void initSolver() = 0;
+    virtual void iterationEngine() = 0;
+     void operator() ()
     {
-        if(isFirstIteration())
+        if(isFirstIteration());
             initSolver();
         iterationEngine();
         ++iteration_;
     }
-
     void operator() (size_t count) // several iterations 
     {
         for(size_t i{0}; i < count; ++i)
@@ -253,13 +210,74 @@ public:
         std::chrono::duration<double> seconds {end - start};
         return seconds.count();
     }
-    Vector getSolutions()
+
+    arma::colvec getResults()
     {
         return res_->solutions_vector_;
     }
+
     size_t getIteration() const
     {
         return iteration_;
+    }
+
+
+};
+
+class IterationSolver:
+    public Solver
+{
+private:
+    bool                         dynamic_relaxing_flag_; 
+    size_t                       iteration_;
+    RelaxModifier                relax_modifier_;
+    SystemMonitor                system_monitor_;
+    ConvergenceChecker           convergence_checker_;
+private:
+    void initSolver()
+    {
+        setPreconditioner();
+        if(system_monitor_.isDiagZeroVector())
+            system_monitor_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
+    }
+    inline void iterationEngine()
+    {
+        if(dynamic_relaxing_flag_ == true)
+            modifyRelax();
+        res_->solutions_vector_ += relax_ *  relax_modifier_.getStep();
+    }
+    inline void modifyRelax()
+    {
+        relax_ = relax_modifier_.getRelax(); 
+    }
+protected:
+    virtual void setPreconditioner() = 0; // hook 
+public:
+    //ugly constructor , but it works 
+    explicit IterationSolver(Matrix const& cooficient_matrix,
+                             Vector const& right_side_vector,
+                             bool   enable_dynamic_relax = false,
+                             double start_relax = 1.0,
+                             Vector const& start_positions_vector = {}):
+        Solver{cooficient_matrix,
+                right_side_vector,
+                start_positions_vector,
+                start_relax
+                },
+        relax_modifier_{},
+        system_monitor_{},
+        convergence_checker_{}
+    {
+        relax_modifier_.setRes(res_);
+        system_monitor_.setRes(res_);
+        convergence_checker_.setRes(res_);
+
+        system_monitor_.checkSystemValid();
+        if(!convergence_checker_.isConvergence())
+            throw std::logic_error{"Matrix is not convergence!\n"};
+        if(system_monitor_.isStartVectorEmpty())
+            system_monitor_.fillStartVectorWithZero();
+        
     }
 };
 
