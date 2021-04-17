@@ -2,68 +2,73 @@
 #include <armadillo>
 #include <string>
 #include <cmath>
-
 #include <memory>
+#include <chrono>
 
-using DenseMatrix = arma::mat;
-using SparseMatrix = arma::sp_mat;
-using DenseVector = arma::colvec;
-using SparseVector = arma::sp_colvec;
+using Matrix = arma::mat;
+using Vector = arma::colvec;
 
-template<typename MatrixType,typename VectorType>
 struct SharedResources
 {
-    MatrixType     preconditioner_;
-    MatrixType     cooficient_matrix_;
-    VectorType     right_side_vector_;
-    VectorType     solutions_vector_;
-    SharedResources(MatrixType const& cooficient_matrix,
-                    VectorType const& right_side_vector,
-                    VectorType const& solutions_vector):
+    Matrix     preconditioner_;
+    Matrix     cooficient_matrix_;
+    Vector     right_side_vector_;
+    Vector     solutions_vector_;
+    SharedResources(Matrix const& cooficient_matrix,
+                    Vector const& right_side_vector,
+                    Vector const& solutions_vector):
         cooficient_matrix_{cooficient_matrix},
         right_side_vector_{right_side_vector},
-        solutions_vector_{right_side_vector}
+        solutions_vector_{right_side_vector},
+        preconditioner_{}
     {}
 };
 
-template<typename MatrixType,typename VectorType>
-class MatrixConvergenceChecker
+using CommonResources = std::shared_ptr<SharedResources>;
+
+class SupportObject
 {
-private:
-    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
+protected:
+    CommonResources res_;
 public:
-    MatrixConvergenceChecker(){}
-    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
+    SupportObject(){}
+    void setRes(CommonResources  res)
     {
          res_ = std::move(res);
     }
+};
+
+class ConvergenceChecker:
+    public SupportObject
+{
+public:
+    using SupportObject::SupportObject;
+
     bool isConvergence()
     {
-        size_t sum = 0;
-        //i cannot use std::accumulate bcs this matrix does not provide matrx.begin() ,matrix.end()...
-        for(size_t i = 0 ; i < res_->cooficient_matrix_.n_rows; ++i)
-            for(size_t j = 0 ; j < res_->cooficient_matrix_.n_rows; ++j)
-                if(j != i)
-                    sum += res_->cooficient_matrix_.at(i,j);
-        
-        for(size_t i = 0 ; i < res_->cooficient_matrix_.n_rows; ++i)
-            if(fabs(res_->cooficient_matrix_.at(i,i)) <= sum )
+        Matrix D  { arma::diagmat(res_->cooficient_matrix_) };
+        Matrix L  { arma::trimatl(res_->cooficient_matrix_,-1) };
+        Matrix U  { arma::trimatu(res_->cooficient_matrix_,1) };
+
+        Matrix B = -1 * (D + L).i() * U;
+
+        arma::cx_vec eigen_values ;
+        arma::eig_gen(eigen_values,B);
+
+        for(size_t i{0}; i < eigen_values.n_cols;++i)
+            if(std::abs(eigen_values.at(i)) >= 1)
                 return false;
+        
         return true;
     }
 };
 
-template<typename MatrixType,typename VectorType>
-class SystemMonitor
+class SystemMonitor:
+    public SupportObject
 {
-private:
-   std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 public:
-    SystemMonitor(){}
-    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
-    {
-         res_ = std::move(res);
-    }
+    using SupportObject::SupportObject;
+
     inline bool vectorHasBadLength() const
     {
         return res_->right_side_vector_.n_elem != res_->cooficient_matrix_.n_rows;
@@ -97,22 +102,17 @@ public:
     }
 };
 
-template<typename MatrixType,typename VectorType>
-class RelaxModifier
+class RelaxModifier:
+    public SupportObject
 {
-private:
-   std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 public:
-    RelaxModifier(){}
-    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
-    {
-        res_ = std::move(res);
-    }
-    inline MatrixType getSubstep() const
+    using SupportObject::SupportObject;
+
+    inline Matrix getSubstep() const
     {
         return res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
     }
-    inline MatrixType getStep() const
+    inline Matrix getStep() const
     {
         return res_->preconditioner_ * getSubstep();
     }
@@ -131,18 +131,48 @@ public:
     }
 };
 
-template<typename MatrixType,typename VectorType>
+class PrecisionChekcer:
+    public SupportObject
+{
+public:
+    using SupportObject::SupportObject;
+
+    inline bool hasGoodPrecision(double left,double right,double precision)
+    {
+        return ( fabs(left-right) / left ) < precision;
+    }
+    //i need to optimize this below function
+    bool isInsufficientPrecision(double precision,Vector const& temp)
+    {
+        size_t vector_size {temp.n_elem};
+        size_t precise_solutions {0};
+        for(size_t i{0}; i < vector_size ; ++i)
+            if(hasGoodPrecision(temp.at(i,0),res_->solutions_vector_.at(i,0),precision))
+                ++precise_solutions;
+        if(precise_solutions == vector_size)
+            return false; // sufficient solutions
+        return true;//bad solutions
+    }
+};
+
 class Solver
 {
 private:
-    bool dynamic_relaxing_flag_; 
-    size_t iteration_;
-    double relax_;
-    RelaxModifier<MatrixType,VectorType>                relax_modifier_;
-    SystemMonitor<MatrixType,VectorType>                system_monitor_;
-    MatrixConvergenceChecker<MatrixType,VectorType>     convergence_checker_;
+    
+};
+
+class IterationSolver
+{
+private:
+    bool                         dynamic_relaxing_flag_; 
+    size_t                       iteration_;
+    double                       relax_;
+    RelaxModifier                relax_modifier_;
+    SystemMonitor                system_monitor_;
+    ConvergenceChecker           convergence_checker_;
+    PrecisionChekcer             precision_checker_; 
 protected:
-    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
+    CommonResources res_;
 private:
     void initSolver()
     {
@@ -164,44 +194,30 @@ private:
     {
         relax_ = relax_modifier_.getRelax(); 
     }
-    inline bool hasGoodPrecision(double left,double right,double precision)
-    {
-        return fabs(left-right) < precision;
-    }
-    //i need to optimize this below function
-    bool isInsufficientPrecision(double precision,VectorType const& temp)
-    {
-        size_t vector_size {temp.n_elem};
-        size_t precise_solutions {0};
-        for(size_t i{0}; i < vector_size ; ++i)
-            if(hasGoodPrecision(temp.at(i,0),res_->solutions_vector_.at(i,0),precision))
-                ++precise_solutions;
-        if(precise_solutions == vector_size)
-            return false; // sufficient solutions
-        return true;//bad solutions
-    }
 protected:
     virtual void setPreconditioner() = 0; // hook 
 public:
     //ugly constructor , but it works 
-    explicit Solver(MatrixType const& cooficient_matrix,
-           VectorType const& right_side_vector,
-           bool enable_dynamic_relax = false,
-           double start_relax = 1.0,
-           VectorType const& start_positions_vector = {}):
+    explicit IterationSolver(Matrix const& cooficient_matrix,
+                    Vector const& right_side_vector,
+                    bool   enable_dynamic_relax = false,
+                    double start_relax = 1.0,
+                    Vector const& start_positions_vector = {}):
         iteration_{0},
         relax_{start_relax},
-        res_{new SharedResources<MatrixType,VectorType>
-                                    {cooficient_matrix,
-                                    right_side_vector,
-                                    start_positions_vector}},
+        res_{new SharedResources
+                            {cooficient_matrix,
+                            right_side_vector,
+                            start_positions_vector}},
         relax_modifier_{},
         system_monitor_{},
-        convergence_checker_{}
+        convergence_checker_{},
+        precision_checker_{}
     {
         relax_modifier_.setRes(res_);
         system_monitor_.setRes(res_);
         convergence_checker_.setRes(res_);
+        precision_checker_.setRes(res_);
 
         system_monitor_.checkSystemValid();
         if(!convergence_checker_.isConvergence())
@@ -223,17 +239,21 @@ public:
         for(size_t i{0}; i < count; ++i)
             (*this)();
     } 
-    void operator() (double precision)//counting while all |x_i+1 - x_i| < precision  
+    double operator() (double precision)//counting while all |x_i+1 - x_i| < precision  
     {
-        VectorType temp {res_->solutions_vector_};
+        auto start = std::chrono::steady_clock::now();
+        Vector temp {res_->solutions_vector_};
         (*this)();
-        while (isInsufficientPrecision(precision,temp))
+        while (precision_checker_.isInsufficientPrecision(precision,temp))
         {
             temp = res_->solutions_vector_;
             (*this)();
         }
+        auto end = std::chrono::steady_clock::now();
+        std::chrono::duration<double> seconds {end - start};
+        return seconds.count();
     }
-    VectorType getSolutions()
+    Vector getSolutions()
     {
         return res_->solutions_vector_;
     }
@@ -245,9 +265,8 @@ public:
 
 //JacobiSolver and GaussSeidelSolver also have a dynamic MINRES relax modification
 
-template<typename MatrixType,typename VectorType>
 class JacobiSolver:
-    public Solver<MatrixType,VectorType>
+    public IterationSolver
 {
 protected:
     virtual void setPreconditioner()
@@ -256,12 +275,11 @@ protected:
         this->res_->preconditioner_ =  arma::diagmat(this->res_->cooficient_matrix_).i();
     }
 public:
-    using Solver<MatrixType,VectorType>::Solver;
+    using IterationSolver::IterationSolver;
 };
 
-template<typename MatrixType,typename VectorType>
 class GaussSeidelSolver:
-    public Solver<MatrixType,VectorType>
+    public IterationSolver
 {
 protected:
     virtual void setPreconditioner()
@@ -271,5 +289,5 @@ protected:
         this->res_->preconditioner_ = arma::inv(this->res_->preconditioner_);
     }
 public:
-    using Solver<MatrixType,VectorType>::Solver;
+    using IterationSolver::IterationSolver;
 };

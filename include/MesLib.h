@@ -22,45 +22,6 @@ int DOF(int elidx, int elidy, int locdofid,int const mx)
 		return 2 * ((elidy + 1)*(mx + 1) + elidx - 3) + locdofid;
 }
 
-class Matrix
-{
-private:
-    std::vector<std::vector<double>> body_;
-    void resize_impl(size_t size)
-    {
-        body_.resize(size);
-        for (auto& e : body_)
-            e.resize(size);
-    }
-public:
-    Matrix(size_t size):
-        body_{}
-    {
-        resize_impl(size);
-    }
-    Matrix(Matrix&& other) noexcept
-    {
-        body_ = std::move(other.body_);
-        std::cout << "\nMOVE!!!\n";
-    }
-    size_t size() const
-    {
-        return body_.size();
-    }
-    void resize(size_t size)
-    {
-        resize_impl(size);
-    }
-    double& at(size_t col,size_t row)
-    {
-        return body_[col][row];
-    }
-    std::vector<std::vector<double>> data() const
-    {
-        return body_;
-    }
-};
-
 const double skala = 1.0;
 
 //------------------------------- MACIERZ SZTYWNOSCI ELEMENTU --------------------------

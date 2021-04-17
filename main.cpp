@@ -1,5 +1,6 @@
 #include <iostream>
 #include "include/EquationSolvers.hpp"
+#include "include/GradientEquationsSolvers.hpp"
 #include "include/MesLib.h"
 using namespace std;
 using namespace arma;
@@ -72,71 +73,8 @@ void resizeAll(VectorType& forces, std::vector<bool>& fix,int n)
 //JEŚLI COŚ NIE DZIAŁA ,TO ZAMIEŃ NA DENSITY
 int main()
 {
-    std::cout << "MES_START\n";
 
-    //wymiary siatki
-	int const mx{ 10 };
-	int const my{ 20 };
-
-    size_t node_matrix_size{ 8 };	//rozmiar macierzy K
-
-    int  n{ 2 * (mx + 1) * (my + 1) };
-    
-    
-    colvec shifts{};	//wektor przesuniêæ
-	colvec forces(n);	//wektor si³
-	std::vector<bool> fix{};
-
-    resizeAll(forces, fix, n);
-    freeAllNodes(fix);
-    blockNodes(fix, mx);
-
-    DenseMatrix K_glob(n,n);
-   
-    assembly(K_glob, mx, my, n, node_matrix_size);
-    setForces(forces, n);
-	applyLocksToMatrix(K_glob, fix, forces, n);
-
-    //JacobiSolver<DenseMatrix,colvec> solver{K_glob,forces};
-    //GaussSeidelSolver<DenseMatrix,colvec> solver{K_glob,forces,false};
-    
-    //solver();
-    //solver((size_t)10);
-    //solver(0.1);
-    //shifts = solver.getSolutions();
-    //std::cout << solver.getIteration() << std::endl;
-    
-    // col_i * A_
-    //A = A^T
-    //x^T *(skalar) A *(wektor) x > 0 
-
-    std::cout << "MES_END\n\n\n";
-
-    std::cout << "wartosci wlasne\n\n\n";
-
-    mat BD(3,3);
-
-    BD.at(0,0) = 3;
-    BD.at(0,1) = 0;
-    BD.at(0,2) = 3;
-    BD.at(1,0) = 3;
-    BD.at(1,1) = 2;
-    BD.at(1,2) = 1;
-    BD.at(2,0) = 4;
-    BD.at(2,1) = 0;
-    BD.at(2,2) = 2;
-
-    std::cout << BD << std::endl;
-
-    cx_vec eigval;
-
-    eig_gen(eigval,BD); 
-
-    std::cout <<  std::abs(eigval.at(0)) << std::endl;
-
-    std::cout << eigval << std::endl;
-    std::cout << "end_wartosci_wlasne\n\n\n";
-
+    /*
     mat A(4, 4);
     //manual
     //row-col 
@@ -174,32 +112,42 @@ int main()
     start.at(2,0) = 1;
     start.at(3,0) = 1;
 
-    JacobiSolver<DenseMatrix,DenseVector> g{A,V,true};
+    JacobiSolver g{A,V,true};
     g();
     //g((size_t)10);
-    g(0.001);
+    std::cout << "Time : " << g(0.001) << std::endl; 
     cout << g.getSolutions() << endl; 
     cout << "Liczba iteracji : " << g.getIteration() << std::endl; 
     // GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,false};
     // j();
     // j((size_t)10);
     // cout << j.getSolutions() << endl; 
-    
+    */
+    mat AC(3,3);
+
+    AC.at(0,0) = 4;
+    AC.at(0,1) = 2;
+    AC.at(0,2) = 1;
+
+    AC.at(1,0) = 2;
+    AC.at(1,1) = 4;
+    AC.at(1,2) = 2;
+
+    AC.at(2,0) = 1;
+    AC.at(2,1) = 2;
+    AC.at(2,2) = 4;
+   
+    colvec bb(3);
+    bb.at(0) = 1;
+    bb.at(1) = 4;
+    bb.at(2) = -3;
+
+    GradientSolver grad{AC,bb};
+
+    grad(0.01);
     
 
-    mat U  = trimatu(A);
-    mat L  = trimatl(A);
-
-    mat UU = trimatu(A,  1);  // omit the main diagonal
-    mat LL = trimatl(A, -1);  // omit the main diagonal
-    cout << A << endl;
-    cout << LL << endl;
-    cout << UU << endl;
-    mat C(4, 5, fill::randu);
-    mat B(4, 5, fill::randu);
-    
-    cout << C*B.t() << endl;
-    cout << A.diag() << endl;
-    cout << diagmat(A);
+    std::cout << grad.getResults() << std::endl;
+    std::cout << grad.getIteration() << std::endl;
     return 0;
 }
