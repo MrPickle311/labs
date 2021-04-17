@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "include/EquationSolvers.hpp"
 #include "include/MesLib.h"
 using namespace std;
@@ -70,40 +69,74 @@ void resizeAll(VectorType& forces, std::vector<bool>& fix,int n)
 	fix.resize(n);
 }
 
-
+//JEŚLI COŚ NIE DZIAŁA ,TO ZAMIEŃ NA DENSITY
 int main()
 {
     std::cout << "MES_START\n";
 
     //wymiary siatki
-	int const mx{ 100 };
-	int const my{ 200 };
+	int const mx{ 10 };
+	int const my{ 20 };
 
     size_t node_matrix_size{ 8 };	//rozmiar macierzy K
 
     int  n{ 2 * (mx + 1) * (my + 1) };
     
-    DenseVector shifts{};	//wektor przesuniêæ
-	DenseVector forces(n);	//wektor si³
-	std::vector<bool> fix{};
     
+    colvec shifts{};	//wektor przesuniêæ
+	colvec forces(n);	//wektor si³
+	std::vector<bool> fix{};
+
     resizeAll(forces, fix, n);
     freeAllNodes(fix);
     blockNodes(fix, mx);
 
     DenseMatrix K_glob(n,n);
-
+   
     assembly(K_glob, mx, my, n, node_matrix_size);
     setForces(forces, n);
 	applyLocksToMatrix(K_glob, fix, forces, n);
 
-    GaussSeidelSolver<DenseMatrix,DenseVector> solver{K_glob,forces,false};
-    solver();
-    solver(0.01);
-    shifts = solver.getSolutions();
-
+    //JacobiSolver<DenseMatrix,colvec> solver{K_glob,forces};
+    //GaussSeidelSolver<DenseMatrix,colvec> solver{K_glob,forces,false};
+    
+    //solver();
+    //solver((size_t)10);
+    //solver(0.1);
+    //shifts = solver.getSolutions();
+    //std::cout << solver.getIteration() << std::endl;
+    
+    // col_i * A_
+    //A = A^T
+    //x^T *(skalar) A *(wektor) x > 0 
 
     std::cout << "MES_END\n\n\n";
+
+    std::cout << "wartosci wlasne\n\n\n";
+
+    mat BD(3,3);
+
+    BD.at(0,0) = 3;
+    BD.at(0,1) = 0;
+    BD.at(0,2) = 3;
+    BD.at(1,0) = 3;
+    BD.at(1,1) = 2;
+    BD.at(1,2) = 1;
+    BD.at(2,0) = 4;
+    BD.at(2,1) = 0;
+    BD.at(2,2) = 2;
+
+    std::cout << BD << std::endl;
+
+    cx_vec eigval;
+
+    eig_gen(eigval,BD); 
+
+    std::cout <<  std::abs(eigval.at(0)) << std::endl;
+
+    std::cout << eigval << std::endl;
+    std::cout << "end_wartosci_wlasne\n\n\n";
+
     mat A(4, 4);
     //manual
     //row-col 
@@ -143,13 +176,14 @@ int main()
 
     JacobiSolver<DenseMatrix,DenseVector> g{A,V,true};
     g();
-    g((size_t)10);
+    //g((size_t)10);
+    g(0.001);
     cout << g.getSolutions() << endl; 
-
-    GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,false};
-    j();
-    j((size_t)10);
-    cout << j.getSolutions() << endl; 
+    cout << "Liczba iteracji : " << g.getIteration() << std::endl; 
+    // GaussSeidelSolver<SparseMatrix,SparseVector> j{A,V,false};
+    // j();
+    // j((size_t)10);
+    // cout << j.getSolutions() << endl; 
     
     
 

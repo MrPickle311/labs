@@ -1,5 +1,4 @@
 #pragma once
-//#define ARMA_DONT_USE_WRAPPER
 #include <armadillo>
 #include <string>
 #include <cmath>
@@ -28,17 +27,44 @@ struct SharedResources
 };
 
 template<typename MatrixType,typename VectorType>
+class MatrixConvergenceChecker
+{
+private:
+    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
+public:
+    MatrixConvergenceChecker(){}
+    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
+    {
+         res_ = std::move(res);
+    }
+    bool isConvergence()
+    {
+        size_t sum = 0;
+        //i cannot use std::accumulate bcs this matrix does not provide matrx.begin() ,matrix.end()...
+        for(size_t i = 0 ; i < res_->cooficient_matrix_.n_rows; ++i)
+            for(size_t j = 0 ; j < res_->cooficient_matrix_.n_rows; ++j)
+                if(j != i)
+                    sum += res_->cooficient_matrix_.at(i,j);
+        
+        for(size_t i = 0 ; i < res_->cooficient_matrix_.n_rows; ++i)
+            if(fabs(res_->cooficient_matrix_.at(i,i)) <= sum )
+                return false;
+        return true;
+    }
+};
+
+template<typename MatrixType,typename VectorType>
 class SystemMonitor
 {
 private:
    std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 public:
-   SystemMonitor(){}
-   void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
-   {
-        res_ = std::move(res);
-   }
-   inline bool vectorHasBadLength() const
+    SystemMonitor(){}
+    void setRes(std::shared_ptr<SharedResources<MatrixType,VectorType>>  res)
+    {
+         res_ = std::move(res);
+    }
+    inline bool vectorHasBadLength() const
     {
         return res_->right_side_vector_.n_elem != res_->cooficient_matrix_.n_rows;
     }
@@ -105,8 +131,6 @@ public:
     }
 };
 
-
-
 template<typename MatrixType,typename VectorType>
 class Solver
 {
@@ -114,16 +138,17 @@ private:
     bool dynamic_relaxing_flag_; 
     size_t iteration_;
     double relax_;
-    RelaxModifier<MatrixType,VectorType> relax_modifier_;
-    SystemMonitor<MatrixType,VectorType> checker_;
+    RelaxModifier<MatrixType,VectorType>                relax_modifier_;
+    SystemMonitor<MatrixType,VectorType>                system_monitor_;
+    MatrixConvergenceChecker<MatrixType,VectorType>     convergence_checker_;
 protected:
     std::shared_ptr<SharedResources<MatrixType,VectorType>> res_;
 private:
     void initSolver()
     {
         setPreconditioner();
-        if(checker_.isDiagZeroVector())
-            checker_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
+        if(system_monitor_.isDiagZeroVector())
+            system_monitor_.throwError(std::string{"Diagonal of cooficients is zero vector !"});
     }
     inline bool isFirstIteration() const
     {
@@ -143,6 +168,7 @@ private:
     {
         return fabs(left-right) < precision;
     }
+    //i need to optimize this below function
     bool isInsufficientPrecision(double precision,VectorType const& temp)
     {
         size_t vector_size {temp.n_elem};
@@ -170,13 +196,19 @@ public:
                                     right_side_vector,
                                     start_positions_vector}},
         relax_modifier_{},
-        checker_{}
+        system_monitor_{},
+        convergence_checker_{}
     {
         relax_modifier_.setRes(res_);
-        checker_.setRes(res_);
-        checker_.checkSystemValid();
-        if(checker_.isStartVectorEmpty())
-            checker_.fillStartVectorWithZero();
+        system_monitor_.setRes(res_);
+        convergence_checker_.setRes(res_);
+
+        system_monitor_.checkSystemValid();
+        if(!convergence_checker_.isConvergence())
+            throw std::logic_error{"Matrix is not convergence!\n"};
+        if(system_monitor_.isStartVectorEmpty())
+            system_monitor_.fillStartVectorWithZero();
+        
     }
     void operator() () // one iteration
     {
@@ -215,29 +247,29 @@ public:
 
 template<typename MatrixType,typename VectorType>
 class JacobiSolver:
-    public Solver<DenseMatrix,DenseVector>
+    public Solver<MatrixType,VectorType>
 {
 protected:
     virtual void setPreconditioner()
     {
         //get diagonal of matrix
-        res_->preconditioner_ =  arma::diagmat(res_->cooficient_matrix_).i();
-}
+        this->res_->preconditioner_ =  arma::diagmat(this->res_->cooficient_matrix_).i();
+    }
 public:
-    using Solver<DenseMatrix,DenseVector>::Solver;
+    using Solver<MatrixType,VectorType>::Solver;
 };
 
 template<typename MatrixType,typename VectorType>
 class GaussSeidelSolver:
-    public Solver<DenseMatrix,DenseVector>
+    public Solver<MatrixType,VectorType>
 {
 protected:
     virtual void setPreconditioner()
     {
         //get lower triangular parts
-        res_->preconditioner_ = arma::trimatl(res_->cooficient_matrix_,0);
-        res_->preconditioner_ = arma::inv(res_->preconditioner_);
+        this->res_->preconditioner_ = arma::trimatl(this->res_->cooficient_matrix_,0);
+        this->res_->preconditioner_ = arma::inv(this->res_->preconditioner_);
     }
 public:
-    using Solver<DenseMatrix,DenseVector>::Solver;
+    using Solver<MatrixType,VectorType>::Solver;
 };
