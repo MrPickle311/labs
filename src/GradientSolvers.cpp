@@ -70,10 +70,12 @@ void GradientSolver::iterationEngine()//very ugly
 GradientSolver::GradientSolver(Matrix cooficient_matrix,
                                Vector right_side_vector,
                                bool use_preconditioner,
+                               double start_relax,
                                Vector start_position_vector):
         Solver{cooficient_matrix,
                right_side_vector,
-               start_position_vector
+               start_position_vector,
+               start_relax
                },
         checker_{},
         r_main_vector_{},

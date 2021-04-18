@@ -27,17 +27,10 @@ void SupportObject::setRes(CommonResources  res)
 
 bool PrecisionChekcer::isInsufficientPrecision(double precision,Vector const& temp)
 {
-    size_t vector_size {temp.n_elem};
-    size_t precise_solutions {0};
-        
-    for(size_t i{0}; i < vector_size ; ++i)
-        if(hasGoodPrecision(temp.at(i,0),res_->solutions_vector_.at(i,0),precision))
-            ++precise_solutions;
-        
-    if(precise_solutions == vector_size)
-        return false; // sufficient solutions
-       
-    return true;//bad solutions
+    if(arma::norm(res_->solutions_vector_ - temp) >= precision)
+        return true;
+
+    return false;//bad solutions
 }
 
 
@@ -54,7 +47,8 @@ Solver::Solver(Matrix cooficient_matrix,
             },        
         iteration_{0},    
         precision_checker_{},
-        relax_{start_relax}
+        relax_{start_relax},
+        timeout_occured_{false}
 {
     precision_checker_.setRes(res_);
 }  
@@ -73,20 +67,26 @@ void Solver::operator() (size_t count)
         (*this)();
 } 
 
-double Solver::operator() (double precision)
+double Solver::operator() (double precision,double timeout)
 
 {
     auto start = std::chrono::steady_clock::now();
-    
-    (*this)();
+
     Vector temp {res_->solutions_vector_};
-    
-    
+    timeout_occured_ = false;
+
+    (*this)();
+
     while (precision_checker_.isInsufficientPrecision(precision,temp))
     {
+        std::chrono::duration<double> tim {std::chrono::steady_clock::now() - start};
+        if (timeout < tim.count())
+        {
+            timeout_occured_ = true;
+            break;
+        }
         temp = res_->solutions_vector_;
         (*this)();
-        //std::cout << arma::norm(res_->solutions_vector_ - temp) << " : NORM\n";
     }
     
     auto end = std::chrono::steady_clock::now();
@@ -103,4 +103,9 @@ Vector Solver::getResults()
 size_t Solver::getIteration() const
 {
     return iteration_;
+}
+
+bool Solver::getTimeoutState() const
+{
+    return timeout_occured_;
 }

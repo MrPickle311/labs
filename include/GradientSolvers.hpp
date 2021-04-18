@@ -52,7 +52,7 @@ private:
     {
         r_main_vector_ = res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
     }
-    
+
     void initSolver();
     
     inline void computeHelperMatrix()
@@ -95,5 +95,6 @@ public:
     GradientSolver(Matrix cooficient_matrix,
                    Vector right_side_vector,
                    bool use_preconditioner = false,
+                   double start_relax = 1.0,
                    Vector start_position_vector = {});
 };

@@ -1,142 +1,167 @@
 #include <iostream>
 #include "include/GradientSolvers.hpp"
 #include "include/IterativeSolvers.hpp"
-#include "include/MesLib.h"
 #include "include/MatrixStream.hpp"
+#include <vector>
 
 using namespace std;
 using namespace arma;
 
-template<typename MatrixType>
-void assembly(MatrixType& K_glob, int mx, int my,int n, int node_matrix_size)
+struct TestData
 {
-	//Assemblacja + "umasowienie" macierzy
-	for (size_t elx{ 0 }; elx < mx; ++elx)
-		for (size_t ely{ 0 }; ely < my; ++ely) //dla ka¿dego wêz³a...
-			for (size_t dim1{ 0 }; dim1 < node_matrix_size; ++dim1)
-				for (size_t dim2{ 0 }; dim2 < node_matrix_size; ++dim2)
-					K_glob.at(DOF(elx, ely, dim1, mx), DOF(elx, ely, dim2, mx)) += K[dim1][dim2];
-	// redystrybucja elementów lokalnych macierzy do macierz globalnej
-	// z wykorzystaniem DOF
+    double              time_;
+    size_t              iterations_;
+    std::string         name_;
+    bool                dynamic_relax_enabled_ = false;
+    double              start_relax_ = 1.0; 
+    bool                timeout_occured;
+};
 
-	for (size_t i{ 0 }; i < n; ++i)
-		for (size_t j{ 0 }; j < n; ++j)
-			K_glob.at(i, j) *= Md;
+TestData start_benchmark(Solver* solver,
+                         std::string test_name,
+                         double norm_precision,
+                         bool dynamic_relax = false,
+                         double start_relax_ = 1.0,
+                         bool show_results = false)
+{
+    TestData data;
+    data.name_              = test_name;
+    data.time_              = (*solver)(norm_precision) * 1000;
+    data.iterations_        = solver->getIteration();
+    data.timeout_occured    = solver->getTimeoutState();
+    data.start_relax_       = start_relax_;
+
+    std::cout << "Method: " << data.name_  << std::endl;
+    std::cout << "Time of solving : " << data.time_ << " ms" << std::endl;
+    
+    if(show_results)
+        std::cout << "Results:\n" << solver->getResults() << std::endl;
+    
+    if(dynamic_relax)
+        std::cout << "Dynamic relax enabled with value " << start_relax_ << std::endl;
+
+    std::cout << "Iterations count: " << data.iterations_ << std::endl;
+
+    if(data.timeout_occured)
+        std::cout << " **** TIMEOUT ****" << std::endl;
+    std::cout << std::endl;
+    return data;
 }
 
-void freeAllNodes(std::vector<bool>& fix)
+std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
 {
-	//na pocz¹tku ca³y uk³ad bêdzie uwolniony
-	for (auto&& elem : fix)
-		elem = false;
+    std::vector<TestData> data;
+
+    //without preconditiner
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&grad,"Gradient method without preconditioner",norm_precision,true,relax));
+    }
+
+    //with preconditioner
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,true,relax};
+        data.push_back(start_benchmark(&grad,"Gradient method with preconditioner",norm_precision,true,relax));
+    }
+
+    return data;
 }
 
-void blockNodes(std::vector<bool>& fix,int mx)
+std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
 {
-	//wprowadzam trzy podpory
-	fix[0] = true;
-	fix[1] = true;
-	fix[mx] = true;
-	fix[mx + 1] = true;
-	fix[2 * mx] = true;
-	fix[2 * mx + 1] = true;
+    std::vector<TestData> data;
+
+    //without dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_};
+        data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision));
+    }
+
+    //with dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,true,relax));
+    }
+
+    return data;
 }
 
-template<typename VectorType>
-void setForces(VectorType& forces, int n)
+std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
 {
-	for (size_t i{ 0 }; i < n; ++i)
-		if (i % 2 != 0)
-			forces[i] = -400000000;
+    std::vector<TestData> data;
+
+    //without dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_};
+        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision));
+    }
+
+    //with dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,true,relax));
+    }
+
+    return data;
 }
 
-template<typename MatrixType,typename VectorType>
-void applyLocksToMatrix(MatrixType& K_glob, std::vector<bool>& fix, VectorType& forces,int n)
+std::string parse_test_data(TestData const& data)
 {
-	//Narzuæ warunki brzegowe tzn. zerujê si³y w wêz³ach podporowych oraz
-	//modyfikujê odpowiednio macierz
-	for (size_t i{ 0 }; i < n; ++i)//dla ka¿dej kolumny
-		if (fix[i])// sprawd ,czy wêze³ utwierdzony
-		{
-			for (size_t j{ 0 }; j < n; ++j)
-				K_glob.at(i, j) = 0;//zerowanie kolumn
-			K_glob.at(i, i) = 1;//na diagonali 1 
-			forces[i] = 0;
-		}
+    std::string str_data;
+    std::ostringstream str{str_data};
+    
+    str << data.name_ << '\t';//1
+
+    str << data.start_relax_ << '\t';//4
+    
+    if(data.timeout_occured)//5
+        str << "Timeout occured!" << '\t';
+    else str <<"Compute complete" << '\t';
+    
+    
+
+    str <<  data.time_ << '\t';//6
+    str <<  data.iterations_ << '\t';
+
+    str << '\n';
+    
+    str_data = str.str();
+    
+    return str_data;
 }
 
-template<typename VectorType>
-void resizeAll(VectorType& forces, std::vector<bool>& fix,int n)
+std::string parse_test_vector(std::vector<TestData> data)
 {
-	// alokacja pamiêci
-	fix.resize(n);
+    std::string str_data;
+    std::ostringstream str{str_data};
+
+    for(auto&& e : data)
+        str << parse_test_data(e);
+
+    str_data = str.str();
+
+    return str_data;
 }
 
-//JEŚLI COŚ NIE DZIAŁA ,TO ZAMIEŃ NA DENSITY
+void generateReport(std::string dat , std::filesystem::path dir)
+{
+    std::ofstream file (dir, ios_base::trunc);
+    if(file.is_open())
+    {
+        std::cout << "Saving a report..." << std::endl;
+        file << dat;
+    }
+    else std::cout << "Cannot open a file " << std::endl;
+}
+
 int main()
 {
-    mat A(4, 4);
-    //manual
-    //row-col 
-    A.at(0,0) = 4;
-    A.at(1,0) = -1;
-    A.at(2,0) = 0.2;
-    A.at(3,0) = 0;
-    A.at(0,1) = -1;
-    A.at(1,1) = 5;
-    A.at(2,1) = 1;
-    A.at(3,1) = -2;
-    A.at(0,2) = -0.2;
-    A.at(1,2) = 0;
-    A.at(2,2) = 10;
-    A.at(3,2) = -1;
-    A.at(0,3) = 2;
-    A.at(1,3) = -2;
-    A.at(2,3) = -1;
-    A.at(3,3) = 4;
-    //
-    colvec V(4);
-    //manual
-    V.at(0,0) = 30;
-    V.at(1,0) = 0;
-    V.at(2,0) = -10;
-    V.at(3,0) = 5;
-    //
-    cout << A << endl;
-    cout << V << endl;
-    cout << arma::trimatl(A,0) << endl;
-
-    colvec start(4);
-    start.at(0,0) = 1;
-    start.at(1,0) = 1;
-    start.at(2,0) = 1;
-    start.at(3,0) = 1;
-
-    JacobiSolver g{A,V,true};
-    g();
-    std::cout << "Time : " << g(0.001) << std::endl; 
-    cout << g.getResults() << endl; 
-    cout << "Liczba iteracji : " << g.getIteration() << std::endl; 
-    
-    mat AC(3,3);
-
-    AC.at(0,0) = 4;
-    AC.at(0,1) = 2;
-    AC.at(0,2) = 1;
-
-    AC.at(1,0) = 2;
-    AC.at(1,1) = 4;
-    AC.at(1,2) = 2;
-
-    AC.at(2,0) = 1;
-    AC.at(2,1) = 2;
-    AC.at(2,2) = 4;
-   
-    colvec bb(3);
-    bb.at(0) = 1;
-    bb.at(1) = 4;
-    bb.at(2) = -3;
-
     MatrixStream str{ std::filesystem::current_path() / "../extern/eq1.txt"};
 
     EquationPackage pack;
@@ -145,14 +170,29 @@ int main()
     std::cout << pack.cooficient_matrix_ << std::endl; 
     std::cout << pack.right_side_vector_ << std::endl;
 
-    GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,false};
+    double norm_precision = 0.0000000000000001;//norma 
 
+    std::vector<TestData>  jacobi_set {jacobi_benchmark_set(pack,norm_precision,0.8,1.3)};
+    std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,0.8,1.3)};
+    std::vector<TestData>  gradient_set {gradient_benchmark_set(pack,norm_precision,0.8,1.3)};
 
-    grad((size_t)2);
-    //grad();
+    std::string jacobi_dat {parse_test_vector(jacobi_set)};
+    std::cout << jacobi_dat ;
+    std::cout << std::endl;
 
-    std::cout << grad.getResults() << std::endl;
-    std::cout << grad.getIteration() << std::endl;
-    
+    std::string gauss_dat {parse_test_vector(gauss_seidel_set)};
+    std::cout << gauss_dat ;
+    std::cout << std::endl;
+
+    std::string gradient_dat {parse_test_vector(gradient_set)};
+    std::cout << gradient_dat ;
+    std::cout << std::endl << std::endl;
+
+    std::filesystem::path save_dir {std::filesystem::current_path() / "../extern"};
+
+    generateReport(jacobi_dat,save_dir / "jacobi_report.txt");
+    generateReport(gauss_dat,save_dir / "gauss_report.txt");
+    generateReport(gradient_dat,save_dir / "gradient_report.txt");
+
     return 0;
 }

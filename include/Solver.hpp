@@ -51,6 +51,7 @@ protected:
     PrecisionChekcer precision_checker_;
     size_t iteration_;
     double relax_;
+    bool timeout_occured_;
 public:
     Solver(Matrix cooficient_matrix,
            Vector right_side_vector,
@@ -67,11 +68,12 @@ public:
     void operator() ();
     void operator() (size_t count); // several iterations 
 
-    double operator() (double precision);//counting while all |x_i+1 - x_i| / x_i+1 < precision
+    double operator() (double precision,double timeout = 0.1);//counting while all |x_i+1 - x_i| / x_i+1 < precision
 
     Vector getResults();
 
     size_t getIteration() const;
 
+    bool getTimeoutState() const;
 };
 
