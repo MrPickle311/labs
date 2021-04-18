@@ -1,9 +1,6 @@
 #pragma once
-#include <armadillo>
-#include <string>
-#include <cmath>
-#include <memory>
-#include "EquationSolvers.hpp"
+
+#include "Solver.hpp"
 
 class GradientConvergenceChecker:
     public SupportObject
@@ -15,26 +12,9 @@ private:
     {
         return res_->cooficient_matrix_.is_symmetric();
     }
-    inline bool isPositivelyDefined()
-    {
-        for(size_t i{0}; i < res_->cooficient_matrix_.n_cols; ++i)
-        {
-            if( arma::norm(res_->cooficient_matrix_.col(i)) == 0)
-                return false;
-            if( arma::dot( arma::trans( res_->cooficient_matrix_.col(i) ) , res_->cooficient_matrix_ * res_->cooficient_matrix_.col(i) ) <= 0 )
-                return false;
-        }
-        return true;
-    }
+    bool isPositivelyDefined();
 public:
-    void checkConvergence()
-    {
-        if(!isSymetric())
-            throw std::logic_error("Matrix is not symmetric!\n");
-        
-        if(!isPositivelyDefined())
-            throw std::logic_error("Matrix is not positive defined!\n");
-    }  
+    void checkConvergence();
 };
 
 class GradientSolver:
@@ -60,7 +40,6 @@ private:
 private:
     inline void initPreconditioner()
     {
-        std::cout << "xdxxd\n";
         z_old_vector_ = res_->cooficient_matrix_.i() * r_main_vector_;
         z_new_vector_ = z_old_vector_;
     }
@@ -69,17 +48,13 @@ private:
         p_vector_ = init_vec;
         r_old_vector_ = arma::trans(r_main_vector_) * init_vec;
     }
-    void initSolver()
+    inline void initRMainVector()
     {
         r_main_vector_ = res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
-
-        if(use_preconditioner_)
-        {
-            initPreconditioner();
-            setupVectors(z_new_vector_);
-        }
-        else setupVectors(r_main_vector_);
     }
+    
+    void initSolver();
+    
     inline void computeHelperMatrix()
     {
         helper_vector_ = res_->cooficient_matrix_ * p_vector_;
@@ -113,51 +88,12 @@ private:
     {
         p_vector_ = comp_vec + beta_cooficient_ * p_vector_;
     }
-    inline void iterationEngine()
-    {
-        computeHelperMatrix();
-        computeRelax();
-        computeSolutionsVector();
-        computeRMainVector();
 
-        if(use_preconditioner_)
-        {
-            computeZNewVector();
-            computeRNewVector(z_new_vector_);
-        }
-        else computeRNewVector(r_main_vector_);
-        
-        
-        computeBeta();
+    void iterationEngine();
 
-        if(use_preconditioner_)
-            computePVector(z_new_vector_);
-        else computePVector(r_main_vector_);
-        
-        r_old_vector_ = r_main_vector_;
-
-        if(use_preconditioner_)
-            z_old_vector_ = z_new_vector_;
-    }
 public:
     GradientSolver(Matrix cooficient_matrix,
                    Vector right_side_vector,
                    bool use_preconditioner = false,
-                   Vector start_position_vector = {}):
-        Solver{cooficient_matrix,
-               right_side_vector,
-               start_position_vector
-               },
-        checker_{},
-        r_main_vector_{},
-        r_old_vector_{},
-        r_new_vector_{},
-        beta_cooficient_{0},
-        helper_vector_{},
-        use_preconditioner_{use_preconditioner}
-    {
-        checker_.setRes(res_);
-
-        checker_.checkConvergence();
-    }
+                   Vector start_position_vector = {});
 };

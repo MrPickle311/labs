@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.12)
 project (lab3)
 
 #enable memory sanitizer and some linker settings
-set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address -std=c++17")
 set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address" "-O1" "-lblas" "-llapack" "-larmadillo")
 
 find_package(Armadillo REQUIRED)

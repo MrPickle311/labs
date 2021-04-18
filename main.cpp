@@ -1,7 +1,9 @@
 #include <iostream>
-#include "include/EquationSolvers.hpp"
-#include "include/GradientEquationsSolvers.hpp"
+#include "include/GradientSolvers.hpp"
+#include "include/IterativeSolvers.hpp"
 #include "include/MesLib.h"
+#include "include/MatrixStream.hpp"
+
 using namespace std;
 using namespace arma;
 
@@ -135,12 +137,22 @@ int main()
     bb.at(1) = 4;
     bb.at(2) = -3;
 
-    GradientSolver grad{AC,bb,true};
+    MatrixStream str{ std::filesystem::current_path() / "../extern/eq1.txt"};
 
-    grad(0.000000000000000000001);
+    EquationPackage pack;
+    pack << str;
 
+    std::cout << pack.cooficient_matrix_ << std::endl; 
+    std::cout << pack.right_side_vector_ << std::endl;
+
+    GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,false};
+
+
+    grad((size_t)2);
+    //grad();
 
     std::cout << grad.getResults() << std::endl;
     std::cout << grad.getIteration() << std::endl;
+    
     return 0;
 }
