@@ -52,12 +52,33 @@ private:
     Vector p_vector_;//p
 
     double beta_cooficient_;
+
+    bool   use_preconditioner_;
+
+    Vector z_old_vector_;
+    Vector z_new_vector_;
 private:
+    inline void initPreconditioner()
+    {
+        std::cout << "xdxxd\n";
+        z_old_vector_ = res_->cooficient_matrix_.i() * r_main_vector_;
+        z_new_vector_ = z_old_vector_;
+    }
+    inline void setupVectors(Vector const& init_vec)
+    {
+        p_vector_ = init_vec;
+        r_old_vector_ = arma::trans(r_main_vector_) * init_vec;
+    }
     void initSolver()
     {
         r_main_vector_ = res_->right_side_vector_ - res_->cooficient_matrix_ * res_->solutions_vector_;
-        p_vector_ = r_main_vector_;
-        r_old_vector_ = arma::trans(r_main_vector_) * r_main_vector_;
+
+        if(use_preconditioner_)
+        {
+            initPreconditioner();
+            setupVectors(z_new_vector_);
+        }
+        else setupVectors(r_main_vector_);
     }
     inline void computeHelperMatrix()
     {
@@ -76,17 +97,21 @@ private:
     {
         r_main_vector_ -=  relax_ * helper_vector_; 
     }
-    inline void computeRNewVector()
+    inline void computeZNewVector()
     {
-        r_new_vector_ = arma::trans(r_main_vector_) * r_main_vector_;
+        z_new_vector_ = res_->cooficient_matrix_.i() * r_main_vector_;
+    }
+    inline void computeRNewVector(Vector const& compute_vec)
+    {
+        r_new_vector_ = arma::trans(r_main_vector_) * compute_vec;
     }
     inline void computeBeta()
     {
         beta_cooficient_ = arma::norm(r_new_vector_) / arma::norm(r_old_vector_);
     }
-    inline void computePVector()
+    inline void computePVector(Vector const& comp_vec)
     {
-        p_vector_ = r_main_vector_ + beta_cooficient_ * p_vector_;
+        p_vector_ = comp_vec + beta_cooficient_ * p_vector_;
     }
     inline void iterationEngine()
     {
@@ -94,14 +119,30 @@ private:
         computeRelax();
         computeSolutionsVector();
         computeRMainVector();
-        computeRNewVector();
+
+        if(use_preconditioner_)
+        {
+            computeZNewVector();
+            computeRNewVector(z_new_vector_);
+        }
+        else computeRNewVector(r_main_vector_);
+        
+        
         computeBeta();
-        computePVector();
+
+        if(use_preconditioner_)
+            computePVector(z_new_vector_);
+        else computePVector(r_main_vector_);
+        
         r_old_vector_ = r_main_vector_;
+
+        if(use_preconditioner_)
+            z_old_vector_ = z_new_vector_;
     }
 public:
     GradientSolver(Matrix cooficient_matrix,
                    Vector right_side_vector,
+                   bool use_preconditioner = false,
                    Vector start_position_vector = {}):
         Solver{cooficient_matrix,
                right_side_vector,
@@ -112,7 +153,8 @@ public:
         r_old_vector_{},
         r_new_vector_{},
         beta_cooficient_{0},
-        helper_vector_{}
+        helper_vector_{},
+        use_preconditioner_{use_preconditioner}
     {
         checker_.setRes(res_);
 

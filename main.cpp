@@ -135,10 +135,10 @@ int main()
     bb.at(1) = 4;
     bb.at(2) = -3;
 
-    GradientSolver grad{AC,bb};
+    GradientSolver grad{AC,bb,true};
 
-    grad(0.01);
-    
+    grad(0.000000000000000000001);
+
 
     std::cout << grad.getResults() << std::endl;
     std::cout << grad.getIteration() << std::endl;
