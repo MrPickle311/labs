@@ -17,8 +17,8 @@ bool GradientConvergenceChecker::isPositivelyDefined()
 
 void GradientConvergenceChecker::checkConvergence()
 {
-    if(!isSymetric())
-        throw std::logic_error("Matrix is not symmetric!\n");
+    //if(!isSymetric())
+    //    throw std::logic_error("Matrix is not symmetric!\n");
         
     if(!isPositivelyDefined())
         throw std::logic_error("Matrix is not positive defined!\n");

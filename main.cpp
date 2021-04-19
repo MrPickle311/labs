@@ -20,13 +20,14 @@ struct TestData
 TestData start_benchmark(Solver* solver,
                          std::string test_name,
                          double norm_precision,
+                         double timeout = 0.1,
                          bool dynamic_relax = false,
                          double start_relax_ = 1.0,
                          bool show_results = false)
 {
     TestData data;
     data.name_              = test_name;
-    data.time_              = (*solver)(norm_precision) * 1000;
+    data.time_              = (*solver)(norm_precision,timeout) * 1000;
     data.iterations_        = solver->getIteration();
     data.timeout_occured    = solver->getTimeoutState();
     data.start_relax_       = start_relax_;
@@ -48,7 +49,11 @@ TestData start_benchmark(Solver* solver,
     return data;
 }
 
-std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
+std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,
+                                             double norm_precision,
+                                             double min_relax_value  = 0.99 ,
+                                             double max_relax_value = 1.01,
+                                             double timeout = 0.1)
 {
     std::vector<TestData> data;
 
@@ -56,20 +61,24 @@ std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,double 
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&grad,"Gradient method without preconditioner",norm_precision,true,relax));
+        data.push_back(start_benchmark(&grad,"Gradient method without preconditioner",norm_precision,timeout,true,relax));
     }
 
     //with preconditioner
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,true,relax};
-        data.push_back(start_benchmark(&grad,"Gradient method with preconditioner",norm_precision,true,relax));
+        data.push_back(start_benchmark(&grad,"Gradient method with preconditioner",norm_precision,timeout,true,relax));
     }
 
     return data;
 }
 
-std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
+std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,
+                                                           double norm_precision,
+                                                           double min_relax_value  = 0.99 ,
+                                                           double max_relax_value = 1.01,
+                                                           double timeout = 0.1)
 {
     std::vector<TestData> data;
 
@@ -77,20 +86,23 @@ std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,double no
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision));
+        data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision,timeout));
     }
 
     //with dynamic relax
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,true,relax));
+        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
     }
 
     return data;
 }
 
-std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,double min_relax_value  = 0.99 ,double max_relax_value = 1.01)
+std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,
+                                                                 double min_relax_value  = 0.99 ,
+                                                                 double max_relax_value = 1.01,
+                                                                 double timeout = 0.1)
 {
     std::vector<TestData> data;
 
@@ -98,14 +110,14 @@ std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,dou
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_};
-        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision));
+        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision,timeout));
     }
 
     //with dynamic relax
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,true,relax));
+        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,timeout,true,relax));
     }
 
     return data;
@@ -172,9 +184,9 @@ int main()
 
     double norm_precision = 0.0000000000000001;//norma 
 
-    std::vector<TestData>  jacobi_set {jacobi_benchmark_set(pack,norm_precision,0.8,1.3)};
-    std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,0.8,1.3)};
-    std::vector<TestData>  gradient_set {gradient_benchmark_set(pack,norm_precision,0.8,1.3)};
+    std::vector<TestData>  jacobi_set {jacobi_benchmark_set(pack,norm_precision,0.1,2.0)};
+    std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,0.1,2.0)};
+    std::vector<TestData>  gradient_set {gradient_benchmark_set(pack,norm_precision,0.1,2.0)};
 
     std::string jacobi_dat {parse_test_vector(jacobi_set)};
     std::cout << jacobi_dat ;
@@ -193,6 +205,31 @@ int main()
     generateReport(jacobi_dat,save_dir / "jacobi_report.txt");
     generateReport(gauss_dat,save_dir / "gauss_report.txt");
     generateReport(gradient_dat,save_dir / "gradient_report.txt");
+
+
+
+
+    MatrixStream str2{ std::filesystem::current_path() / "../extern/eq2.txt"};
+
+    EquationPackage pack2;
+    pack2 << str2;
+
+    std::vector<TestData>  jacobi_set2 {jacobi_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
+    std::vector<TestData>  gauss_seidel_set2 {gauss_siedel_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
+    std::vector<TestData>  gradient_set2 {gradient_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
+
+    
+    std::string jacobi_dat2 {parse_test_vector(jacobi_set2)};
+
+    generateReport(jacobi_dat2,save_dir / "jacobi_report2.txt");
+
+    std::string gauss_dat2 {parse_test_vector(gauss_seidel_set2)};
+
+    generateReport(gauss_dat2,save_dir / "gauss_report2.txt");
+
+    std::string gradient_dat2 {parse_test_vector(gradient_set2)};
+    
+    generateReport(gradient_dat2,save_dir / "gradient_report2.txt");
 
     return 0;
 }
