@@ -75,7 +75,9 @@ IterativeSolver::IterativeSolver(Matrix const& cooficient_matrix,
                 },
         relax_modifier_{},
         system_monitor_{},
-        convergence_checker_{}
+        convergence_checker_{},
+        dynamic_relaxing_flag_{enable_dynamic_relax},
+        iteration_{0}
 {
     relax_modifier_.setRes(res_);
     system_monitor_.setRes(res_);
@@ -89,8 +91,6 @@ IterativeSolver::IterativeSolver(Matrix const& cooficient_matrix,
         system_monitor_.fillStartVectorWithZero();
         
 }
-
-
 
 //JacobiSolver//
 

@@ -137,7 +137,7 @@ std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GradientSolver grad{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&grad,"Gradient method without preconditioner",norm_precision,timeout,true,relax));
+        data.push_back(start_benchmark(&grad,"Gradient method without preconditioner",norm_precision,timeout,false,relax));
     }
 
     //with preconditioner
@@ -204,6 +204,8 @@ int main()
     //wczytywanie układu równań z pliku
     MatrixStream str{ std::filesystem::current_path() / "../extern/eq1.txt"};
 
+    std::filesystem::path save_dir {std::filesystem::current_path() / "../extern"};
+
     EquationPackage pack;//układ równań
     pack << str;//prześlij ze strumienia do obiektu
 
@@ -220,6 +222,9 @@ int main()
 
     //zadałem tutaj TIMEOUT = 1 sek
     //zestawy testowe
+
+    
+
     std::vector<TestData>  jacobi_set       {jacobi_benchmark_set(pack,norm_precision,0.1,1)};
     std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,1.0,2.0)};
     std::vector<TestData>  minres_set       {MINRES_benchmark_set(pack,norm_precision,0.1,2.0)};
@@ -243,14 +248,16 @@ int main()
     std::cout << std::endl << std::endl;
 
     //generowanie raportów do plików
-    std::filesystem::path save_dir {std::filesystem::current_path() / "../extern"};
+    
 
     generateReport(jacobi_dat,save_dir / "jacobi_report.txt");
     generateReport(gauss_dat,save_dir / "gauss_report.txt");
     generateReport(gradient_dat,save_dir / "gradient_report.txt");
     generateReport(minres_dat,save_dir / "minres_report.txt");
 
-    //to samo ,lecz z innym układem równań
+    
+
+    //to samo ,lecz z innym układem równań(ten z laboratorium 2)
     MatrixStream str2{ std::filesystem::current_path() / "../extern/eq2.txt"};
 
     EquationPackage pack2;
@@ -258,7 +265,7 @@ int main()
 
     std::vector<TestData>  jacobi_set2 {jacobi_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
     std::vector<TestData>  gauss_seidel_set2 {gauss_siedel_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
-    std::vector<TestData>  minres_set2     {MINRES_benchmark_set(pack2,norm_precision,0.1,2.0)};
+    std::vector<TestData>  minres_set2     {MINRES_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
     std::vector<TestData>  gradient_set2 {gradient_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
    
     
@@ -266,6 +273,7 @@ int main()
     std::string gauss_dat2 {parse_test_vector(gauss_seidel_set2)};
     std::string gradient_dat2 {parse_test_vector(gradient_set2)};
     std::string minres_dat2 {parse_test_vector(minres_set2)};
+
 
     generateReport(jacobi_dat2,save_dir / "jacobi_report2.txt");
     generateReport(gauss_dat2,save_dir / "gauss_report2.txt");
