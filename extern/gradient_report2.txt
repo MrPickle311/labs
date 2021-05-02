@@ -1,380 +1,380 @@
-Gradient method without preconditioner	0.1	Timeout occured!	1000.08	9803	
-Gradient method without preconditioner	0.11	Timeout occured!	1000.14	9327	
-Gradient method without preconditioner	0.12	Timeout occured!	1000.04	9893	
-Gradient method without preconditioner	0.13	Timeout occured!	1000	9947	
-Gradient method without preconditioner	0.14	Timeout occured!	1000.01	9879	
-Gradient method without preconditioner	0.15	Timeout occured!	1000.04	9993	
-Gradient method without preconditioner	0.16	Timeout occured!	1000.08	9911	
-Gradient method without preconditioner	0.17	Timeout occured!	1000.11	9845	
-Gradient method without preconditioner	0.18	Timeout occured!	1000.01	9522	
-Gradient method without preconditioner	0.19	Timeout occured!	1000.14	7520	
-Gradient method without preconditioner	0.2	Timeout occured!	1000.07	8393	
-Gradient method without preconditioner	0.21	Timeout occured!	1000.06	10349	
-Gradient method without preconditioner	0.22	Timeout occured!	1000	10523	
-Gradient method without preconditioner	0.23	Timeout occured!	1000.12	10531	
-Gradient method without preconditioner	0.24	Timeout occured!	1000.01	10041	
-Gradient method without preconditioner	0.25	Timeout occured!	1000.04	10359	
-Gradient method without preconditioner	0.26	Timeout occured!	1000.15	10282	
-Gradient method without preconditioner	0.27	Timeout occured!	1000.07	10367	
-Gradient method without preconditioner	0.28	Timeout occured!	1000.05	10708	
-Gradient method without preconditioner	0.29	Timeout occured!	1000	9981	
-Gradient method without preconditioner	0.3	Timeout occured!	1000.08	7604	
-Gradient method without preconditioner	0.31	Timeout occured!	1000.06	8547	
-Gradient method without preconditioner	0.32	Timeout occured!	1000.1	10572	
-Gradient method without preconditioner	0.33	Timeout occured!	1000.02	10088	
-Gradient method without preconditioner	0.34	Timeout occured!	1000.06	9986	
-Gradient method without preconditioner	0.35	Timeout occured!	1000.07	10380	
-Gradient method without preconditioner	0.36	Timeout occured!	1000.04	9634	
-Gradient method without preconditioner	0.37	Timeout occured!	1000.14	10319	
-Gradient method without preconditioner	0.38	Timeout occured!	1000	9862	
-Gradient method without preconditioner	0.39	Timeout occured!	1000.01	10521	
-Gradient method without preconditioner	0.4	Timeout occured!	1000.05	10127	
-Gradient method without preconditioner	0.41	Timeout occured!	1000.08	10394	
-Gradient method without preconditioner	0.42	Timeout occured!	1000.02	10101	
-Gradient method without preconditioner	0.43	Timeout occured!	1000.01	10148	
-Gradient method without preconditioner	0.44	Timeout occured!	1000	10217	
-Gradient method without preconditioner	0.45	Timeout occured!	1000.04	10533	
-Gradient method without preconditioner	0.46	Timeout occured!	1000.07	10631	
-Gradient method without preconditioner	0.47	Timeout occured!	1000.09	10302	
-Gradient method without preconditioner	0.48	Timeout occured!	1000.06	10010	
-Gradient method without preconditioner	0.49	Timeout occured!	1000.01	10131	
-Gradient method without preconditioner	0.5	Timeout occured!	1000.01	7787	
-Gradient method without preconditioner	0.51	Timeout occured!	1000.02	7230	
-Gradient method without preconditioner	0.52	Timeout occured!	1000.01	10129	
-Gradient method without preconditioner	0.53	Timeout occured!	1000.04	9250	
-Gradient method without preconditioner	0.54	Timeout occured!	1000.06	8347	
-Gradient method without preconditioner	0.55	Timeout occured!	1000.02	10362	
-Gradient method without preconditioner	0.56	Timeout occured!	1000.04	9931	
-Gradient method without preconditioner	0.57	Timeout occured!	1000.09	8774	
-Gradient method without preconditioner	0.58	Timeout occured!	1000.02	8140	
-Gradient method without preconditioner	0.59	Timeout occured!	1000.03	9165	
-Gradient method without preconditioner	0.6	Timeout occured!	1000.03	9868	
-Gradient method without preconditioner	0.61	Timeout occured!	1000.08	9631	
-Gradient method without preconditioner	0.62	Timeout occured!	1000.06	10234	
-Gradient method without preconditioner	0.63	Timeout occured!	1000.06	10594	
-Gradient method without preconditioner	0.64	Timeout occured!	1000.07	10003	
-Gradient method without preconditioner	0.65	Timeout occured!	1000.04	10598	
-Gradient method without preconditioner	0.66	Timeout occured!	1000.06	9778	
-Gradient method without preconditioner	0.67	Timeout occured!	1000.01	10258	
-Gradient method without preconditioner	0.68	Timeout occured!	1000.04	10556	
-Gradient method without preconditioner	0.69	Timeout occured!	1000.01	10436	
-Gradient method without preconditioner	0.7	Timeout occured!	1000.02	10059	
-Gradient method without preconditioner	0.71	Timeout occured!	1000.05	10141	
-Gradient method without preconditioner	0.72	Timeout occured!	1000.05	9607	
-Gradient method without preconditioner	0.73	Timeout occured!	1000.07	8552	
-Gradient method without preconditioner	0.74	Timeout occured!	1000.02	10079	
-Gradient method without preconditioner	0.75	Timeout occured!	1000.09	10197	
-Gradient method without preconditioner	0.76	Timeout occured!	1000.03	10174	
-Gradient method without preconditioner	0.77	Timeout occured!	1000.04	10804	
-Gradient method without preconditioner	0.78	Timeout occured!	1000.02	9958	
-Gradient method without preconditioner	0.79	Timeout occured!	1000.07	8864	
-Gradient method without preconditioner	0.8	Timeout occured!	1000.08	10218	
-Gradient method without preconditioner	0.81	Timeout occured!	1000.02	9869	
-Gradient method without preconditioner	0.82	Timeout occured!	1000.02	9034	
-Gradient method without preconditioner	0.83	Timeout occured!	1000.06	9920	
-Gradient method without preconditioner	0.84	Timeout occured!	1000.08	10601	
-Gradient method without preconditioner	0.85	Timeout occured!	1000.1	8973	
-Gradient method without preconditioner	0.86	Timeout occured!	1000.04	9422	
-Gradient method without preconditioner	0.87	Timeout occured!	1000.18	10596	
-Gradient method without preconditioner	0.88	Timeout occured!	1000.04	10686	
-Gradient method without preconditioner	0.89	Timeout occured!	1000.05	9374	
-Gradient method without preconditioner	0.9	Timeout occured!	1000.01	8468	
-Gradient method without preconditioner	0.91	Timeout occured!	1000.07	10022	
-Gradient method without preconditioner	0.92	Timeout occured!	1000.05	10647	
-Gradient method without preconditioner	0.93	Timeout occured!	1000.06	10112	
-Gradient method without preconditioner	0.94	Timeout occured!	1000.03	10689	
-Gradient method without preconditioner	0.95	Timeout occured!	1000.07	10801	
-Gradient method without preconditioner	0.96	Timeout occured!	1000.01	10501	
-Gradient method without preconditioner	0.97	Timeout occured!	1000	10465	
-Gradient method without preconditioner	0.98	Timeout occured!	1000.06	10785	
-Gradient method without preconditioner	0.99	Timeout occured!	1000.07	10499	
-Gradient method without preconditioner	1	Timeout occured!	1000.07	10866	
-Gradient method without preconditioner	1.01	Timeout occured!	1000.08	10706	
-Gradient method without preconditioner	1.02	Timeout occured!	1000.04	10749	
-Gradient method without preconditioner	1.03	Timeout occured!	1000.04	10343	
-Gradient method without preconditioner	1.04	Timeout occured!	1000.04	10628	
-Gradient method without preconditioner	1.05	Timeout occured!	1000.06	10771	
-Gradient method without preconditioner	1.06	Timeout occured!	1000	10751	
-Gradient method without preconditioner	1.07	Timeout occured!	1000	10410	
-Gradient method without preconditioner	1.08	Timeout occured!	1000.06	10570	
-Gradient method without preconditioner	1.09	Timeout occured!	1000.03	10513	
-Gradient method without preconditioner	1.1	Timeout occured!	1000.04	10793	
-Gradient method without preconditioner	1.11	Timeout occured!	1000.12	10660	
-Gradient method without preconditioner	1.12	Timeout occured!	1000.04	10565	
-Gradient method without preconditioner	1.13	Timeout occured!	1000.12	10608	
-Gradient method without preconditioner	1.14	Timeout occured!	1000.05	10678	
-Gradient method without preconditioner	1.15	Timeout occured!	1000.09	10685	
-Gradient method without preconditioner	1.16	Timeout occured!	1000.01	10630	
-Gradient method without preconditioner	1.17	Timeout occured!	1000.05	10820	
-Gradient method without preconditioner	1.18	Timeout occured!	1000.04	10884	
-Gradient method without preconditioner	1.19	Timeout occured!	1000.04	10826	
-Gradient method without preconditioner	1.2	Timeout occured!	1000.04	10793	
-Gradient method without preconditioner	1.21	Timeout occured!	1000.01	10808	
-Gradient method without preconditioner	1.22	Timeout occured!	1000.07	10234	
-Gradient method without preconditioner	1.23	Timeout occured!	1000.07	10792	
-Gradient method without preconditioner	1.24	Timeout occured!	1000.06	10637	
-Gradient method without preconditioner	1.25	Timeout occured!	1000.03	10679	
-Gradient method without preconditioner	1.26	Timeout occured!	1000.07	10632	
-Gradient method without preconditioner	1.27	Timeout occured!	1000.01	10433	
-Gradient method without preconditioner	1.28	Timeout occured!	1000.12	10493	
-Gradient method without preconditioner	1.29	Timeout occured!	1000.03	10687	
-Gradient method without preconditioner	1.3	Timeout occured!	1000.15	10709	
-Gradient method without preconditioner	1.31	Timeout occured!	1000.04	10679	
-Gradient method without preconditioner	1.32	Timeout occured!	1000.04	10743	
-Gradient method without preconditioner	1.33	Timeout occured!	1000.01	10647	
-Gradient method without preconditioner	1.34	Timeout occured!	1000.07	10801	
-Gradient method without preconditioner	1.35	Timeout occured!	1000.01	10679	
-Gradient method without preconditioner	1.36	Timeout occured!	1000.03	10676	
-Gradient method without preconditioner	1.37	Timeout occured!	1000.01	10780	
-Gradient method without preconditioner	1.38	Timeout occured!	1000.05	10310	
-Gradient method without preconditioner	1.39	Timeout occured!	1000.03	10744	
-Gradient method without preconditioner	1.4	Timeout occured!	1000.08	10041	
-Gradient method without preconditioner	1.41	Timeout occured!	1000.02	9587	
-Gradient method without preconditioner	1.42	Timeout occured!	1000.08	9387	
-Gradient method without preconditioner	1.43	Timeout occured!	1000.02	10369	
-Gradient method without preconditioner	1.44	Timeout occured!	1000.04	10395	
-Gradient method without preconditioner	1.45	Timeout occured!	1000.05	10100	
-Gradient method without preconditioner	1.46	Timeout occured!	1000.12	10126	
-Gradient method without preconditioner	1.47	Timeout occured!	1000.05	10629	
-Gradient method without preconditioner	1.48	Timeout occured!	1000.06	9837	
-Gradient method without preconditioner	1.49	Timeout occured!	1000.12	10510	
-Gradient method without preconditioner	1.5	Timeout occured!	1000.15	10492	
-Gradient method without preconditioner	1.51	Timeout occured!	1000.04	9690	
-Gradient method without preconditioner	1.52	Timeout occured!	1000.06	9370	
-Gradient method without preconditioner	1.53	Timeout occured!	1000.01	10132	
-Gradient method without preconditioner	1.54	Timeout occured!	1000.08	10209	
-Gradient method without preconditioner	1.55	Timeout occured!	1000.02	9225	
-Gradient method without preconditioner	1.56	Timeout occured!	1000.03	9160	
-Gradient method without preconditioner	1.57	Timeout occured!	1000.2	9059	
-Gradient method without preconditioner	1.58	Timeout occured!	1000.03	10302	
-Gradient method without preconditioner	1.59	Timeout occured!	1000.15	10868	
-Gradient method without preconditioner	1.6	Timeout occured!	1000.02	9367	
-Gradient method without preconditioner	1.61	Timeout occured!	1000.03	9710	
-Gradient method without preconditioner	1.62	Timeout occured!	1000.01	9981	
-Gradient method without preconditioner	1.63	Timeout occured!	1000.03	9869	
-Gradient method without preconditioner	1.64	Timeout occured!	1000.03	9551	
-Gradient method without preconditioner	1.65	Timeout occured!	1000.07	10585	
-Gradient method without preconditioner	1.66	Timeout occured!	1000.02	9912	
-Gradient method without preconditioner	1.67	Timeout occured!	1000.06	10405	
-Gradient method without preconditioner	1.68	Timeout occured!	1000.01	9519	
-Gradient method without preconditioner	1.69	Timeout occured!	1000.1	9330	
-Gradient method without preconditioner	1.7	Timeout occured!	1000.05	10163	
-Gradient method without preconditioner	1.71	Timeout occured!	1000.12	10318	
-Gradient method without preconditioner	1.72	Timeout occured!	1000.02	10575	
-Gradient method without preconditioner	1.73	Timeout occured!	1000.03	10343	
-Gradient method without preconditioner	1.74	Timeout occured!	1000.01	10640	
-Gradient method without preconditioner	1.75	Timeout occured!	1000.09	10668	
-Gradient method without preconditioner	1.76	Timeout occured!	1000.08	10707	
-Gradient method without preconditioner	1.77	Timeout occured!	1000.08	10697	
-Gradient method without preconditioner	1.78	Timeout occured!	1000.01	10661	
-Gradient method without preconditioner	1.79	Timeout occured!	1000.06	10645	
-Gradient method without preconditioner	1.8	Timeout occured!	1000.03	10171	
-Gradient method without preconditioner	1.81	Timeout occured!	1000.02	10554	
-Gradient method without preconditioner	1.82	Timeout occured!	1000.06	10686	
-Gradient method without preconditioner	1.83	Timeout occured!	1000.05	10640	
-Gradient method without preconditioner	1.84	Timeout occured!	1000.07	10324	
-Gradient method without preconditioner	1.85	Timeout occured!	1000.07	10715	
-Gradient method without preconditioner	1.86	Timeout occured!	1000.08	10741	
-Gradient method without preconditioner	1.87	Timeout occured!	1000.02	10565	
-Gradient method without preconditioner	1.88	Timeout occured!	1000.08	10341	
-Gradient method without preconditioner	1.89	Timeout occured!	1000.05	10691	
-Gradient method without preconditioner	1.9	Timeout occured!	1000.01	10541	
-Gradient method without preconditioner	1.91	Timeout occured!	1000.04	9880	
-Gradient method without preconditioner	1.92	Timeout occured!	1000.08	10855	
-Gradient method without preconditioner	1.93	Timeout occured!	1000.05	10512	
-Gradient method without preconditioner	1.94	Timeout occured!	1000.06	10640	
-Gradient method without preconditioner	1.95	Timeout occured!	1000.07	10709	
-Gradient method without preconditioner	1.96	Timeout occured!	1000.05	10170	
-Gradient method without preconditioner	1.97	Timeout occured!	1000.04	10563	
-Gradient method without preconditioner	1.98	Timeout occured!	1000.06	9953	
-Gradient method without preconditioner	1.99	Timeout occured!	1000	10398	
-Gradient method with preconditioner	0.1	Timeout occured!	1006.83	147	
-Gradient method with preconditioner	0.11	Timeout occured!	1000.86	151	
-Gradient method with preconditioner	0.12	Timeout occured!	1006.52	151	
-Gradient method with preconditioner	0.13	Timeout occured!	1003.31	148	
-Gradient method with preconditioner	0.14	Timeout occured!	1004.67	150	
-Gradient method with preconditioner	0.15	Timeout occured!	1003.46	154	
-Gradient method with preconditioner	0.16	Timeout occured!	1007.72	156	
-Gradient method with preconditioner	0.17	Timeout occured!	1000.86	154	
-Gradient method with preconditioner	0.18	Timeout occured!	1002.92	152	
-Gradient method with preconditioner	0.19	Timeout occured!	1001.41	150	
-Gradient method with preconditioner	0.2	Timeout occured!	1002.39	149	
-Gradient method with preconditioner	0.21	Timeout occured!	1000.9	154	
-Gradient method with preconditioner	0.22	Timeout occured!	1002.93	154	
-Gradient method with preconditioner	0.23	Timeout occured!	1007.13	150	
-Gradient method with preconditioner	0.24	Timeout occured!	1001.07	150	
-Gradient method with preconditioner	0.25	Timeout occured!	1007.49	150	
-Gradient method with preconditioner	0.26	Timeout occured!	1001.45	153	
-Gradient method with preconditioner	0.27	Timeout occured!	1007.08	153	
-Gradient method with preconditioner	0.28	Timeout occured!	1005.01	152	
-Gradient method with preconditioner	0.29	Timeout occured!	1004.47	150	
-Gradient method with preconditioner	0.3	Timeout occured!	1005.16	154	
-Gradient method with preconditioner	0.31	Timeout occured!	1000.49	151	
-Gradient method with preconditioner	0.32	Timeout occured!	1003.03	148	
-Gradient method with preconditioner	0.33	Timeout occured!	1005	150	
-Gradient method with preconditioner	0.34	Timeout occured!	1001.7	148	
-Gradient method with preconditioner	0.35	Timeout occured!	1004.85	151	
-Gradient method with preconditioner	0.36	Timeout occured!	1006.02	148	
-Gradient method with preconditioner	0.37	Timeout occured!	1006.13	151	
-Gradient method with preconditioner	0.38	Timeout occured!	1005.21	149	
-Gradient method with preconditioner	0.39	Timeout occured!	1008.59	150	
-Gradient method with preconditioner	0.4	Timeout occured!	1003.94	154	
-Gradient method with preconditioner	0.41	Timeout occured!	1006.03	154	
-Gradient method with preconditioner	0.42	Timeout occured!	1003.44	152	
-Gradient method with preconditioner	0.43	Timeout occured!	1002.22	150	
-Gradient method with preconditioner	0.44	Timeout occured!	1000.34	153	
-Gradient method with preconditioner	0.45	Timeout occured!	1003.2	148	
-Gradient method with preconditioner	0.46	Timeout occured!	1005.86	146	
-Gradient method with preconditioner	0.47	Timeout occured!	1000.72	145	
-Gradient method with preconditioner	0.48	Timeout occured!	1000.87	151	
-Gradient method with preconditioner	0.49	Timeout occured!	1002.36	138	
-Gradient method with preconditioner	0.5	Timeout occured!	1002.58	134	
-Gradient method with preconditioner	0.51	Timeout occured!	1000.63	147	
-Gradient method with preconditioner	0.52	Timeout occured!	1001.71	147	
-Gradient method with preconditioner	0.53	Timeout occured!	1002.07	154	
-Gradient method with preconditioner	0.54	Timeout occured!	1001.95	152	
-Gradient method with preconditioner	0.55	Timeout occured!	1007.09	141	
-Gradient method with preconditioner	0.56	Timeout occured!	1003.08	132	
-Gradient method with preconditioner	0.57	Timeout occured!	1001.19	128	
-Gradient method with preconditioner	0.58	Timeout occured!	1000.31	129	
-Gradient method with preconditioner	0.59	Timeout occured!	1001.68	130	
-Gradient method with preconditioner	0.6	Timeout occured!	1002.32	139	
-Gradient method with preconditioner	0.61	Timeout occured!	1001.68	138	
-Gradient method with preconditioner	0.62	Timeout occured!	1004.77	120	
-Gradient method with preconditioner	0.63	Timeout occured!	1003.86	94	
-Gradient method with preconditioner	0.64	Timeout occured!	1001.21	148	
-Gradient method with preconditioner	0.65	Timeout occured!	1002.47	147	
-Gradient method with preconditioner	0.66	Timeout occured!	1007.73	149	
-Gradient method with preconditioner	0.67	Timeout occured!	1005.03	131	
-Gradient method with preconditioner	0.68	Timeout occured!	1008.32	94	
-Gradient method with preconditioner	0.69	Timeout occured!	1009.77	98	
-Gradient method with preconditioner	0.7	Timeout occured!	1009.08	118	
-Gradient method with preconditioner	0.71	Timeout occured!	1005.88	97	
-Gradient method with preconditioner	0.72	Timeout occured!	1003.01	138	
-Gradient method with preconditioner	0.73	Timeout occured!	1005.62	143	
-Gradient method with preconditioner	0.74	Timeout occured!	1002.46	146	
-Gradient method with preconditioner	0.75	Timeout occured!	1001.26	139	
-Gradient method with preconditioner	0.76	Timeout occured!	1007.03	105	
-Gradient method with preconditioner	0.77	Timeout occured!	1000.93	104	
-Gradient method with preconditioner	0.78	Timeout occured!	1005.62	127	
-Gradient method with preconditioner	0.79	Timeout occured!	1004.4	94	
-Gradient method with preconditioner	0.8	Timeout occured!	1000.93	98	
-Gradient method with preconditioner	0.81	Timeout occured!	1001.9	119	
-Gradient method with preconditioner	0.82	Timeout occured!	1000.05	144	
-Gradient method with preconditioner	0.83	Timeout occured!	1000.71	129	
-Gradient method with preconditioner	0.84	Timeout occured!	1003.54	141	
-Gradient method with preconditioner	0.85	Timeout occured!	1002.52	137	
-Gradient method with preconditioner	0.86	Timeout occured!	1002.39	147	
-Gradient method with preconditioner	0.87	Timeout occured!	1002.5	137	
-Gradient method with preconditioner	0.88	Timeout occured!	1002.68	141	
-Gradient method with preconditioner	0.89	Timeout occured!	1004.91	140	
-Gradient method with preconditioner	0.9	Timeout occured!	1004.33	141	
-Gradient method with preconditioner	0.91	Timeout occured!	1001.03	148	
-Gradient method with preconditioner	0.92	Timeout occured!	1006.5	143	
-Gradient method with preconditioner	0.93	Timeout occured!	1005.41	140	
-Gradient method with preconditioner	0.94	Timeout occured!	1001.23	146	
-Gradient method with preconditioner	0.95	Timeout occured!	1003.32	153	
-Gradient method with preconditioner	0.96	Timeout occured!	1005.69	150	
-Gradient method with preconditioner	0.97	Timeout occured!	1004.62	143	
-Gradient method with preconditioner	0.98	Timeout occured!	1000.75	149	
-Gradient method with preconditioner	0.99	Timeout occured!	1003.7	146	
-Gradient method with preconditioner	1	Timeout occured!	1000.17	149	
-Gradient method with preconditioner	1.01	Timeout occured!	1005.22	106	
-Gradient method with preconditioner	1.02	Timeout occured!	1000.9	137	
-Gradient method with preconditioner	1.03	Timeout occured!	1002.18	127	
-Gradient method with preconditioner	1.04	Timeout occured!	1005.46	109	
-Gradient method with preconditioner	1.05	Timeout occured!	1001.94	123	
-Gradient method with preconditioner	1.06	Timeout occured!	1001.28	150	
-Gradient method with preconditioner	1.07	Timeout occured!	1001.65	134	
-Gradient method with preconditioner	1.08	Timeout occured!	1005.23	119	
-Gradient method with preconditioner	1.09	Timeout occured!	1004.73	122	
-Gradient method with preconditioner	1.1	Timeout occured!	1005.06	137	
-Gradient method with preconditioner	1.11	Timeout occured!	1001.27	108	
-Gradient method with preconditioner	1.12	Timeout occured!	1004.02	134	
-Gradient method with preconditioner	1.13	Timeout occured!	1005.01	148	
-Gradient method with preconditioner	1.14	Timeout occured!	1004.16	141	
-Gradient method with preconditioner	1.15	Timeout occured!	1005.24	150	
-Gradient method with preconditioner	1.16	Timeout occured!	1004.94	135	
-Gradient method with preconditioner	1.17	Timeout occured!	1003.47	147	
-Gradient method with preconditioner	1.18	Timeout occured!	1004.61	139	
-Gradient method with preconditioner	1.19	Timeout occured!	1000.38	136	
-Gradient method with preconditioner	1.2	Timeout occured!	1007.79	145	
-Gradient method with preconditioner	1.21	Timeout occured!	1007.44	149	
-Gradient method with preconditioner	1.22	Timeout occured!	1004.86	127	
-Gradient method with preconditioner	1.23	Timeout occured!	1005.33	142	
-Gradient method with preconditioner	1.24	Timeout occured!	1003.81	138	
-Gradient method with preconditioner	1.25	Timeout occured!	1004.21	141	
-Gradient method with preconditioner	1.26	Timeout occured!	1001.03	145	
-Gradient method with preconditioner	1.27	Timeout occured!	1005.9	153	
-Gradient method with preconditioner	1.28	Timeout occured!	1005.35	145	
-Gradient method with preconditioner	1.29	Timeout occured!	1007.03	148	
-Gradient method with preconditioner	1.3	Timeout occured!	1007.8	140	
-Gradient method with preconditioner	1.31	Timeout occured!	1000.64	145	
-Gradient method with preconditioner	1.32	Timeout occured!	1004.75	145	
-Gradient method with preconditioner	1.33	Timeout occured!	1001.33	131	
-Gradient method with preconditioner	1.34	Timeout occured!	1001.11	143	
-Gradient method with preconditioner	1.35	Timeout occured!	1004.22	151	
-Gradient method with preconditioner	1.36	Timeout occured!	1005	135	
-Gradient method with preconditioner	1.37	Timeout occured!	1004.65	98	
-Gradient method with preconditioner	1.38	Timeout occured!	1000.8	133	
-Gradient method with preconditioner	1.39	Timeout occured!	1005.95	141	
-Gradient method with preconditioner	1.4	Timeout occured!	1005.37	151	
-Gradient method with preconditioner	1.41	Timeout occured!	1006.2	149	
-Gradient method with preconditioner	1.42	Timeout occured!	1005.11	155	
-Gradient method with preconditioner	1.43	Timeout occured!	1000.18	122	
-Gradient method with preconditioner	1.44	Timeout occured!	1000.35	138	
-Gradient method with preconditioner	1.45	Timeout occured!	1000.68	140	
-Gradient method with preconditioner	1.46	Timeout occured!	1000.52	153	
-Gradient method with preconditioner	1.47	Timeout occured!	1003.11	152	
-Gradient method with preconditioner	1.48	Timeout occured!	1001.03	159	
-Gradient method with preconditioner	1.49	Timeout occured!	1003.44	152	
-Gradient method with preconditioner	1.5	Timeout occured!	1004.86	152	
-Gradient method with preconditioner	1.51	Timeout occured!	1002.3	153	
-Gradient method with preconditioner	1.52	Timeout occured!	1002.75	146	
-Gradient method with preconditioner	1.53	Timeout occured!	1004.01	150	
-Gradient method with preconditioner	1.54	Timeout occured!	1003.71	141	
-Gradient method with preconditioner	1.55	Timeout occured!	1006.32	126	
-Gradient method with preconditioner	1.56	Timeout occured!	1003.81	138	
-Gradient method with preconditioner	1.57	Timeout occured!	1005.01	152	
-Gradient method with preconditioner	1.58	Timeout occured!	1002.42	151	
-Gradient method with preconditioner	1.59	Timeout occured!	1004.14	148	
-Gradient method with preconditioner	1.6	Timeout occured!	1006.32	147	
-Gradient method with preconditioner	1.61	Timeout occured!	1005.88	147	
-Gradient method with preconditioner	1.62	Timeout occured!	1003.57	148	
-Gradient method with preconditioner	1.63	Timeout occured!	1004.91	148	
-Gradient method with preconditioner	1.64	Timeout occured!	1004.16	150	
-Gradient method with preconditioner	1.65	Timeout occured!	1002.88	151	
-Gradient method with preconditioner	1.66	Timeout occured!	1001.96	147	
-Gradient method with preconditioner	1.67	Timeout occured!	1004.92	145	
-Gradient method with preconditioner	1.68	Timeout occured!	1002.84	152	
-Gradient method with preconditioner	1.69	Timeout occured!	1002.43	140	
-Gradient method with preconditioner	1.7	Timeout occured!	1007.59	152	
-Gradient method with preconditioner	1.71	Timeout occured!	1001.31	147	
-Gradient method with preconditioner	1.72	Timeout occured!	1002.52	145	
-Gradient method with preconditioner	1.73	Timeout occured!	1002.42	148	
-Gradient method with preconditioner	1.74	Timeout occured!	1005.29	148	
-Gradient method with preconditioner	1.75	Timeout occured!	1002.11	153	
-Gradient method with preconditioner	1.76	Timeout occured!	1004.44	151	
-Gradient method with preconditioner	1.77	Timeout occured!	1000.3	149	
-Gradient method with preconditioner	1.78	Timeout occured!	1005.27	151	
-Gradient method with preconditioner	1.79	Timeout occured!	1002.96	151	
-Gradient method with preconditioner	1.8	Timeout occured!	1002.69	151	
-Gradient method with preconditioner	1.81	Timeout occured!	1001.28	151	
-Gradient method with preconditioner	1.82	Timeout occured!	1002.84	148	
-Gradient method with preconditioner	1.83	Timeout occured!	1000.43	138	
-Gradient method with preconditioner	1.84	Timeout occured!	1011.22	150	
-Gradient method with preconditioner	1.85	Timeout occured!	1000.65	118	
-Gradient method with preconditioner	1.86	Timeout occured!	1008.11	151	
-Gradient method with preconditioner	1.87	Timeout occured!	1004.73	147	
-Gradient method with preconditioner	1.88	Timeout occured!	1000.57	138	
-Gradient method with preconditioner	1.89	Timeout occured!	1004.3	146	
-Gradient method with preconditioner	1.9	Timeout occured!	1005.11	144	
-Gradient method with preconditioner	1.91	Timeout occured!	1001.52	126	
-Gradient method with preconditioner	1.92	Timeout occured!	1001.82	143	
-Gradient method with preconditioner	1.93	Timeout occured!	1006.74	146	
-Gradient method with preconditioner	1.94	Timeout occured!	1004.55	140	
-Gradient method with preconditioner	1.95	Timeout occured!	1002.24	145	
-Gradient method with preconditioner	1.96	Timeout occured!	1000.34	143	
-Gradient method with preconditioner	1.97	Timeout occured!	1006.37	147	
-Gradient method with preconditioner	1.98	Timeout occured!	1000.46	146	
-Gradient method with preconditioner	1.99	Timeout occured!	1007.83	151	
+       Gradient method without preconditioner	  0.1	    Compute complete	   663.139	      7227	
+       Gradient method without preconditioner	 0.11	    Compute complete	   635.941	      7227	
+       Gradient method without preconditioner	 0.12	    Compute complete	   656.719	      7227	
+       Gradient method without preconditioner	 0.13	    Compute complete	   644.317	      7227	
+       Gradient method without preconditioner	 0.14	    Compute complete	   639.434	      7227	
+       Gradient method without preconditioner	 0.15	    Compute complete	    675.44	      7227	
+       Gradient method without preconditioner	 0.16	    Compute complete	    651.69	      7227	
+       Gradient method without preconditioner	 0.17	    Compute complete	   650.018	      7227	
+       Gradient method without preconditioner	 0.18	    Compute complete	   634.049	      7227	
+       Gradient method without preconditioner	 0.19	    Compute complete	   619.797	      7227	
+       Gradient method without preconditioner	  0.2	    Compute complete	   629.064	      7227	
+       Gradient method without preconditioner	 0.21	    Compute complete	   618.704	      7227	
+       Gradient method without preconditioner	 0.22	    Compute complete	   621.028	      7227	
+       Gradient method without preconditioner	 0.23	    Compute complete	   613.564	      7227	
+       Gradient method without preconditioner	 0.24	    Compute complete	   620.016	      7227	
+       Gradient method without preconditioner	 0.25	    Compute complete	   634.081	      7227	
+       Gradient method without preconditioner	 0.26	    Compute complete	   634.533	      7227	
+       Gradient method without preconditioner	 0.27	    Compute complete	   617.975	      7227	
+       Gradient method without preconditioner	 0.28	    Compute complete	   620.355	      7227	
+       Gradient method without preconditioner	 0.29	    Compute complete	   614.891	      7227	
+       Gradient method without preconditioner	  0.3	    Compute complete	   621.089	      7227	
+       Gradient method without preconditioner	 0.31	    Compute complete	   604.823	      7227	
+       Gradient method without preconditioner	 0.32	    Compute complete	   625.666	      7227	
+       Gradient method without preconditioner	 0.33	    Compute complete	   618.456	      7227	
+       Gradient method without preconditioner	 0.34	    Compute complete	    616.39	      7227	
+       Gradient method without preconditioner	 0.35	    Compute complete	   648.938	      7227	
+       Gradient method without preconditioner	 0.36	    Compute complete	   621.074	      7227	
+       Gradient method without preconditioner	 0.37	    Compute complete	    605.49	      7227	
+       Gradient method without preconditioner	 0.38	    Compute complete	   650.839	      7227	
+       Gradient method without preconditioner	 0.39	    Compute complete	   638.071	      7227	
+       Gradient method without preconditioner	  0.4	    Compute complete	   614.905	      7227	
+       Gradient method without preconditioner	 0.41	    Compute complete	   638.902	      7227	
+       Gradient method without preconditioner	 0.42	    Compute complete	   632.601	      7227	
+       Gradient method without preconditioner	 0.43	    Compute complete	   651.076	      7227	
+       Gradient method without preconditioner	 0.44	    Compute complete	   655.678	      7227	
+       Gradient method without preconditioner	 0.45	    Compute complete	   613.924	      7227	
+       Gradient method without preconditioner	 0.46	    Compute complete	   616.636	      7227	
+       Gradient method without preconditioner	 0.47	    Compute complete	     609.9	      7227	
+       Gradient method without preconditioner	 0.48	    Compute complete	   646.398	      7227	
+       Gradient method without preconditioner	 0.49	    Compute complete	    635.21	      7227	
+       Gradient method without preconditioner	  0.5	    Compute complete	   603.236	      7227	
+       Gradient method without preconditioner	 0.51	    Compute complete	   603.984	      7227	
+       Gradient method without preconditioner	 0.52	    Compute complete	   605.144	      7227	
+       Gradient method without preconditioner	 0.53	    Compute complete	   610.259	      7227	
+       Gradient method without preconditioner	 0.54	    Compute complete	   671.524	      7227	
+       Gradient method without preconditioner	 0.55	    Compute complete	    627.75	      7227	
+       Gradient method without preconditioner	 0.56	    Compute complete	   638.899	      7227	
+       Gradient method without preconditioner	 0.57	    Compute complete	   631.947	      7227	
+       Gradient method without preconditioner	 0.58	    Compute complete	   631.573	      7227	
+       Gradient method without preconditioner	 0.59	    Compute complete	   608.101	      7227	
+       Gradient method without preconditioner	  0.6	    Compute complete	   603.861	      7227	
+       Gradient method without preconditioner	 0.61	    Compute complete	    605.91	      7227	
+       Gradient method without preconditioner	 0.62	    Compute complete	   610.337	      7227	
+       Gradient method without preconditioner	 0.63	    Compute complete	   616.854	      7227	
+       Gradient method without preconditioner	 0.64	    Compute complete	   625.412	      7227	
+       Gradient method without preconditioner	 0.65	    Compute complete	   640.582	      7227	
+       Gradient method without preconditioner	 0.66	    Compute complete	   622.273	      7227	
+       Gradient method without preconditioner	 0.67	    Compute complete	   626.893	      7227	
+       Gradient method without preconditioner	 0.68	    Compute complete	   627.099	      7227	
+       Gradient method without preconditioner	 0.69	    Compute complete	    638.69	      7227	
+       Gradient method without preconditioner	  0.7	    Compute complete	   624.726	      7227	
+       Gradient method without preconditioner	 0.71	    Compute complete	   608.218	      7227	
+       Gradient method without preconditioner	 0.72	    Compute complete	   603.207	      7227	
+       Gradient method without preconditioner	 0.73	    Compute complete	   603.883	      7227	
+       Gradient method without preconditioner	 0.74	    Compute complete	   601.959	      7227	
+       Gradient method without preconditioner	 0.75	    Compute complete	   604.838	      7227	
+       Gradient method without preconditioner	 0.76	    Compute complete	   604.084	      7227	
+       Gradient method without preconditioner	 0.77	    Compute complete	   611.703	      7227	
+       Gradient method without preconditioner	 0.78	    Compute complete	   602.771	      7227	
+       Gradient method without preconditioner	 0.79	    Compute complete	   611.473	      7227	
+       Gradient method without preconditioner	  0.8	    Compute complete	    627.09	      7227	
+       Gradient method without preconditioner	 0.81	    Compute complete	   632.736	      7227	
+       Gradient method without preconditioner	 0.82	    Compute complete	   643.824	      7227	
+       Gradient method without preconditioner	 0.83	    Compute complete	   620.848	      7227	
+       Gradient method without preconditioner	 0.84	    Compute complete	   658.179	      7227	
+       Gradient method without preconditioner	 0.85	    Compute complete	    605.97	      7227	
+       Gradient method without preconditioner	 0.86	    Compute complete	   610.558	      7227	
+       Gradient method without preconditioner	 0.87	    Compute complete	    639.73	      7227	
+       Gradient method without preconditioner	 0.88	    Compute complete	   625.937	      7227	
+       Gradient method without preconditioner	 0.89	    Compute complete	   638.023	      7227	
+       Gradient method without preconditioner	  0.9	    Compute complete	   636.567	      7227	
+       Gradient method without preconditioner	 0.91	    Compute complete	   607.885	      7227	
+       Gradient method without preconditioner	 0.92	    Compute complete	   605.184	      7227	
+       Gradient method without preconditioner	 0.93	    Compute complete	   604.634	      7227	
+       Gradient method without preconditioner	 0.94	    Compute complete	   619.047	      7227	
+       Gradient method without preconditioner	 0.95	    Compute complete	   607.947	      7227	
+       Gradient method without preconditioner	 0.96	    Compute complete	     625.4	      7227	
+       Gradient method without preconditioner	 0.97	    Compute complete	    611.51	      7227	
+       Gradient method without preconditioner	 0.98	    Compute complete	   600.399	      7227	
+       Gradient method without preconditioner	 0.99	    Compute complete	   600.743	      7227	
+       Gradient method without preconditioner	    1	    Compute complete	   600.961	      7227	
+       Gradient method without preconditioner	 1.01	    Compute complete	   602.647	      7227	
+       Gradient method without preconditioner	 1.02	    Compute complete	   600.773	      7227	
+       Gradient method without preconditioner	 1.03	    Compute complete	   604.237	      7227	
+       Gradient method without preconditioner	 1.04	    Compute complete	   602.712	      7227	
+       Gradient method without preconditioner	 1.05	    Compute complete	   604.334	      7227	
+       Gradient method without preconditioner	 1.06	    Compute complete	   604.967	      7227	
+       Gradient method without preconditioner	 1.07	    Compute complete	   603.414	      7227	
+       Gradient method without preconditioner	 1.08	    Compute complete	   604.098	      7227	
+       Gradient method without preconditioner	 1.09	    Compute complete	   603.101	      7227	
+       Gradient method without preconditioner	  1.1	    Compute complete	   601.004	      7227	
+       Gradient method without preconditioner	 1.11	    Compute complete	   601.191	      7227	
+       Gradient method without preconditioner	 1.12	    Compute complete	   613.924	      7227	
+       Gradient method without preconditioner	 1.13	    Compute complete	   637.102	      7227	
+       Gradient method without preconditioner	 1.14	    Compute complete	   636.278	      7227	
+       Gradient method without preconditioner	 1.15	    Compute complete	   618.985	      7227	
+       Gradient method without preconditioner	 1.16	    Compute complete	   619.109	      7227	
+       Gradient method without preconditioner	 1.17	    Compute complete	   615.569	      7227	
+       Gradient method without preconditioner	 1.18	    Compute complete	   613.571	      7227	
+       Gradient method without preconditioner	 1.19	    Compute complete	   606.409	      7227	
+       Gradient method without preconditioner	  1.2	    Compute complete	    617.17	      7227	
+       Gradient method without preconditioner	 1.21	    Compute complete	   610.217	      7227	
+       Gradient method without preconditioner	 1.22	    Compute complete	   640.312	      7227	
+       Gradient method without preconditioner	 1.23	    Compute complete	   736.021	      7227	
+       Gradient method without preconditioner	 1.24	    Compute complete	   641.144	      7227	
+       Gradient method without preconditioner	 1.25	    Compute complete	   622.156	      7227	
+       Gradient method without preconditioner	 1.26	    Compute complete	   616.058	      7227	
+       Gradient method without preconditioner	 1.27	    Compute complete	   649.385	      7227	
+       Gradient method without preconditioner	 1.28	    Compute complete	   811.991	      7227	
+       Gradient method without preconditioner	 1.29	    Compute complete	   767.389	      7227	
+       Gradient method without preconditioner	  1.3	    Compute complete	   653.079	      7227	
+       Gradient method without preconditioner	 1.31	    Compute complete	   621.433	      7227	
+       Gradient method without preconditioner	 1.32	    Compute complete	   605.401	      7227	
+       Gradient method without preconditioner	 1.33	    Compute complete	   651.234	      7227	
+       Gradient method without preconditioner	 1.34	    Compute complete	   625.148	      7227	
+       Gradient method without preconditioner	 1.35	    Compute complete	   696.192	      7227	
+       Gradient method without preconditioner	 1.36	    Compute complete	   824.774	      7227	
+       Gradient method without preconditioner	 1.37	    Compute complete	   721.781	      7227	
+       Gradient method without preconditioner	 1.38	    Compute complete	   641.322	      7227	
+       Gradient method without preconditioner	 1.39	    Compute complete	    653.15	      7227	
+       Gradient method without preconditioner	  1.4	    Compute complete	   601.951	      7227	
+       Gradient method without preconditioner	 1.41	    Compute complete	   608.412	      7227	
+       Gradient method without preconditioner	 1.42	    Compute complete	   601.007	      7227	
+       Gradient method without preconditioner	 1.43	    Compute complete	   606.838	      7227	
+       Gradient method without preconditioner	 1.44	    Compute complete	   611.532	      7227	
+       Gradient method without preconditioner	 1.45	    Compute complete	   615.953	      7227	
+       Gradient method without preconditioner	 1.46	    Compute complete	   603.929	      7227	
+       Gradient method without preconditioner	 1.47	    Compute complete	   601.839	      7227	
+       Gradient method without preconditioner	 1.48	    Compute complete	   615.983	      7227	
+       Gradient method without preconditioner	 1.49	    Compute complete	   604.071	      7227	
+       Gradient method without preconditioner	  1.5	    Compute complete	    611.96	      7227	
+       Gradient method without preconditioner	 1.51	    Compute complete	    601.94	      7227	
+       Gradient method without preconditioner	 1.52	    Compute complete	   610.449	      7227	
+       Gradient method without preconditioner	 1.53	    Compute complete	   611.856	      7227	
+       Gradient method without preconditioner	 1.54	    Compute complete	   611.379	      7227	
+       Gradient method without preconditioner	 1.55	    Compute complete	   608.649	      7227	
+       Gradient method without preconditioner	 1.56	    Compute complete	   640.908	      7227	
+       Gradient method without preconditioner	 1.57	    Compute complete	   629.803	      7227	
+       Gradient method without preconditioner	 1.58	    Compute complete	    624.97	      7227	
+       Gradient method without preconditioner	 1.59	    Compute complete	   611.795	      7227	
+       Gradient method without preconditioner	  1.6	    Compute complete	   609.143	      7227	
+       Gradient method without preconditioner	 1.61	    Compute complete	   644.711	      7227	
+       Gradient method without preconditioner	 1.62	    Compute complete	    632.48	      7227	
+       Gradient method without preconditioner	 1.63	    Compute complete	   674.192	      7227	
+       Gradient method without preconditioner	 1.64	    Compute complete	   695.757	      7227	
+       Gradient method without preconditioner	 1.65	    Compute complete	   672.767	      7227	
+       Gradient method without preconditioner	 1.66	    Compute complete	   732.583	      7227	
+       Gradient method without preconditioner	 1.67	    Compute complete	   607.473	      7227	
+       Gradient method without preconditioner	 1.68	    Compute complete	   621.772	      7227	
+       Gradient method without preconditioner	 1.69	    Compute complete	   609.744	      7227	
+       Gradient method without preconditioner	  1.7	    Compute complete	   607.209	      7227	
+       Gradient method without preconditioner	 1.71	    Compute complete	    601.75	      7227	
+       Gradient method without preconditioner	 1.72	    Compute complete	    605.15	      7227	
+       Gradient method without preconditioner	 1.73	    Compute complete	   605.836	      7227	
+       Gradient method without preconditioner	 1.74	    Compute complete	   754.827	      7227	
+       Gradient method without preconditioner	 1.75	    Compute complete	   632.054	      7227	
+       Gradient method without preconditioner	 1.76	    Compute complete	   609.015	      7227	
+       Gradient method without preconditioner	 1.77	    Compute complete	   607.262	      7227	
+       Gradient method without preconditioner	 1.78	    Compute complete	   606.791	      7227	
+       Gradient method without preconditioner	 1.79	    Compute complete	   609.043	      7227	
+       Gradient method without preconditioner	  1.8	    Compute complete	    612.37	      7227	
+       Gradient method without preconditioner	 1.81	    Compute complete	    609.05	      7227	
+       Gradient method without preconditioner	 1.82	    Compute complete	   615.223	      7227	
+       Gradient method without preconditioner	 1.83	    Compute complete	   612.906	      7227	
+       Gradient method without preconditioner	 1.84	    Compute complete	   613.995	      7227	
+       Gradient method without preconditioner	 1.85	    Compute complete	   618.925	      7227	
+       Gradient method without preconditioner	 1.86	    Compute complete	   615.468	      7227	
+       Gradient method without preconditioner	 1.87	    Compute complete	    616.27	      7227	
+       Gradient method without preconditioner	 1.88	    Compute complete	     612.2	      7227	
+       Gradient method without preconditioner	 1.89	    Compute complete	   615.382	      7227	
+       Gradient method without preconditioner	  1.9	    Compute complete	   618.116	      7227	
+       Gradient method without preconditioner	 1.91	    Compute complete	   619.136	      7227	
+       Gradient method without preconditioner	 1.92	    Compute complete	   615.735	      7227	
+       Gradient method without preconditioner	 1.93	    Compute complete	   619.636	      7227	
+       Gradient method without preconditioner	 1.94	    Compute complete	   617.746	      7227	
+       Gradient method without preconditioner	 1.95	    Compute complete	   623.263	      7227	
+       Gradient method without preconditioner	 1.96	    Compute complete	   613.548	      7227	
+       Gradient method without preconditioner	 1.97	    Compute complete	   615.725	      7227	
+       Gradient method without preconditioner	 1.98	    Compute complete	   617.546	      7227	
+       Gradient method without preconditioner	 1.99	    Compute complete	   611.226	      7227	
+          Gradient method with preconditioner	  0.1	    Compute complete	   20.8732	         3	
+          Gradient method with preconditioner	 0.11	    Compute complete	   17.6414	         3	
+          Gradient method with preconditioner	 0.12	    Compute complete	   16.8645	         3	
+          Gradient method with preconditioner	 0.13	    Compute complete	   16.9101	         3	
+          Gradient method with preconditioner	 0.14	    Compute complete	   19.0716	         3	
+          Gradient method with preconditioner	 0.15	    Compute complete	    17.192	         3	
+          Gradient method with preconditioner	 0.16	    Compute complete	   17.8917	         3	
+          Gradient method with preconditioner	 0.17	    Compute complete	   17.1932	         3	
+          Gradient method with preconditioner	 0.18	    Compute complete	   17.2044	         3	
+          Gradient method with preconditioner	 0.19	    Compute complete	   17.1593	         3	
+          Gradient method with preconditioner	  0.2	    Compute complete	   18.6957	         3	
+          Gradient method with preconditioner	 0.21	    Compute complete	   16.9068	         3	
+          Gradient method with preconditioner	 0.22	    Compute complete	   18.3998	         3	
+          Gradient method with preconditioner	 0.23	    Compute complete	   17.6542	         3	
+          Gradient method with preconditioner	 0.24	    Compute complete	   17.4552	         3	
+          Gradient method with preconditioner	 0.25	    Compute complete	   20.3825	         3	
+          Gradient method with preconditioner	 0.26	    Compute complete	    28.397	         3	
+          Gradient method with preconditioner	 0.27	    Compute complete	   17.4442	         3	
+          Gradient method with preconditioner	 0.28	    Compute complete	   17.0827	         3	
+          Gradient method with preconditioner	 0.29	    Compute complete	   17.3454	         3	
+          Gradient method with preconditioner	  0.3	    Compute complete	   17.1504	         3	
+          Gradient method with preconditioner	 0.31	    Compute complete	   17.7616	         3	
+          Gradient method with preconditioner	 0.32	    Compute complete	   19.6417	         3	
+          Gradient method with preconditioner	 0.33	    Compute complete	   17.5229	         3	
+          Gradient method with preconditioner	 0.34	    Compute complete	    18.598	         3	
+          Gradient method with preconditioner	 0.35	    Compute complete	   17.0159	         3	
+          Gradient method with preconditioner	 0.36	    Compute complete	   16.8858	         3	
+          Gradient method with preconditioner	 0.37	    Compute complete	   17.1786	         3	
+          Gradient method with preconditioner	 0.38	    Compute complete	   19.4206	         3	
+          Gradient method with preconditioner	 0.39	    Compute complete	   16.9819	         3	
+          Gradient method with preconditioner	  0.4	    Compute complete	   16.9757	         3	
+          Gradient method with preconditioner	 0.41	    Compute complete	    17.207	         3	
+          Gradient method with preconditioner	 0.42	    Compute complete	   17.7514	         3	
+          Gradient method with preconditioner	 0.43	    Compute complete	    18.387	         3	
+          Gradient method with preconditioner	 0.44	    Compute complete	   21.8473	         3	
+          Gradient method with preconditioner	 0.45	    Compute complete	   20.0228	         3	
+          Gradient method with preconditioner	 0.46	    Compute complete	   19.7008	         3	
+          Gradient method with preconditioner	 0.47	    Compute complete	   16.9136	         3	
+          Gradient method with preconditioner	 0.48	    Compute complete	     16.99	         3	
+          Gradient method with preconditioner	 0.49	    Compute complete	   16.7881	         3	
+          Gradient method with preconditioner	  0.5	    Compute complete	   19.0147	         3	
+          Gradient method with preconditioner	 0.51	    Compute complete	   17.1253	         3	
+          Gradient method with preconditioner	 0.52	    Compute complete	   19.1013	         3	
+          Gradient method with preconditioner	 0.53	    Compute complete	    19.595	         3	
+          Gradient method with preconditioner	 0.54	    Compute complete	   19.7761	         3	
+          Gradient method with preconditioner	 0.55	    Compute complete	   20.3979	         3	
+          Gradient method with preconditioner	 0.56	    Compute complete	   21.8059	         3	
+          Gradient method with preconditioner	 0.57	    Compute complete	   21.0897	         3	
+          Gradient method with preconditioner	 0.58	    Compute complete	   20.5867	         3	
+          Gradient method with preconditioner	 0.59	    Compute complete	   19.5112	         3	
+          Gradient method with preconditioner	  0.6	    Compute complete	   20.6272	         3	
+          Gradient method with preconditioner	 0.61	    Compute complete	   19.8521	         3	
+          Gradient method with preconditioner	 0.62	    Compute complete	   20.8668	         3	
+          Gradient method with preconditioner	 0.63	    Compute complete	   19.4929	         3	
+          Gradient method with preconditioner	 0.64	    Compute complete	   19.8276	         3	
+          Gradient method with preconditioner	 0.65	    Compute complete	   19.7155	         3	
+          Gradient method with preconditioner	 0.66	    Compute complete	   19.3392	         3	
+          Gradient method with preconditioner	 0.67	    Compute complete	   17.9999	         3	
+          Gradient method with preconditioner	 0.68	    Compute complete	   18.9962	         3	
+          Gradient method with preconditioner	 0.69	    Compute complete	   16.6452	         3	
+          Gradient method with preconditioner	  0.7	    Compute complete	   16.5828	         3	
+          Gradient method with preconditioner	 0.71	    Compute complete	   16.7393	         3	
+          Gradient method with preconditioner	 0.72	    Compute complete	   17.4985	         3	
+          Gradient method with preconditioner	 0.73	    Compute complete	   17.1588	         3	
+          Gradient method with preconditioner	 0.74	    Compute complete	   21.8815	         3	
+          Gradient method with preconditioner	 0.75	    Compute complete	   18.9058	         3	
+          Gradient method with preconditioner	 0.76	    Compute complete	   19.3113	         3	
+          Gradient method with preconditioner	 0.77	    Compute complete	   19.4346	         3	
+          Gradient method with preconditioner	 0.78	    Compute complete	   20.1997	         3	
+          Gradient method with preconditioner	 0.79	    Compute complete	   19.8283	         3	
+          Gradient method with preconditioner	  0.8	    Compute complete	   20.8158	         3	
+          Gradient method with preconditioner	 0.81	    Compute complete	   20.7951	         3	
+          Gradient method with preconditioner	 0.82	    Compute complete	   19.8211	         3	
+          Gradient method with preconditioner	 0.83	    Compute complete	   19.3122	         3	
+          Gradient method with preconditioner	 0.84	    Compute complete	   19.8234	         3	
+          Gradient method with preconditioner	 0.85	    Compute complete	   19.8135	         3	
+          Gradient method with preconditioner	 0.86	    Compute complete	   21.2697	         3	
+          Gradient method with preconditioner	 0.87	    Compute complete	   18.8446	         3	
+          Gradient method with preconditioner	 0.88	    Compute complete	   17.2363	         3	
+          Gradient method with preconditioner	 0.89	    Compute complete	   16.5986	         3	
+          Gradient method with preconditioner	  0.9	    Compute complete	   16.5751	         3	
+          Gradient method with preconditioner	 0.91	    Compute complete	   16.8984	         3	
+          Gradient method with preconditioner	 0.92	    Compute complete	   18.8455	         3	
+          Gradient method with preconditioner	 0.93	    Compute complete	      17.7	         3	
+          Gradient method with preconditioner	 0.94	    Compute complete	   17.4452	         3	
+          Gradient method with preconditioner	 0.95	    Compute complete	   19.2499	         3	
+          Gradient method with preconditioner	 0.96	    Compute complete	   17.5809	         3	
+          Gradient method with preconditioner	 0.97	    Compute complete	    16.723	         3	
+          Gradient method with preconditioner	 0.98	    Compute complete	    18.798	         3	
+          Gradient method with preconditioner	 0.99	    Compute complete	   17.1092	         3	
+          Gradient method with preconditioner	    1	    Compute complete	   17.1023	         3	
+          Gradient method with preconditioner	 1.01	    Compute complete	   16.6634	         3	
+          Gradient method with preconditioner	 1.02	    Compute complete	   16.7319	         3	
+          Gradient method with preconditioner	 1.03	    Compute complete	   16.7189	         3	
+          Gradient method with preconditioner	 1.04	    Compute complete	   19.7347	         3	
+          Gradient method with preconditioner	 1.05	    Compute complete	   17.2927	         3	
+          Gradient method with preconditioner	 1.06	    Compute complete	   19.2009	         3	
+          Gradient method with preconditioner	 1.07	    Compute complete	   20.1611	         3	
+          Gradient method with preconditioner	 1.08	    Compute complete	   17.4779	         3	
+          Gradient method with preconditioner	 1.09	    Compute complete	   18.7959	         3	
+          Gradient method with preconditioner	  1.1	    Compute complete	   19.5405	         3	
+          Gradient method with preconditioner	 1.11	    Compute complete	   17.4331	         3	
+          Gradient method with preconditioner	 1.12	    Compute complete	    18.181	         3	
+          Gradient method with preconditioner	 1.13	    Compute complete	   17.1076	         3	
+          Gradient method with preconditioner	 1.14	    Compute complete	   16.9536	         3	
+          Gradient method with preconditioner	 1.15	    Compute complete	   16.5557	         3	
+          Gradient method with preconditioner	 1.16	    Compute complete	   18.9916	         3	
+          Gradient method with preconditioner	 1.17	    Compute complete	   17.0584	         3	
+          Gradient method with preconditioner	 1.18	    Compute complete	   17.1515	         3	
+          Gradient method with preconditioner	 1.19	    Compute complete	    17.033	         3	
+          Gradient method with preconditioner	  1.2	    Compute complete	   17.0815	         3	
+          Gradient method with preconditioner	 1.21	    Compute complete	   16.7157	         3	
+          Gradient method with preconditioner	 1.22	    Compute complete	   18.8769	         3	
+          Gradient method with preconditioner	 1.23	    Compute complete	   16.6724	         3	
+          Gradient method with preconditioner	 1.24	    Compute complete	   17.0718	         3	
+          Gradient method with preconditioner	 1.25	    Compute complete	   16.9361	         3	
+          Gradient method with preconditioner	 1.26	    Compute complete	   16.9526	         3	
+          Gradient method with preconditioner	 1.27	    Compute complete	    19.557	         3	
+          Gradient method with preconditioner	 1.28	    Compute complete	    21.332	         3	
+          Gradient method with preconditioner	 1.29	    Compute complete	   20.1134	         3	
+          Gradient method with preconditioner	  1.3	    Compute complete	   19.4428	         3	
+          Gradient method with preconditioner	 1.31	    Compute complete	   19.9227	         3	
+          Gradient method with preconditioner	 1.32	    Compute complete	   17.6562	         3	
+          Gradient method with preconditioner	 1.33	    Compute complete	   17.6425	         3	
+          Gradient method with preconditioner	 1.34	    Compute complete	   19.6915	         3	
+          Gradient method with preconditioner	 1.35	    Compute complete	   17.0333	         3	
+          Gradient method with preconditioner	 1.36	    Compute complete	   17.1921	         3	
+          Gradient method with preconditioner	 1.37	    Compute complete	   17.0463	         3	
+          Gradient method with preconditioner	 1.38	    Compute complete	   17.3754	         3	
+          Gradient method with preconditioner	 1.39	    Compute complete	   17.1942	         3	
+          Gradient method with preconditioner	  1.4	    Compute complete	   20.0005	         3	
+          Gradient method with preconditioner	 1.41	    Compute complete	   17.8357	         3	
+          Gradient method with preconditioner	 1.42	    Compute complete	   17.8205	         3	
+          Gradient method with preconditioner	 1.43	    Compute complete	   17.3329	         3	
+          Gradient method with preconditioner	 1.44	    Compute complete	   16.9376	         3	
+          Gradient method with preconditioner	 1.45	    Compute complete	   16.9306	         3	
+          Gradient method with preconditioner	 1.46	    Compute complete	   18.7752	         3	
+          Gradient method with preconditioner	 1.47	    Compute complete	   16.9784	         3	
+          Gradient method with preconditioner	 1.48	    Compute complete	   17.3862	         3	
+          Gradient method with preconditioner	 1.49	    Compute complete	   20.1752	         3	
+          Gradient method with preconditioner	  1.5	    Compute complete	   19.2666	         3	
+          Gradient method with preconditioner	 1.51	    Compute complete	   19.8135	         3	
+          Gradient method with preconditioner	 1.52	    Compute complete	   21.8832	         3	
+          Gradient method with preconditioner	 1.53	    Compute complete	   19.5262	         3	
+          Gradient method with preconditioner	 1.54	    Compute complete	   21.2532	         3	
+          Gradient method with preconditioner	 1.55	    Compute complete	   20.4336	         3	
+          Gradient method with preconditioner	 1.56	    Compute complete	   19.8067	         3	
+          Gradient method with preconditioner	 1.57	    Compute complete	   19.7787	         3	
+          Gradient method with preconditioner	 1.58	    Compute complete	   22.2155	         3	
+          Gradient method with preconditioner	 1.59	    Compute complete	   17.6271	         3	
+          Gradient method with preconditioner	  1.6	    Compute complete	   17.8282	         3	
+          Gradient method with preconditioner	 1.61	    Compute complete	   17.1296	         3	
+          Gradient method with preconditioner	 1.62	    Compute complete	   16.9211	         3	
+          Gradient method with preconditioner	 1.63	    Compute complete	   16.9525	         3	
+          Gradient method with preconditioner	 1.64	    Compute complete	    19.136	         3	
+          Gradient method with preconditioner	 1.65	    Compute complete	   17.2025	         3	
+          Gradient method with preconditioner	 1.66	    Compute complete	   17.5474	         3	
+          Gradient method with preconditioner	 1.67	    Compute complete	   17.4133	         3	
+          Gradient method with preconditioner	 1.68	    Compute complete	    20.454	         3	
+          Gradient method with preconditioner	 1.69	    Compute complete	    19.958	         3	
+          Gradient method with preconditioner	  1.7	    Compute complete	   22.6346	         3	
+          Gradient method with preconditioner	 1.71	    Compute complete	   19.5974	         3	
+          Gradient method with preconditioner	 1.72	    Compute complete	   19.0843	         3	
+          Gradient method with preconditioner	 1.73	    Compute complete	    16.776	         3	
+          Gradient method with preconditioner	 1.74	    Compute complete	   16.6722	         3	
+          Gradient method with preconditioner	 1.75	    Compute complete	   17.4358	         3	
+          Gradient method with preconditioner	 1.76	    Compute complete	   19.8318	         3	
+          Gradient method with preconditioner	 1.77	    Compute complete	   17.1239	         3	
+          Gradient method with preconditioner	 1.78	    Compute complete	   18.5159	         3	
+          Gradient method with preconditioner	 1.79	    Compute complete	    19.051	         3	
+          Gradient method with preconditioner	  1.8	    Compute complete	   17.8568	         3	
+          Gradient method with preconditioner	 1.81	    Compute complete	   17.3975	         3	
+          Gradient method with preconditioner	 1.82	    Compute complete	   35.7728	         3	
+          Gradient method with preconditioner	 1.83	    Compute complete	   18.2493	         3	
+          Gradient method with preconditioner	 1.84	    Compute complete	   17.0311	         3	
+          Gradient method with preconditioner	 1.85	    Compute complete	   16.9163	         3	
+          Gradient method with preconditioner	 1.86	    Compute complete	   17.0732	         3	
+          Gradient method with preconditioner	 1.87	    Compute complete	   16.7867	         3	
+          Gradient method with preconditioner	 1.88	    Compute complete	   19.5148	         3	
+          Gradient method with preconditioner	 1.89	    Compute complete	   17.7423	         3	
+          Gradient method with preconditioner	  1.9	    Compute complete	   17.9916	         3	
+          Gradient method with preconditioner	 1.91	    Compute complete	   19.7872	         3	
+          Gradient method with preconditioner	 1.92	    Compute complete	   20.0984	         3	
+          Gradient method with preconditioner	 1.93	    Compute complete	   20.2745	         3	
+          Gradient method with preconditioner	 1.94	    Compute complete	   21.9099	         3	
+          Gradient method with preconditioner	 1.95	    Compute complete	    17.653	         3	
+          Gradient method with preconditioner	 1.96	    Compute complete	   17.7159	         3	
+          Gradient method with preconditioner	 1.97	    Compute complete	   17.5587	         3	
+          Gradient method with preconditioner	 1.98	    Compute complete	   17.5207	         3	
+          Gradient method with preconditioner	 1.99	    Compute complete	   16.6632	         3	

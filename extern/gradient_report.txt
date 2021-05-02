@@ -1,380 +1,380 @@
-Gradient method without preconditioner	0.1	Compute complete	0.362827	97	
-Gradient method without preconditioner	0.11	Compute complete	0.262485	97	
-Gradient method without preconditioner	0.12	Compute complete	0.27277	97	
-Gradient method without preconditioner	0.13	Compute complete	0.258029	97	
-Gradient method without preconditioner	0.14	Compute complete	0.308365	97	
-Gradient method without preconditioner	0.15	Compute complete	0.293353	97	
-Gradient method without preconditioner	0.16	Compute complete	0.257535	97	
-Gradient method without preconditioner	0.17	Compute complete	0.277309	97	
-Gradient method without preconditioner	0.18	Compute complete	0.257346	97	
-Gradient method without preconditioner	0.19	Compute complete	0.256972	97	
-Gradient method without preconditioner	0.2	Compute complete	0.257906	97	
-Gradient method without preconditioner	0.21	Compute complete	0.26103	97	
-Gradient method without preconditioner	0.22	Compute complete	0.257256	97	
-Gradient method without preconditioner	0.23	Compute complete	0.256556	97	
-Gradient method without preconditioner	0.24	Compute complete	0.272637	97	
-Gradient method without preconditioner	0.25	Compute complete	0.256533	97	
-Gradient method without preconditioner	0.26	Compute complete	0.256696	97	
-Gradient method without preconditioner	0.27	Compute complete	0.257199	97	
-Gradient method without preconditioner	0.28	Compute complete	0.259913	97	
-Gradient method without preconditioner	0.29	Compute complete	0.268884	97	
-Gradient method without preconditioner	0.3	Compute complete	0.262577	97	
-Gradient method without preconditioner	0.31	Compute complete	0.261546	97	
-Gradient method without preconditioner	0.32	Compute complete	0.257465	97	
-Gradient method without preconditioner	0.33	Compute complete	0.494337	97	
-Gradient method without preconditioner	0.34	Compute complete	0.526961	97	
-Gradient method without preconditioner	0.35	Compute complete	0.380627	97	
-Gradient method without preconditioner	0.36	Compute complete	0.26889	97	
-Gradient method without preconditioner	0.37	Compute complete	0.256935	97	
-Gradient method without preconditioner	0.38	Compute complete	0.282136	97	
-Gradient method without preconditioner	0.39	Compute complete	0.590799	97	
-Gradient method without preconditioner	0.4	Compute complete	0.407165	97	
-Gradient method without preconditioner	0.41	Compute complete	0.379856	97	
-Gradient method without preconditioner	0.42	Compute complete	0.267143	97	
-Gradient method without preconditioner	0.43	Compute complete	0.370451	97	
-Gradient method without preconditioner	0.44	Compute complete	0.396906	97	
-Gradient method without preconditioner	0.45	Compute complete	0.512803	97	
-Gradient method without preconditioner	0.46	Compute complete	0.417622	97	
-Gradient method without preconditioner	0.47	Compute complete	0.354327	97	
-Gradient method without preconditioner	0.48	Compute complete	0.289047	97	
-Gradient method without preconditioner	0.49	Compute complete	0.257051	97	
-Gradient method without preconditioner	0.5	Compute complete	0.271438	97	
-Gradient method without preconditioner	0.51	Compute complete	0.381306	97	
-Gradient method without preconditioner	0.52	Compute complete	0.303841	97	
-Gradient method without preconditioner	0.53	Compute complete	0.269509	97	
-Gradient method without preconditioner	0.54	Compute complete	0.293319	97	
-Gradient method without preconditioner	0.55	Compute complete	0.264474	97	
-Gradient method without preconditioner	0.56	Compute complete	0.258696	97	
-Gradient method without preconditioner	0.57	Compute complete	0.257687	97	
-Gradient method without preconditioner	0.58	Compute complete	0.257732	97	
-Gradient method without preconditioner	0.59	Compute complete	0.262165	97	
-Gradient method without preconditioner	0.6	Compute complete	0.278908	97	
-Gradient method without preconditioner	0.61	Compute complete	0.257824	97	
-Gradient method without preconditioner	0.62	Compute complete	0.29617	97	
-Gradient method without preconditioner	0.63	Compute complete	0.26032	97	
-Gradient method without preconditioner	0.64	Compute complete	0.412761	97	
-Gradient method without preconditioner	0.65	Compute complete	0.321731	97	
-Gradient method without preconditioner	0.66	Compute complete	0.257513	97	
-Gradient method without preconditioner	0.67	Compute complete	0.266981	97	
-Gradient method without preconditioner	0.68	Compute complete	0.281037	97	
-Gradient method without preconditioner	0.69	Compute complete	0.257804	97	
-Gradient method without preconditioner	0.7	Compute complete	0.257795	97	
-Gradient method without preconditioner	0.71	Compute complete	0.260939	97	
-Gradient method without preconditioner	0.72	Compute complete	0.256707	97	
-Gradient method without preconditioner	0.73	Compute complete	0.258698	97	
-Gradient method without preconditioner	0.74	Compute complete	0.257601	97	
-Gradient method without preconditioner	0.75	Compute complete	0.268349	97	
-Gradient method without preconditioner	0.76	Compute complete	0.257485	97	
-Gradient method without preconditioner	0.77	Compute complete	0.258016	97	
-Gradient method without preconditioner	0.78	Compute complete	0.261177	97	
-Gradient method without preconditioner	0.79	Compute complete	0.25889	97	
-Gradient method without preconditioner	0.8	Compute complete	0.270124	97	
-Gradient method without preconditioner	0.81	Compute complete	0.317855	97	
-Gradient method without preconditioner	0.82	Compute complete	0.25743	97	
-Gradient method without preconditioner	0.83	Compute complete	0.257948	97	
-Gradient method without preconditioner	0.84	Compute complete	0.257778	97	
-Gradient method without preconditioner	0.85	Compute complete	0.262147	97	
-Gradient method without preconditioner	0.86	Compute complete	0.272416	97	
-Gradient method without preconditioner	0.87	Compute complete	0.257582	97	
-Gradient method without preconditioner	0.88	Compute complete	0.323915	97	
-Gradient method without preconditioner	0.89	Compute complete	0.257576	97	
-Gradient method without preconditioner	0.9	Compute complete	0.320054	97	
-Gradient method without preconditioner	0.91	Compute complete	0.261315	97	
-Gradient method without preconditioner	0.92	Compute complete	0.256855	97	
-Gradient method without preconditioner	0.93	Compute complete	0.27389	97	
-Gradient method without preconditioner	0.94	Compute complete	0.28732	97	
-Gradient method without preconditioner	0.95	Compute complete	0.362113	97	
-Gradient method without preconditioner	0.96	Compute complete	0.40231	97	
-Gradient method without preconditioner	0.97	Compute complete	0.264766	97	
-Gradient method without preconditioner	0.98	Compute complete	0.274553	97	
-Gradient method without preconditioner	0.99	Compute complete	0.267437	97	
-Gradient method without preconditioner	1	Compute complete	0.270548	97	
-Gradient method without preconditioner	1.01	Compute complete	0.266753	97	
-Gradient method without preconditioner	1.02	Compute complete	0.266978	97	
-Gradient method without preconditioner	1.03	Compute complete	0.266375	97	
-Gradient method without preconditioner	1.04	Compute complete	0.281394	97	
-Gradient method without preconditioner	1.05	Compute complete	0.259608	97	
-Gradient method without preconditioner	1.06	Compute complete	0.258315	97	
-Gradient method without preconditioner	1.07	Compute complete	0.29416	97	
-Gradient method without preconditioner	1.08	Compute complete	0.256532	97	
-Gradient method without preconditioner	1.09	Compute complete	0.256539	97	
-Gradient method without preconditioner	1.1	Compute complete	0.261419	97	
-Gradient method without preconditioner	1.11	Compute complete	0.264406	97	
-Gradient method without preconditioner	1.12	Compute complete	0.256924	97	
-Gradient method without preconditioner	1.13	Compute complete	0.264659	97	
-Gradient method without preconditioner	1.14	Compute complete	0.257346	97	
-Gradient method without preconditioner	1.15	Compute complete	0.257237	97	
-Gradient method without preconditioner	1.16	Compute complete	0.29596	97	
-Gradient method without preconditioner	1.17	Compute complete	0.324706	97	
-Gradient method without preconditioner	1.18	Compute complete	0.465452	97	
-Gradient method without preconditioner	1.19	Compute complete	0.388948	97	
-Gradient method without preconditioner	1.2	Compute complete	0.386046	97	
-Gradient method without preconditioner	1.21	Compute complete	0.257068	97	
-Gradient method without preconditioner	1.22	Compute complete	0.263025	97	
-Gradient method without preconditioner	1.23	Compute complete	0.275615	97	
-Gradient method without preconditioner	1.24	Compute complete	0.258167	97	
-Gradient method without preconditioner	1.25	Compute complete	0.31102	97	
-Gradient method without preconditioner	1.26	Compute complete	0.260183	97	
-Gradient method without preconditioner	1.27	Compute complete	0.437618	97	
-Gradient method without preconditioner	1.28	Compute complete	0.29018	97	
-Gradient method without preconditioner	1.29	Compute complete	0.257974	97	
-Gradient method without preconditioner	1.3	Compute complete	0.256468	97	
-Gradient method without preconditioner	1.31	Compute complete	0.281598	97	
-Gradient method without preconditioner	1.32	Compute complete	0.267405	97	
-Gradient method without preconditioner	1.33	Compute complete	0.261117	97	
-Gradient method without preconditioner	1.34	Compute complete	0.391896	97	
-Gradient method without preconditioner	1.35	Compute complete	0.538978	97	
-Gradient method without preconditioner	1.36	Compute complete	0.501986	97	
-Gradient method without preconditioner	1.37	Compute complete	0.298711	97	
-Gradient method without preconditioner	1.38	Compute complete	0.37094	97	
-Gradient method without preconditioner	1.39	Compute complete	0.351705	97	
-Gradient method without preconditioner	1.4	Compute complete	0.507844	97	
-Gradient method without preconditioner	1.41	Compute complete	0.43313	97	
-Gradient method without preconditioner	1.42	Compute complete	0.316175	97	
-Gradient method without preconditioner	1.43	Compute complete	0.272038	97	
-Gradient method without preconditioner	1.44	Compute complete	0.258107	97	
-Gradient method without preconditioner	1.45	Compute complete	0.260663	97	
-Gradient method without preconditioner	1.46	Compute complete	0.257362	97	
-Gradient method without preconditioner	1.47	Compute complete	0.258092	97	
-Gradient method without preconditioner	1.48	Compute complete	0.258047	97	
-Gradient method without preconditioner	1.49	Compute complete	0.27763	97	
-Gradient method without preconditioner	1.5	Compute complete	0.261159	97	
-Gradient method without preconditioner	1.51	Compute complete	0.291139	97	
-Gradient method without preconditioner	1.52	Compute complete	0.262559	97	
-Gradient method without preconditioner	1.53	Compute complete	0.278896	97	
-Gradient method without preconditioner	1.54	Compute complete	0.258107	97	
-Gradient method without preconditioner	1.55	Compute complete	0.261044	97	
-Gradient method without preconditioner	1.56	Compute complete	0.269472	97	
-Gradient method without preconditioner	1.57	Compute complete	0.257115	97	
-Gradient method without preconditioner	1.58	Compute complete	0.269027	97	
-Gradient method without preconditioner	1.59	Compute complete	0.257195	97	
-Gradient method without preconditioner	1.6	Compute complete	0.25689	97	
-Gradient method without preconditioner	1.61	Compute complete	0.257073	97	
-Gradient method without preconditioner	1.62	Compute complete	0.260625	97	
-Gradient method without preconditioner	1.63	Compute complete	0.256854	97	
-Gradient method without preconditioner	1.64	Compute complete	0.257462	97	
-Gradient method without preconditioner	1.65	Compute complete	0.25999	97	
-Gradient method without preconditioner	1.66	Compute complete	0.257397	97	
-Gradient method without preconditioner	1.67	Compute complete	0.257314	97	
-Gradient method without preconditioner	1.68	Compute complete	0.257738	97	
-Gradient method without preconditioner	1.69	Compute complete	0.26725	97	
-Gradient method without preconditioner	1.7	Compute complete	0.279538	97	
-Gradient method without preconditioner	1.71	Compute complete	0.259663	97	
-Gradient method without preconditioner	1.72	Compute complete	0.27308	97	
-Gradient method without preconditioner	1.73	Compute complete	0.318019	97	
-Gradient method without preconditioner	1.74	Compute complete	0.334689	97	
-Gradient method without preconditioner	1.75	Compute complete	0.262696	97	
-Gradient method without preconditioner	1.76	Compute complete	0.258204	97	
-Gradient method without preconditioner	1.77	Compute complete	0.257659	97	
-Gradient method without preconditioner	1.78	Compute complete	0.298749	97	
-Gradient method without preconditioner	1.79	Compute complete	0.288326	97	
-Gradient method without preconditioner	1.8	Compute complete	0.259666	97	
-Gradient method without preconditioner	1.81	Compute complete	0.259637	97	
-Gradient method without preconditioner	1.82	Compute complete	0.272621	97	
-Gradient method without preconditioner	1.83	Compute complete	0.437007	97	
-Gradient method without preconditioner	1.84	Compute complete	0.421072	97	
-Gradient method without preconditioner	1.85	Compute complete	0.35181	97	
-Gradient method without preconditioner	1.86	Compute complete	0.25813	97	
-Gradient method without preconditioner	1.87	Compute complete	0.257111	97	
-Gradient method without preconditioner	1.88	Compute complete	0.257054	97	
-Gradient method without preconditioner	1.89	Compute complete	0.256888	97	
-Gradient method without preconditioner	1.9	Compute complete	0.260455	97	
-Gradient method without preconditioner	1.91	Compute complete	0.257262	97	
-Gradient method without preconditioner	1.92	Compute complete	0.256598	97	
-Gradient method without preconditioner	1.93	Compute complete	0.260068	97	
-Gradient method without preconditioner	1.94	Compute complete	0.256914	97	
-Gradient method without preconditioner	1.95	Compute complete	0.27194	97	
-Gradient method without preconditioner	1.96	Compute complete	0.301831	97	
-Gradient method without preconditioner	1.97	Compute complete	0.450294	97	
-Gradient method without preconditioner	1.98	Compute complete	0.441437	97	
-Gradient method without preconditioner	1.99	Compute complete	0.413118	97	
-Gradient method with preconditioner	0.1	Compute complete	0.099005	3	
-Gradient method with preconditioner	0.11	Compute complete	0.033743	3	
-Gradient method with preconditioner	0.12	Compute complete	0.045607	3	
-Gradient method with preconditioner	0.13	Compute complete	0.033005	3	
-Gradient method with preconditioner	0.14	Compute complete	0.038286	3	
-Gradient method with preconditioner	0.15	Compute complete	0.032757	3	
-Gradient method with preconditioner	0.16	Compute complete	0.032698	3	
-Gradient method with preconditioner	0.17	Compute complete	0.038485	3	
-Gradient method with preconditioner	0.18	Compute complete	0.032656	3	
-Gradient method with preconditioner	0.19	Compute complete	0.032433	3	
-Gradient method with preconditioner	0.2	Compute complete	0.037938	3	
-Gradient method with preconditioner	0.21	Compute complete	0.031802	3	
-Gradient method with preconditioner	0.22	Compute complete	0.032223	3	
-Gradient method with preconditioner	0.23	Compute complete	0.031832	3	
-Gradient method with preconditioner	0.24	Compute complete	0.034709	3	
-Gradient method with preconditioner	0.25	Compute complete	0.036912	3	
-Gradient method with preconditioner	0.26	Compute complete	0.032076	3	
-Gradient method with preconditioner	0.27	Compute complete	0.03224	3	
-Gradient method with preconditioner	0.28	Compute complete	0.032476	3	
-Gradient method with preconditioner	0.29	Compute complete	0.032798	3	
-Gradient method with preconditioner	0.3	Compute complete	0.036927	3	
-Gradient method with preconditioner	0.31	Compute complete	0.032283	3	
-Gradient method with preconditioner	0.32	Compute complete	0.036672	3	
-Gradient method with preconditioner	0.33	Compute complete	0.032245	3	
-Gradient method with preconditioner	0.34	Compute complete	0.032342	3	
-Gradient method with preconditioner	0.35	Compute complete	0.032346	3	
-Gradient method with preconditioner	0.36	Compute complete	0.036238	3	
-Gradient method with preconditioner	0.37	Compute complete	0.046871	3	
-Gradient method with preconditioner	0.38	Compute complete	0.03237	3	
-Gradient method with preconditioner	0.39	Compute complete	0.032565	3	
-Gradient method with preconditioner	0.4	Compute complete	0.032313	3	
-Gradient method with preconditioner	0.41	Compute complete	0.036391	3	
-Gradient method with preconditioner	0.42	Compute complete	0.032273	3	
-Gradient method with preconditioner	0.43	Compute complete	0.032426	3	
-Gradient method with preconditioner	0.44	Compute complete	0.032279	3	
-Gradient method with preconditioner	0.45	Compute complete	0.03274	3	
-Gradient method with preconditioner	0.46	Compute complete	0.035574	3	
-Gradient method with preconditioner	0.47	Compute complete	0.036421	3	
-Gradient method with preconditioner	0.48	Compute complete	0.032459	3	
-Gradient method with preconditioner	0.49	Compute complete	0.032526	3	
-Gradient method with preconditioner	0.5	Compute complete	0.032403	3	
-Gradient method with preconditioner	0.51	Compute complete	0.032768	3	
-Gradient method with preconditioner	0.52	Compute complete	0.036257	3	
-Gradient method with preconditioner	0.53	Compute complete	0.032424	3	
-Gradient method with preconditioner	0.54	Compute complete	0.032268	3	
-Gradient method with preconditioner	0.55	Compute complete	0.032412	3	
-Gradient method with preconditioner	0.56	Compute complete	0.032032	3	
-Gradient method with preconditioner	0.57	Compute complete	0.036054	3	
-Gradient method with preconditioner	0.58	Compute complete	0.032278	3	
-Gradient method with preconditioner	0.59	Compute complete	0.032033	3	
-Gradient method with preconditioner	0.6	Compute complete	0.032964	3	
-Gradient method with preconditioner	0.61	Compute complete	0.032542	3	
-Gradient method with preconditioner	0.62	Compute complete	0.035995	3	
-Gradient method with preconditioner	0.63	Compute complete	0.032513	3	
-Gradient method with preconditioner	0.64	Compute complete	0.032397	3	
-Gradient method with preconditioner	0.65	Compute complete	0.032326	3	
-Gradient method with preconditioner	0.66	Compute complete	0.032405	3	
-Gradient method with preconditioner	0.67	Compute complete	0.03306	3	
-Gradient method with preconditioner	0.68	Compute complete	0.036343	3	
-Gradient method with preconditioner	0.69	Compute complete	0.066074	3	
-Gradient method with preconditioner	0.7	Compute complete	0.05146	3	
-Gradient method with preconditioner	0.71	Compute complete	0.048409	3	
-Gradient method with preconditioner	0.72	Compute complete	0.056153	3	
-Gradient method with preconditioner	0.73	Compute complete	0.063361	3	
-Gradient method with preconditioner	0.74	Compute complete	0.056305	3	
-Gradient method with preconditioner	0.75	Compute complete	0.056891	3	
-Gradient method with preconditioner	0.76	Compute complete	0.054021	3	
-Gradient method with preconditioner	0.77	Compute complete	0.05868	3	
-Gradient method with preconditioner	0.78	Compute complete	0.05134	3	
-Gradient method with preconditioner	0.79	Compute complete	0.033008	3	
-Gradient method with preconditioner	0.8	Compute complete	0.034585	3	
-Gradient method with preconditioner	0.81	Compute complete	0.032387	3	
-Gradient method with preconditioner	0.82	Compute complete	0.047026	3	
-Gradient method with preconditioner	0.83	Compute complete	0.036837	3	
-Gradient method with preconditioner	0.84	Compute complete	0.039665	3	
-Gradient method with preconditioner	0.85	Compute complete	0.037784	3	
-Gradient method with preconditioner	0.86	Compute complete	0.032878	3	
-Gradient method with preconditioner	0.87	Compute complete	0.033102	3	
-Gradient method with preconditioner	0.88	Compute complete	0.033002	3	
-Gradient method with preconditioner	0.89	Compute complete	0.037398	3	
-Gradient method with preconditioner	0.9	Compute complete	0.03337	3	
-Gradient method with preconditioner	0.91	Compute complete	0.03315	3	
-Gradient method with preconditioner	0.92	Compute complete	0.033518	3	
-Gradient method with preconditioner	0.93	Compute complete	0.034049	3	
-Gradient method with preconditioner	0.94	Compute complete	0.055356	3	
-Gradient method with preconditioner	0.95	Compute complete	0.032373	3	
-Gradient method with preconditioner	0.96	Compute complete	0.032488	3	
-Gradient method with preconditioner	0.97	Compute complete	0.032299	3	
-Gradient method with preconditioner	0.98	Compute complete	0.032558	3	
-Gradient method with preconditioner	0.99	Compute complete	0.036568	3	
-Gradient method with preconditioner	1	Compute complete	0.036159	3	
-Gradient method with preconditioner	1.01	Compute complete	0.03245	3	
-Gradient method with preconditioner	1.02	Compute complete	0.032292	3	
-Gradient method with preconditioner	1.03	Compute complete	0.032039	3	
-Gradient method with preconditioner	1.04	Compute complete	0.032233	3	
-Gradient method with preconditioner	1.05	Compute complete	0.035757	3	
-Gradient method with preconditioner	1.06	Compute complete	0.032422	3	
-Gradient method with preconditioner	1.07	Compute complete	0.0324	3	
-Gradient method with preconditioner	1.08	Compute complete	0.032179	3	
-Gradient method with preconditioner	1.09	Compute complete	0.032293	3	
-Gradient method with preconditioner	1.1	Compute complete	0.035231	3	
-Gradient method with preconditioner	1.11	Compute complete	0.031699	3	
-Gradient method with preconditioner	1.12	Compute complete	0.031916	3	
-Gradient method with preconditioner	1.13	Compute complete	0.032513	3	
-Gradient method with preconditioner	1.14	Compute complete	0.032365	3	
-Gradient method with preconditioner	1.15	Compute complete	0.036332	3	
-Gradient method with preconditioner	1.16	Compute complete	0.036969	3	
-Gradient method with preconditioner	1.17	Compute complete	0.032087	3	
-Gradient method with preconditioner	1.18	Compute complete	0.032372	3	
-Gradient method with preconditioner	1.19	Compute complete	0.032261	3	
-Gradient method with preconditioner	1.2	Compute complete	0.032217	3	
-Gradient method with preconditioner	1.21	Compute complete	0.035949	3	
-Gradient method with preconditioner	1.22	Compute complete	0.032473	3	
-Gradient method with preconditioner	1.23	Compute complete	0.03214	3	
-Gradient method with preconditioner	1.24	Compute complete	0.032274	3	
-Gradient method with preconditioner	1.25	Compute complete	0.03303	3	
-Gradient method with preconditioner	1.26	Compute complete	0.035694	3	
-Gradient method with preconditioner	1.27	Compute complete	0.032286	3	
-Gradient method with preconditioner	1.28	Compute complete	0.032689	3	
-Gradient method with preconditioner	1.29	Compute complete	0.032632	3	
-Gradient method with preconditioner	1.3	Compute complete	0.032467	3	
-Gradient method with preconditioner	1.31	Compute complete	0.032713	3	
-Gradient method with preconditioner	1.32	Compute complete	0.036188	3	
-Gradient method with preconditioner	1.33	Compute complete	0.03221	3	
-Gradient method with preconditioner	1.34	Compute complete	0.032103	3	
-Gradient method with preconditioner	1.35	Compute complete	0.032465	3	
-Gradient method with preconditioner	1.36	Compute complete	0.032207	3	
-Gradient method with preconditioner	1.37	Compute complete	0.035589	3	
-Gradient method with preconditioner	1.38	Compute complete	0.03258	3	
-Gradient method with preconditioner	1.39	Compute complete	0.033328	3	
-Gradient method with preconditioner	1.4	Compute complete	0.051363	3	
-Gradient method with preconditioner	1.41	Compute complete	0.032673	3	
-Gradient method with preconditioner	1.42	Compute complete	0.038657	3	
-Gradient method with preconditioner	1.43	Compute complete	0.041313	3	
-Gradient method with preconditioner	1.44	Compute complete	0.057047	3	
-Gradient method with preconditioner	1.45	Compute complete	0.056746	3	
-Gradient method with preconditioner	1.46	Compute complete	0.033514	3	
-Gradient method with preconditioner	1.47	Compute complete	0.033043	3	
-Gradient method with preconditioner	1.48	Compute complete	0.039613	3	
-Gradient method with preconditioner	1.49	Compute complete	0.045155	3	
-Gradient method with preconditioner	1.5	Compute complete	0.032264	3	
-Gradient method with preconditioner	1.51	Compute complete	0.032664	3	
-Gradient method with preconditioner	1.52	Compute complete	0.048452	3	
-Gradient method with preconditioner	1.53	Compute complete	0.07126	3	
-Gradient method with preconditioner	1.54	Compute complete	0.067196	3	
-Gradient method with preconditioner	1.55	Compute complete	0.064463	3	
-Gradient method with preconditioner	1.56	Compute complete	0.085745	3	
-Gradient method with preconditioner	1.57	Compute complete	0.065156	3	
-Gradient method with preconditioner	1.58	Compute complete	0.075002	3	
-Gradient method with preconditioner	1.59	Compute complete	0.065917	3	
-Gradient method with preconditioner	1.6	Compute complete	0.064693	3	
-Gradient method with preconditioner	1.61	Compute complete	0.065643	3	
-Gradient method with preconditioner	1.62	Compute complete	0.06394	3	
-Gradient method with preconditioner	1.63	Compute complete	0.060309	3	
-Gradient method with preconditioner	1.64	Compute complete	0.041318	3	
-Gradient method with preconditioner	1.65	Compute complete	0.0399	3	
-Gradient method with preconditioner	1.66	Compute complete	0.033533	3	
-Gradient method with preconditioner	1.67	Compute complete	0.033118	3	
-Gradient method with preconditioner	1.68	Compute complete	0.032914	3	
-Gradient method with preconditioner	1.69	Compute complete	0.036764	3	
-Gradient method with preconditioner	1.7	Compute complete	0.033073	3	
-Gradient method with preconditioner	1.71	Compute complete	0.032987	3	
-Gradient method with preconditioner	1.72	Compute complete	0.03289	3	
-Gradient method with preconditioner	1.73	Compute complete	0.032939	3	
-Gradient method with preconditioner	1.74	Compute complete	0.036426	3	
-Gradient method with preconditioner	1.75	Compute complete	0.033129	3	
-Gradient method with preconditioner	1.76	Compute complete	0.044485	3	
-Gradient method with preconditioner	1.77	Compute complete	0.034188	3	
-Gradient method with preconditioner	1.78	Compute complete	0.060191	3	
-Gradient method with preconditioner	1.79	Compute complete	0.037323	3	
-Gradient method with preconditioner	1.8	Compute complete	0.131181	3	
-Gradient method with preconditioner	1.81	Compute complete	0.038456	3	
-Gradient method with preconditioner	1.82	Compute complete	0.050699	3	
-Gradient method with preconditioner	1.83	Compute complete	0.046464	3	
-Gradient method with preconditioner	1.84	Compute complete	0.032754	3	
-Gradient method with preconditioner	1.85	Compute complete	0.065411	3	
-Gradient method with preconditioner	1.86	Compute complete	0.050834	3	
-Gradient method with preconditioner	1.87	Compute complete	0.054346	3	
-Gradient method with preconditioner	1.88	Compute complete	0.061092	3	
-Gradient method with preconditioner	1.89	Compute complete	0.053089	3	
-Gradient method with preconditioner	1.9	Compute complete	0.093885	3	
-Gradient method with preconditioner	1.91	Compute complete	0.059476	3	
-Gradient method with preconditioner	1.92	Compute complete	0.042797	3	
-Gradient method with preconditioner	1.93	Compute complete	0.039131	3	
-Gradient method with preconditioner	1.94	Compute complete	0.049706	3	
-Gradient method with preconditioner	1.95	Compute complete	0.068019	3	
-Gradient method with preconditioner	1.96	Compute complete	0.050688	3	
-Gradient method with preconditioner	1.97	Compute complete	0.041585	3	
-Gradient method with preconditioner	1.98	Compute complete	0.041262	3	
-Gradient method with preconditioner	1.99	Compute complete	0.035811	3	
+       Gradient method without preconditioner	  0.1	    Compute complete	  0.116228	        41	
+       Gradient method without preconditioner	 0.11	    Compute complete	   0.10779	        41	
+       Gradient method without preconditioner	 0.12	    Compute complete	  0.107685	        41	
+       Gradient method without preconditioner	 0.13	    Compute complete	  0.107701	        41	
+       Gradient method without preconditioner	 0.14	    Compute complete	  0.107338	        41	
+       Gradient method without preconditioner	 0.15	    Compute complete	  0.107627	        41	
+       Gradient method without preconditioner	 0.16	    Compute complete	  0.107708	        41	
+       Gradient method without preconditioner	 0.17	    Compute complete	  0.107673	        41	
+       Gradient method without preconditioner	 0.18	    Compute complete	  0.107804	        41	
+       Gradient method without preconditioner	 0.19	    Compute complete	  0.108022	        41	
+       Gradient method without preconditioner	  0.2	    Compute complete	  0.107665	        41	
+       Gradient method without preconditioner	 0.21	    Compute complete	  0.108236	        41	
+       Gradient method without preconditioner	 0.22	    Compute complete	  0.108027	        41	
+       Gradient method without preconditioner	 0.23	    Compute complete	  0.107419	        41	
+       Gradient method without preconditioner	 0.24	    Compute complete	  0.107581	        41	
+       Gradient method without preconditioner	 0.25	    Compute complete	  0.107335	        41	
+       Gradient method without preconditioner	 0.26	    Compute complete	  0.107418	        41	
+       Gradient method without preconditioner	 0.27	    Compute complete	  0.107904	        41	
+       Gradient method without preconditioner	 0.28	    Compute complete	   0.10766	        41	
+       Gradient method without preconditioner	 0.29	    Compute complete	  0.107337	        41	
+       Gradient method without preconditioner	  0.3	    Compute complete	  0.107607	        41	
+       Gradient method without preconditioner	 0.31	    Compute complete	  0.107225	        41	
+       Gradient method without preconditioner	 0.32	    Compute complete	  0.107605	        41	
+       Gradient method without preconditioner	 0.33	    Compute complete	  0.107095	        41	
+       Gradient method without preconditioner	 0.34	    Compute complete	  0.107212	        41	
+       Gradient method without preconditioner	 0.35	    Compute complete	  0.114755	        41	
+       Gradient method without preconditioner	 0.36	    Compute complete	   0.10748	        41	
+       Gradient method without preconditioner	 0.37	    Compute complete	  0.107349	        41	
+       Gradient method without preconditioner	 0.38	    Compute complete	  0.107303	        41	
+       Gradient method without preconditioner	 0.39	    Compute complete	  0.107418	        41	
+       Gradient method without preconditioner	  0.4	    Compute complete	  0.107631	        41	
+       Gradient method without preconditioner	 0.41	    Compute complete	  0.107126	        41	
+       Gradient method without preconditioner	 0.42	    Compute complete	   0.10752	        41	
+       Gradient method without preconditioner	 0.43	    Compute complete	  0.107544	        41	
+       Gradient method without preconditioner	 0.44	    Compute complete	  0.107747	        41	
+       Gradient method without preconditioner	 0.45	    Compute complete	  0.107218	        41	
+       Gradient method without preconditioner	 0.46	    Compute complete	  0.107454	        41	
+       Gradient method without preconditioner	 0.47	    Compute complete	  0.107614	        41	
+       Gradient method without preconditioner	 0.48	    Compute complete	  0.107405	        41	
+       Gradient method without preconditioner	 0.49	    Compute complete	  0.107696	        41	
+       Gradient method without preconditioner	  0.5	    Compute complete	  0.107485	        41	
+       Gradient method without preconditioner	 0.51	    Compute complete	  0.107859	        41	
+       Gradient method without preconditioner	 0.52	    Compute complete	  0.107805	        41	
+       Gradient method without preconditioner	 0.53	    Compute complete	  0.107695	        41	
+       Gradient method without preconditioner	 0.54	    Compute complete	  0.107537	        41	
+       Gradient method without preconditioner	 0.55	    Compute complete	  0.108006	        41	
+       Gradient method without preconditioner	 0.56	    Compute complete	  0.108092	        41	
+       Gradient method without preconditioner	 0.57	    Compute complete	  0.107435	        41	
+       Gradient method without preconditioner	 0.58	    Compute complete	  0.107282	        41	
+       Gradient method without preconditioner	 0.59	    Compute complete	  0.107566	        41	
+       Gradient method without preconditioner	  0.6	    Compute complete	  0.107925	        41	
+       Gradient method without preconditioner	 0.61	    Compute complete	  0.118776	        41	
+       Gradient method without preconditioner	 0.62	    Compute complete	  0.107711	        41	
+       Gradient method without preconditioner	 0.63	    Compute complete	  0.107427	        41	
+       Gradient method without preconditioner	 0.64	    Compute complete	  0.108226	        41	
+       Gradient method without preconditioner	 0.65	    Compute complete	  0.107962	        41	
+       Gradient method without preconditioner	 0.66	    Compute complete	  0.107199	        41	
+       Gradient method without preconditioner	 0.67	    Compute complete	  0.107353	        41	
+       Gradient method without preconditioner	 0.68	    Compute complete	  0.107804	        41	
+       Gradient method without preconditioner	 0.69	    Compute complete	  0.107597	        41	
+       Gradient method without preconditioner	  0.7	    Compute complete	  0.107634	        41	
+       Gradient method without preconditioner	 0.71	    Compute complete	  0.107586	        41	
+       Gradient method without preconditioner	 0.72	    Compute complete	  0.107819	        41	
+       Gradient method without preconditioner	 0.73	    Compute complete	  0.107849	        41	
+       Gradient method without preconditioner	 0.74	    Compute complete	  0.107836	        41	
+       Gradient method without preconditioner	 0.75	    Compute complete	  0.108209	        41	
+       Gradient method without preconditioner	 0.76	    Compute complete	  0.107568	        41	
+       Gradient method without preconditioner	 0.77	    Compute complete	  0.107829	        41	
+       Gradient method without preconditioner	 0.78	    Compute complete	  0.107789	        41	
+       Gradient method without preconditioner	 0.79	    Compute complete	  0.107488	        41	
+       Gradient method without preconditioner	  0.8	    Compute complete	  0.107521	        41	
+       Gradient method without preconditioner	 0.81	    Compute complete	  0.108098	        41	
+       Gradient method without preconditioner	 0.82	    Compute complete	  0.107713	        41	
+       Gradient method without preconditioner	 0.83	    Compute complete	  0.107475	        41	
+       Gradient method without preconditioner	 0.84	    Compute complete	  0.107424	        41	
+       Gradient method without preconditioner	 0.85	    Compute complete	  0.108019	        41	
+       Gradient method without preconditioner	 0.86	    Compute complete	  0.107349	        41	
+       Gradient method without preconditioner	 0.87	    Compute complete	   0.10771	        41	
+       Gradient method without preconditioner	 0.88	    Compute complete	  0.107748	        41	
+       Gradient method without preconditioner	 0.89	    Compute complete	  0.107708	        41	
+       Gradient method without preconditioner	  0.9	    Compute complete	  0.107498	        41	
+       Gradient method without preconditioner	 0.91	    Compute complete	  0.107765	        41	
+       Gradient method without preconditioner	 0.92	    Compute complete	  0.108174	        41	
+       Gradient method without preconditioner	 0.93	    Compute complete	  0.107687	        41	
+       Gradient method without preconditioner	 0.94	    Compute complete	  0.107557	        41	
+       Gradient method without preconditioner	 0.95	    Compute complete	  0.107961	        41	
+       Gradient method without preconditioner	 0.96	    Compute complete	  0.107802	        41	
+       Gradient method without preconditioner	 0.97	    Compute complete	  0.108023	        41	
+       Gradient method without preconditioner	 0.98	    Compute complete	  0.107558	        41	
+       Gradient method without preconditioner	 0.99	    Compute complete	  0.107677	        41	
+       Gradient method without preconditioner	    1	    Compute complete	  0.107524	        41	
+       Gradient method without preconditioner	 1.01	    Compute complete	  0.107817	        41	
+       Gradient method without preconditioner	 1.02	    Compute complete	  0.107483	        41	
+       Gradient method without preconditioner	 1.03	    Compute complete	  0.108183	        41	
+       Gradient method without preconditioner	 1.04	    Compute complete	  0.107787	        41	
+       Gradient method without preconditioner	 1.05	    Compute complete	  0.107177	        41	
+       Gradient method without preconditioner	 1.06	    Compute complete	  0.107771	        41	
+       Gradient method without preconditioner	 1.07	    Compute complete	  0.107694	        41	
+       Gradient method without preconditioner	 1.08	    Compute complete	  0.108023	        41	
+       Gradient method without preconditioner	 1.09	    Compute complete	  0.107249	        41	
+       Gradient method without preconditioner	  1.1	    Compute complete	  0.107598	        41	
+       Gradient method without preconditioner	 1.11	    Compute complete	  0.107435	        41	
+       Gradient method without preconditioner	 1.12	    Compute complete	  0.107857	        41	
+       Gradient method without preconditioner	 1.13	    Compute complete	  0.109828	        41	
+       Gradient method without preconditioner	 1.14	    Compute complete	  0.108584	        41	
+       Gradient method without preconditioner	 1.15	    Compute complete	  0.108042	        41	
+       Gradient method without preconditioner	 1.16	    Compute complete	  0.108091	        41	
+       Gradient method without preconditioner	 1.17	    Compute complete	  0.141189	        41	
+       Gradient method without preconditioner	 1.18	    Compute complete	  0.107736	        41	
+       Gradient method without preconditioner	 1.19	    Compute complete	  0.118678	        41	
+       Gradient method without preconditioner	  1.2	    Compute complete	  0.107886	        41	
+       Gradient method without preconditioner	 1.21	    Compute complete	   0.11472	        41	
+       Gradient method without preconditioner	 1.22	    Compute complete	  0.147359	        41	
+       Gradient method without preconditioner	 1.23	    Compute complete	  0.107693	        41	
+       Gradient method without preconditioner	 1.24	    Compute complete	  0.107806	        41	
+       Gradient method without preconditioner	 1.25	    Compute complete	  0.107795	        41	
+       Gradient method without preconditioner	 1.26	    Compute complete	  0.107647	        41	
+       Gradient method without preconditioner	 1.27	    Compute complete	  0.107422	        41	
+       Gradient method without preconditioner	 1.28	    Compute complete	  0.108237	        41	
+       Gradient method without preconditioner	 1.29	    Compute complete	  0.107586	        41	
+       Gradient method without preconditioner	  1.3	    Compute complete	  0.107561	        41	
+       Gradient method without preconditioner	 1.31	    Compute complete	  0.107288	        41	
+       Gradient method without preconditioner	 1.32	    Compute complete	  0.107421	        41	
+       Gradient method without preconditioner	 1.33	    Compute complete	  0.107799	        41	
+       Gradient method without preconditioner	 1.34	    Compute complete	  0.107844	        41	
+       Gradient method without preconditioner	 1.35	    Compute complete	  0.107475	        41	
+       Gradient method without preconditioner	 1.36	    Compute complete	  0.119709	        41	
+       Gradient method without preconditioner	 1.37	    Compute complete	  0.108042	        41	
+       Gradient method without preconditioner	 1.38	    Compute complete	  0.107857	        41	
+       Gradient method without preconditioner	 1.39	    Compute complete	  0.169367	        41	
+       Gradient method without preconditioner	  1.4	    Compute complete	  0.184786	        41	
+       Gradient method without preconditioner	 1.41	    Compute complete	  0.184382	        41	
+       Gradient method without preconditioner	 1.42	    Compute complete	  0.176596	        41	
+       Gradient method without preconditioner	 1.43	    Compute complete	  0.170406	        41	
+       Gradient method without preconditioner	 1.44	    Compute complete	  0.162349	        41	
+       Gradient method without preconditioner	 1.45	    Compute complete	  0.122098	        41	
+       Gradient method without preconditioner	 1.46	    Compute complete	  0.107347	        41	
+       Gradient method without preconditioner	 1.47	    Compute complete	  0.107409	        41	
+       Gradient method without preconditioner	 1.48	    Compute complete	  0.107418	        41	
+       Gradient method without preconditioner	 1.49	    Compute complete	  0.107521	        41	
+       Gradient method without preconditioner	  1.5	    Compute complete	  0.107671	        41	
+       Gradient method without preconditioner	 1.51	    Compute complete	  0.107585	        41	
+       Gradient method without preconditioner	 1.52	    Compute complete	  0.107812	        41	
+       Gradient method without preconditioner	 1.53	    Compute complete	  0.107577	        41	
+       Gradient method without preconditioner	 1.54	    Compute complete	  0.107899	        41	
+       Gradient method without preconditioner	 1.55	    Compute complete	  0.107372	        41	
+       Gradient method without preconditioner	 1.56	    Compute complete	  0.107509	        41	
+       Gradient method without preconditioner	 1.57	    Compute complete	  0.107175	        41	
+       Gradient method without preconditioner	 1.58	    Compute complete	    0.1077	        41	
+       Gradient method without preconditioner	 1.59	    Compute complete	  0.107538	        41	
+       Gradient method without preconditioner	  1.6	    Compute complete	  0.107499	        41	
+       Gradient method without preconditioner	 1.61	    Compute complete	  0.107543	        41	
+       Gradient method without preconditioner	 1.62	    Compute complete	  0.107514	        41	
+       Gradient method without preconditioner	 1.63	    Compute complete	  0.107641	        41	
+       Gradient method without preconditioner	 1.64	    Compute complete	  0.107516	        41	
+       Gradient method without preconditioner	 1.65	    Compute complete	  0.107214	        41	
+       Gradient method without preconditioner	 1.66	    Compute complete	  0.106983	        41	
+       Gradient method without preconditioner	 1.67	    Compute complete	  0.107285	        41	
+       Gradient method without preconditioner	 1.68	    Compute complete	  0.107181	        41	
+       Gradient method without preconditioner	 1.69	    Compute complete	  0.107527	        41	
+       Gradient method without preconditioner	  1.7	    Compute complete	  0.117532	        41	
+       Gradient method without preconditioner	 1.71	    Compute complete	   0.10744	        41	
+       Gradient method without preconditioner	 1.72	    Compute complete	  0.107286	        41	
+       Gradient method without preconditioner	 1.73	    Compute complete	  0.107373	        41	
+       Gradient method without preconditioner	 1.74	    Compute complete	  0.106994	        41	
+       Gradient method without preconditioner	 1.75	    Compute complete	  0.107588	        41	
+       Gradient method without preconditioner	 1.76	    Compute complete	  0.107809	        41	
+       Gradient method without preconditioner	 1.77	    Compute complete	  0.107999	        41	
+       Gradient method without preconditioner	 1.78	    Compute complete	  0.107869	        41	
+       Gradient method without preconditioner	 1.79	    Compute complete	  0.107462	        41	
+       Gradient method without preconditioner	  1.8	    Compute complete	  0.107214	        41	
+       Gradient method without preconditioner	 1.81	    Compute complete	  0.107681	        41	
+       Gradient method without preconditioner	 1.82	    Compute complete	  0.107432	        41	
+       Gradient method without preconditioner	 1.83	    Compute complete	  0.107416	        41	
+       Gradient method without preconditioner	 1.84	    Compute complete	  0.107614	        41	
+       Gradient method without preconditioner	 1.85	    Compute complete	  0.107702	        41	
+       Gradient method without preconditioner	 1.86	    Compute complete	  0.108119	        41	
+       Gradient method without preconditioner	 1.87	    Compute complete	  0.107727	        41	
+       Gradient method without preconditioner	 1.88	    Compute complete	  0.107655	        41	
+       Gradient method without preconditioner	 1.89	    Compute complete	  0.107375	        41	
+       Gradient method without preconditioner	  1.9	    Compute complete	  0.107627	        41	
+       Gradient method without preconditioner	 1.91	    Compute complete	  0.107607	        41	
+       Gradient method without preconditioner	 1.92	    Compute complete	  0.107373	        41	
+       Gradient method without preconditioner	 1.93	    Compute complete	  0.107626	        41	
+       Gradient method without preconditioner	 1.94	    Compute complete	  0.107438	        41	
+       Gradient method without preconditioner	 1.95	    Compute complete	  0.107655	        41	
+       Gradient method without preconditioner	 1.96	    Compute complete	  0.107257	        41	
+       Gradient method without preconditioner	 1.97	    Compute complete	  0.107644	        41	
+       Gradient method without preconditioner	 1.98	    Compute complete	  0.108253	        41	
+       Gradient method without preconditioner	 1.99	    Compute complete	   0.10816	        41	
+          Gradient method with preconditioner	  0.1	    Compute complete	  0.088925	         2	
+          Gradient method with preconditioner	 0.11	    Compute complete	  0.032856	         2	
+          Gradient method with preconditioner	 0.12	    Compute complete	  0.028477	         2	
+          Gradient method with preconditioner	 0.13	    Compute complete	  0.026969	         2	
+          Gradient method with preconditioner	 0.14	    Compute complete	  0.027323	         2	
+          Gradient method with preconditioner	 0.15	    Compute complete	   0.03431	         2	
+          Gradient method with preconditioner	 0.16	    Compute complete	  0.026359	         2	
+          Gradient method with preconditioner	 0.17	    Compute complete	  0.030025	         2	
+          Gradient method with preconditioner	 0.18	    Compute complete	  0.026984	         2	
+          Gradient method with preconditioner	 0.19	    Compute complete	  0.026762	         2	
+          Gradient method with preconditioner	  0.2	    Compute complete	  0.027199	         2	
+          Gradient method with preconditioner	 0.21	    Compute complete	  0.026772	         2	
+          Gradient method with preconditioner	 0.22	    Compute complete	  0.026277	         2	
+          Gradient method with preconditioner	 0.23	    Compute complete	   0.02807	         2	
+          Gradient method with preconditioner	 0.24	    Compute complete	  0.033092	         2	
+          Gradient method with preconditioner	 0.25	    Compute complete	  0.029225	         2	
+          Gradient method with preconditioner	 0.26	    Compute complete	  0.026798	         2	
+          Gradient method with preconditioner	 0.27	    Compute complete	  0.027879	         2	
+          Gradient method with preconditioner	 0.28	    Compute complete	  0.026523	         2	
+          Gradient method with preconditioner	 0.29	    Compute complete	   0.03331	         2	
+          Gradient method with preconditioner	  0.3	    Compute complete	  0.026796	         2	
+          Gradient method with preconditioner	 0.31	    Compute complete	  0.026762	         2	
+          Gradient method with preconditioner	 0.32	    Compute complete	  0.029847	         2	
+          Gradient method with preconditioner	 0.33	    Compute complete	  0.029852	         2	
+          Gradient method with preconditioner	 0.34	    Compute complete	  0.026952	         2	
+          Gradient method with preconditioner	 0.35	    Compute complete	  0.026703	         2	
+          Gradient method with preconditioner	 0.36	    Compute complete	  0.026672	         2	
+          Gradient method with preconditioner	 0.37	    Compute complete	   0.02698	         2	
+          Gradient method with preconditioner	 0.38	    Compute complete	  0.033748	         2	
+          Gradient method with preconditioner	 0.39	    Compute complete	  0.026711	         2	
+          Gradient method with preconditioner	  0.4	    Compute complete	   0.02673	         2	
+          Gradient method with preconditioner	 0.41	    Compute complete	  0.031751	         2	
+          Gradient method with preconditioner	 0.42	    Compute complete	  0.026543	         2	
+          Gradient method with preconditioner	 0.43	    Compute complete	  0.027079	         2	
+          Gradient method with preconditioner	 0.44	    Compute complete	  0.026669	         2	
+          Gradient method with preconditioner	 0.45	    Compute complete	  0.026533	         2	
+          Gradient method with preconditioner	 0.46	    Compute complete	  0.029865	         2	
+          Gradient method with preconditioner	 0.47	    Compute complete	  0.033225	         2	
+          Gradient method with preconditioner	 0.48	    Compute complete	  0.026927	         2	
+          Gradient method with preconditioner	 0.49	    Compute complete	  0.029431	         2	
+          Gradient method with preconditioner	  0.5	    Compute complete	  0.028041	         2	
+          Gradient method with preconditioner	 0.51	    Compute complete	  0.026747	         2	
+          Gradient method with preconditioner	 0.52	    Compute complete	  0.027517	         2	
+          Gradient method with preconditioner	 0.53	    Compute complete	  0.026744	         2	
+          Gradient method with preconditioner	 0.54	    Compute complete	  0.026684	         2	
+          Gradient method with preconditioner	 0.55	    Compute complete	  0.028053	         2	
+          Gradient method with preconditioner	 0.56	    Compute complete	  0.035675	         2	
+          Gradient method with preconditioner	 0.57	    Compute complete	  0.029234	         2	
+          Gradient method with preconditioner	 0.58	    Compute complete	  0.026938	         2	
+          Gradient method with preconditioner	 0.59	    Compute complete	  0.028199	         2	
+          Gradient method with preconditioner	  0.6	    Compute complete	   0.02659	         2	
+          Gradient method with preconditioner	 0.61	    Compute complete	  0.033729	         2	
+          Gradient method with preconditioner	 0.62	    Compute complete	   0.02652	         2	
+          Gradient method with preconditioner	 0.63	    Compute complete	  0.026433	         2	
+          Gradient method with preconditioner	 0.64	    Compute complete	    0.0273	         2	
+          Gradient method with preconditioner	 0.65	    Compute complete	  0.028822	         2	
+          Gradient method with preconditioner	 0.66	    Compute complete	  0.026655	         2	
+          Gradient method with preconditioner	 0.67	    Compute complete	  0.027074	         2	
+          Gradient method with preconditioner	 0.68	    Compute complete	  0.027265	         2	
+          Gradient method with preconditioner	 0.69	    Compute complete	  0.026295	         2	
+          Gradient method with preconditioner	  0.7	    Compute complete	  0.033524	         2	
+          Gradient method with preconditioner	 0.71	    Compute complete	  0.026727	         2	
+          Gradient method with preconditioner	 0.72	    Compute complete	  0.026831	         2	
+          Gradient method with preconditioner	 0.73	    Compute complete	  0.030955	         2	
+          Gradient method with preconditioner	 0.74	    Compute complete	  0.026618	         2	
+          Gradient method with preconditioner	 0.75	    Compute complete	  0.029903	         2	
+          Gradient method with preconditioner	 0.76	    Compute complete	  0.026785	         2	
+          Gradient method with preconditioner	 0.77	    Compute complete	  0.027309	         2	
+          Gradient method with preconditioner	 0.78	    Compute complete	  0.026756	         2	
+          Gradient method with preconditioner	 0.79	    Compute complete	  0.033727	         2	
+          Gradient method with preconditioner	  0.8	    Compute complete	  0.026649	         2	
+          Gradient method with preconditioner	 0.81	    Compute complete	  0.028896	         2	
+          Gradient method with preconditioner	 0.82	    Compute complete	  0.028041	         2	
+          Gradient method with preconditioner	 0.83	    Compute complete	  0.026642	         2	
+          Gradient method with preconditioner	 0.84	    Compute complete	  0.027021	         2	
+          Gradient method with preconditioner	 0.85	    Compute complete	  0.026644	         2	
+          Gradient method with preconditioner	 0.86	    Compute complete	  0.026615	         2	
+          Gradient method with preconditioner	 0.87	    Compute complete	  0.031189	         2	
+          Gradient method with preconditioner	 0.88	    Compute complete	  0.033395	         2	
+          Gradient method with preconditioner	 0.89	    Compute complete	  0.029193	         2	
+          Gradient method with preconditioner	  0.9	    Compute complete	  0.027102	         2	
+          Gradient method with preconditioner	 0.91	    Compute complete	  0.026651	         2	
+          Gradient method with preconditioner	 0.92	    Compute complete	  0.026754	         2	
+          Gradient method with preconditioner	 0.93	    Compute complete	    0.0326	         2	
+          Gradient method with preconditioner	 0.94	    Compute complete	   0.02852	         2	
+          Gradient method with preconditioner	 0.95	    Compute complete	  0.026756	         2	
+          Gradient method with preconditioner	 0.96	    Compute complete	  0.026786	         2	
+          Gradient method with preconditioner	 0.97	    Compute complete	  0.029395	         2	
+          Gradient method with preconditioner	 0.98	    Compute complete	  0.026501	         2	
+          Gradient method with preconditioner	 0.99	    Compute complete	  0.026684	         2	
+          Gradient method with preconditioner	    1	    Compute complete	  0.026702	         2	
+          Gradient method with preconditioner	 1.01	    Compute complete	  0.026932	         2	
+          Gradient method with preconditioner	 1.02	    Compute complete	  0.033419	         2	
+          Gradient method with preconditioner	 1.03	    Compute complete	  0.026679	         2	
+          Gradient method with preconditioner	 1.04	    Compute complete	  0.026624	         2	
+          Gradient method with preconditioner	 1.05	    Compute complete	  0.030862	         2	
+          Gradient method with preconditioner	 1.06	    Compute complete	  0.026641	         2	
+          Gradient method with preconditioner	 1.07	    Compute complete	  0.027094	         2	
+          Gradient method with preconditioner	 1.08	    Compute complete	  0.026706	         2	
+          Gradient method with preconditioner	 1.09	    Compute complete	  0.026743	         2	
+          Gradient method with preconditioner	  1.1	    Compute complete	  0.026794	         2	
+          Gradient method with preconditioner	 1.11	    Compute complete	   0.03388	         2	
+          Gradient method with preconditioner	 1.12	    Compute complete	  0.026824	         2	
+          Gradient method with preconditioner	 1.13	    Compute complete	   0.02917	         2	
+          Gradient method with preconditioner	 1.14	    Compute complete	  0.027864	         2	
+          Gradient method with preconditioner	 1.15	    Compute complete	  0.029889	         2	
+          Gradient method with preconditioner	 1.16	    Compute complete	  0.026907	         2	
+          Gradient method with preconditioner	 1.17	    Compute complete	  0.026975	         2	
+          Gradient method with preconditioner	 1.18	    Compute complete	  0.027027	         2	
+          Gradient method with preconditioner	 1.19	    Compute complete	   0.02791	         2	
+          Gradient method with preconditioner	  1.2	    Compute complete	  0.033629	         2	
+          Gradient method with preconditioner	 1.21	    Compute complete	  0.029218	         2	
+          Gradient method with preconditioner	 1.22	    Compute complete	  0.026598	         2	
+          Gradient method with preconditioner	 1.23	    Compute complete	  0.028086	         2	
+          Gradient method with preconditioner	 1.24	    Compute complete	  0.026779	         2	
+          Gradient method with preconditioner	 1.25	    Compute complete	  0.033532	         2	
+          Gradient method with preconditioner	 1.26	    Compute complete	  0.026614	         2	
+          Gradient method with preconditioner	 1.27	    Compute complete	  0.026538	         2	
+          Gradient method with preconditioner	 1.28	    Compute complete	  0.037035	         2	
+          Gradient method with preconditioner	 1.29	    Compute complete	  0.029658	         2	
+          Gradient method with preconditioner	  1.3	    Compute complete	  0.027216	         2	
+          Gradient method with preconditioner	 1.31	    Compute complete	  0.026758	         2	
+          Gradient method with preconditioner	 1.32	    Compute complete	   0.03006	         2	
+          Gradient method with preconditioner	 1.33	    Compute complete	  0.026717	         2	
+          Gradient method with preconditioner	 1.34	    Compute complete	  0.033628	         2	
+          Gradient method with preconditioner	 1.35	    Compute complete	  0.027004	         2	
+          Gradient method with preconditioner	 1.36	    Compute complete	  0.026804	         2	
+          Gradient method with preconditioner	 1.37	    Compute complete	  0.038237	         2	
+          Gradient method with preconditioner	 1.38	    Compute complete	  0.027064	         2	
+          Gradient method with preconditioner	 1.39	    Compute complete	  0.027241	         2	
+          Gradient method with preconditioner	  1.4	    Compute complete	  0.027461	         2	
+          Gradient method with preconditioner	 1.41	    Compute complete	  0.026787	         2	
+          Gradient method with preconditioner	 1.42	    Compute complete	  0.027017	         2	
+          Gradient method with preconditioner	 1.43	    Compute complete	  0.036837	         2	
+          Gradient method with preconditioner	 1.44	    Compute complete	  0.027045	         2	
+          Gradient method with preconditioner	 1.45	    Compute complete	  0.029094	         2	
+          Gradient method with preconditioner	 1.46	    Compute complete	  0.028223	         2	
+          Gradient method with preconditioner	 1.47	    Compute complete	  0.026586	         2	
+          Gradient method with preconditioner	 1.48	    Compute complete	  0.026851	         2	
+          Gradient method with preconditioner	 1.49	    Compute complete	  0.026784	         2	
+          Gradient method with preconditioner	  1.5	    Compute complete	  0.026728	         2	
+          Gradient method with preconditioner	 1.51	    Compute complete	  0.027723	         2	
+          Gradient method with preconditioner	 1.52	    Compute complete	  0.033224	         2	
+          Gradient method with preconditioner	 1.53	    Compute complete	  0.029505	         2	
+          Gradient method with preconditioner	 1.54	    Compute complete	  0.026675	         2	
+          Gradient method with preconditioner	 1.55	    Compute complete	  0.027912	         2	
+          Gradient method with preconditioner	 1.56	    Compute complete	  0.026768	         2	
+          Gradient method with preconditioner	 1.57	    Compute complete	  0.033096	         2	
+          Gradient method with preconditioner	 1.58	    Compute complete	  0.026772	         2	
+          Gradient method with preconditioner	 1.59	    Compute complete	  0.026621	         2	
+          Gradient method with preconditioner	  1.6	    Compute complete	   0.02821	         2	
+          Gradient method with preconditioner	 1.61	    Compute complete	  0.029187	         2	
+          Gradient method with preconditioner	 1.62	    Compute complete	  0.026989	         2	
+          Gradient method with preconditioner	 1.63	    Compute complete	  0.026895	         2	
+          Gradient method with preconditioner	 1.64	    Compute complete	  0.026904	         2	
+          Gradient method with preconditioner	 1.65	    Compute complete	  0.026579	         2	
+          Gradient method with preconditioner	 1.66	    Compute complete	  0.034575	         2	
+          Gradient method with preconditioner	 1.67	    Compute complete	  0.026573	         2	
+          Gradient method with preconditioner	 1.68	    Compute complete	  0.028696	         2	
+          Gradient method with preconditioner	 1.69	    Compute complete	  0.031227	         2	
+          Gradient method with preconditioner	  1.7	    Compute complete	  0.026409	         2	
+          Gradient method with preconditioner	 1.71	    Compute complete	  0.026934	         2	
+          Gradient method with preconditioner	 1.72	    Compute complete	  0.026666	         2	
+          Gradient method with preconditioner	 1.73	    Compute complete	  0.026577	         2	
+          Gradient method with preconditioner	 1.74	    Compute complete	  0.026628	         2	
+          Gradient method with preconditioner	 1.75	    Compute complete	  0.033603	         2	
+          Gradient method with preconditioner	 1.76	    Compute complete	  0.026549	         2	
+          Gradient method with preconditioner	 1.77	    Compute complete	   0.02905	         2	
+          Gradient method with preconditioner	 1.78	    Compute complete	   0.02779	         2	
+          Gradient method with preconditioner	 1.79	    Compute complete	  0.027126	         2	
+          Gradient method with preconditioner	  1.8	    Compute complete	  0.027018	         2	
+          Gradient method with preconditioner	 1.81	    Compute complete	  0.026535	         2	
+          Gradient method with preconditioner	 1.82	    Compute complete	  0.026638	         2	
+          Gradient method with preconditioner	 1.83	    Compute complete	   0.02797	         2	
+          Gradient method with preconditioner	 1.84	    Compute complete	  0.032942	         2	
+          Gradient method with preconditioner	 1.85	    Compute complete	  0.029138	         2	
+          Gradient method with preconditioner	 1.86	    Compute complete	  0.026877	         2	
+          Gradient method with preconditioner	 1.87	    Compute complete	  0.028141	         2	
+          Gradient method with preconditioner	 1.88	    Compute complete	  0.026654	         2	
+          Gradient method with preconditioner	 1.89	    Compute complete	  0.045361	         2	
+          Gradient method with preconditioner	  1.9	    Compute complete	  0.035684	         2	
+          Gradient method with preconditioner	 1.91	    Compute complete	   0.02677	         2	
+          Gradient method with preconditioner	 1.92	    Compute complete	  0.028278	         2	
+          Gradient method with preconditioner	 1.93	    Compute complete	  0.029237	         2	
+          Gradient method with preconditioner	 1.94	    Compute complete	  0.026817	         2	
+          Gradient method with preconditioner	 1.95	    Compute complete	  0.027118	         2	
+          Gradient method with preconditioner	 1.96	    Compute complete	  0.026617	         2	
+          Gradient method with preconditioner	 1.97	    Compute complete	  0.026572	         2	
+          Gradient method with preconditioner	 1.98	    Compute complete	  0.033499	         2	
+          Gradient method with preconditioner	 1.99	    Compute complete	  0.026531	         2	

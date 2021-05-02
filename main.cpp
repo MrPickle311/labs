@@ -49,6 +49,71 @@ TestData start_benchmark(Solver* solver,
     return data;
 }
 
+
+//test dla jacobiego w najbiedniejszej wersji
+std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,
+                                                           double norm_precision,
+                                                           double min_relax_value  = 0.99 ,
+                                                           double max_relax_value = 1.01,
+                                                           double timeout = 0.1)
+{
+    std::vector<TestData> data;
+
+    //without dynamic relax
+    JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_};
+    data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision,timeout));
+    
+
+    //with dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
+    }
+
+    return data;
+}
+
+std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,
+                                                                 double min_relax_value  = 0.99 ,
+                                                                 double max_relax_value = 1.01,
+                                                                 double timeout = 0.1)
+{
+    std::vector<TestData> data;
+
+    //without dynamic relax
+    GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_};
+    data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision,timeout));
+
+    //with dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,timeout,true,relax));
+    }
+
+    return data;
+}
+
+//MINRES przy wykorzystaniu gaussa-seidla oraz jacobiego
+std::vector<TestData> MINRES_benchmark_set(EquationPackage const& pack,
+                                                           double norm_precision,
+                                                           double min_relax_value  = 0.99 ,
+                                                           double max_relax_value = 1.01,
+                                                           double timeout = 0.1)
+{
+    std::vector<TestData> data;
+
+    //with dynamic relax
+    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    {
+        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
+        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
+    }
+
+    return data;
+}
+
 std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,
                                              double norm_precision,
                                              double min_relax_value  = 0.99 ,
@@ -74,72 +139,23 @@ std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,
     return data;
 }
 
-std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,
-                                                           double norm_precision,
-                                                           double min_relax_value  = 0.99 ,
-                                                           double max_relax_value = 1.01,
-                                                           double timeout = 0.1)
-{
-    std::vector<TestData> data;
-
-    //without dynamic relax
-    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
-    {
-        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision,timeout));
-    }
-
-    //with dynamic relax
-    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
-    {
-        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
-    }
-
-    return data;
-}
-
-std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,
-                                                                 double min_relax_value  = 0.99 ,
-                                                                 double max_relax_value = 1.01,
-                                                                 double timeout = 0.1)
-{
-    std::vector<TestData> data;
-
-    //without dynamic relax
-    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
-    {
-        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_};
-        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision,timeout));
-    }
-
-    //with dynamic relax
-    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
-    {
-        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,timeout,true,relax));
-    }
-
-    return data;
-}
-
 std::string parse_test_data(TestData const& data)
 {
     std::string str_data;
     std::ostringstream str{str_data};
     
-    str << data.name_ << '\t';//1
+    str << std::setw(45) << data.name_  << '\t';//1
 
-    str << data.start_relax_ << '\t';//4
+    str << std::setw(5) << data.start_relax_ << '\t';//4
     
     if(data.timeout_occured)//5
-        str << "Timeout occured!" << '\t';
-    else str <<"Compute complete" << '\t';
+        str << std::setw(20) << "Timeout occured!" << '\t';
+    else str << std::setw(20) << "Compute complete" << '\t';
     
     
 
-    str <<  data.time_ << '\t';//6
-    str <<  data.iterations_ << '\t';
+    str << std::setw(10) << data.time_ << '\t';//6
+    str << std::setw(10) << data.iterations_ << '\t';
 
     str << '\n';
     
@@ -182,9 +198,16 @@ int main()
     std::cout << pack.cooficient_matrix_ << std::endl; 
     std::cout << pack.right_side_vector_ << std::endl;
 
-    double norm_precision = 0.0000000000000001;//norma 
+    double norm_precision = 0.000001;//norma różnicy wektorów rozwiązań obecnego i porzedniego
+    //czyli przykładowo mamy jakiś obecny wektor rozwiązań [x1,x2,...]
+    //odkładamy ,go do zmiennej temp
+    //obliczamy nowy wetkor rozwiązań [y1,y2,...]
+    //liczymy różnicę z = [x1-y1,x2-y2,...]
+    //obliczamy normę z wektora z
+    //i jeśli jego norma jest mniejsza od zadanej ,to przerywamy obliczenia
 
     std::vector<TestData>  jacobi_set {jacobi_benchmark_set(pack,norm_precision,0.1,2.0)};
+    
     std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,0.1,2.0)};
     std::vector<TestData>  gradient_set {gradient_benchmark_set(pack,norm_precision,0.1,2.0)};
 
@@ -205,7 +228,7 @@ int main()
     generateReport(jacobi_dat,save_dir / "jacobi_report.txt");
     generateReport(gauss_dat,save_dir / "gauss_report.txt");
     generateReport(gradient_dat,save_dir / "gradient_report.txt");
-
+    
 
 
 
@@ -232,4 +255,5 @@ int main()
     generateReport(gradient_dat2,save_dir / "gradient_report2.txt");
 
     return 0;
+    
 }

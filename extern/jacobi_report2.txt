@@ -1,380 +1,191 @@
-Jacobi method without dynamic relax	1	Compute complete	363.106	3274	
-Jacobi method without dynamic relax	1	Compute complete	364.186	3274	
-Jacobi method without dynamic relax	1	Compute complete	370.627	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.544	3274	
-Jacobi method without dynamic relax	1	Compute complete	368.342	3274	
-Jacobi method without dynamic relax	1	Compute complete	382.163	3274	
-Jacobi method without dynamic relax	1	Compute complete	367.078	3274	
-Jacobi method without dynamic relax	1	Compute complete	372.352	3274	
-Jacobi method without dynamic relax	1	Compute complete	372.616	3274	
-Jacobi method without dynamic relax	1	Compute complete	362.637	3274	
-Jacobi method without dynamic relax	1	Compute complete	370.659	3274	
-Jacobi method without dynamic relax	1	Compute complete	352.306	3274	
-Jacobi method without dynamic relax	1	Compute complete	358.492	3274	
-Jacobi method without dynamic relax	1	Compute complete	363.679	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.398	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.869	3274	
-Jacobi method without dynamic relax	1	Compute complete	353.434	3274	
-Jacobi method without dynamic relax	1	Compute complete	350.29	3274	
-Jacobi method without dynamic relax	1	Compute complete	351.071	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.509	3274	
-Jacobi method without dynamic relax	1	Compute complete	358.693	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.034	3274	
-Jacobi method without dynamic relax	1	Compute complete	352.299	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.523	3274	
-Jacobi method without dynamic relax	1	Compute complete	393.711	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.045	3274	
-Jacobi method without dynamic relax	1	Compute complete	358.002	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.181	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.999	3274	
-Jacobi method without dynamic relax	1	Compute complete	362.147	3274	
-Jacobi method without dynamic relax	1	Compute complete	369.413	3274	
-Jacobi method without dynamic relax	1	Compute complete	420.669	3274	
-Jacobi method without dynamic relax	1	Compute complete	418.943	3274	
-Jacobi method without dynamic relax	1	Compute complete	519.072	3274	
-Jacobi method without dynamic relax	1	Compute complete	405.538	3274	
-Jacobi method without dynamic relax	1	Compute complete	384.864	3274	
-Jacobi method without dynamic relax	1	Compute complete	412.179	3274	
-Jacobi method without dynamic relax	1	Compute complete	362.695	3274	
-Jacobi method without dynamic relax	1	Compute complete	402.536	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.499	3274	
-Jacobi method without dynamic relax	1	Compute complete	388.055	3274	
-Jacobi method without dynamic relax	1	Compute complete	368.193	3274	
-Jacobi method without dynamic relax	1	Compute complete	398.006	3274	
-Jacobi method without dynamic relax	1	Compute complete	442.118	3274	
-Jacobi method without dynamic relax	1	Compute complete	430.19	3274	
-Jacobi method without dynamic relax	1	Compute complete	368.252	3274	
-Jacobi method without dynamic relax	1	Compute complete	349.445	3274	
-Jacobi method without dynamic relax	1	Compute complete	383.605	3274	
-Jacobi method without dynamic relax	1	Compute complete	390.23	3274	
-Jacobi method without dynamic relax	1	Compute complete	346.99	3274	
-Jacobi method without dynamic relax	1	Compute complete	344.224	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.893	3274	
-Jacobi method without dynamic relax	1	Compute complete	371.069	3274	
-Jacobi method without dynamic relax	1	Compute complete	370.722	3274	
-Jacobi method without dynamic relax	1	Compute complete	425.775	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.495	3274	
-Jacobi method without dynamic relax	1	Compute complete	379.856	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.617	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.705	3274	
-Jacobi method without dynamic relax	1	Compute complete	411.779	3274	
-Jacobi method without dynamic relax	1	Compute complete	341.422	3274	
-Jacobi method without dynamic relax	1	Compute complete	364.742	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.549	3274	
-Jacobi method without dynamic relax	1	Compute complete	360.293	3274	
-Jacobi method without dynamic relax	1	Compute complete	376.526	3274	
-Jacobi method without dynamic relax	1	Compute complete	382.983	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.708	3274	
-Jacobi method without dynamic relax	1	Compute complete	384.002	3274	
-Jacobi method without dynamic relax	1	Compute complete	367.093	3274	
-Jacobi method without dynamic relax	1	Compute complete	331.894	3274	
-Jacobi method without dynamic relax	1	Compute complete	364.834	3274	
-Jacobi method without dynamic relax	1	Compute complete	391.619	3274	
-Jacobi method without dynamic relax	1	Compute complete	430.769	3274	
-Jacobi method without dynamic relax	1	Compute complete	376.676	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.671	3274	
-Jacobi method without dynamic relax	1	Compute complete	383.863	3274	
-Jacobi method without dynamic relax	1	Compute complete	404.8	3274	
-Jacobi method without dynamic relax	1	Compute complete	379.209	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.997	3274	
-Jacobi method without dynamic relax	1	Compute complete	374.23	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.035	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.599	3274	
-Jacobi method without dynamic relax	1	Compute complete	363.314	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.531	3274	
-Jacobi method without dynamic relax	1	Compute complete	388.027	3274	
-Jacobi method without dynamic relax	1	Compute complete	349.56	3274	
-Jacobi method without dynamic relax	1	Compute complete	380.645	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.97	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.644	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.221	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.967	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.375	3274	
-Jacobi method without dynamic relax	1	Compute complete	352.185	3274	
-Jacobi method without dynamic relax	1	Compute complete	392.085	3274	
-Jacobi method without dynamic relax	1	Compute complete	353.338	3274	
-Jacobi method without dynamic relax	1	Compute complete	353.93	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.708	3274	
-Jacobi method without dynamic relax	1	Compute complete	399.717	3274	
-Jacobi method without dynamic relax	1	Compute complete	378.366	3274	
-Jacobi method without dynamic relax	1	Compute complete	370.332	3274	
-Jacobi method without dynamic relax	1	Compute complete	389.359	3274	
-Jacobi method without dynamic relax	1	Compute complete	373.803	3274	
-Jacobi method without dynamic relax	1	Compute complete	383.161	3274	
-Jacobi method without dynamic relax	1	Compute complete	381.939	3274	
-Jacobi method without dynamic relax	1	Compute complete	374.564	3274	
-Jacobi method without dynamic relax	1	Compute complete	390.635	3274	
-Jacobi method without dynamic relax	1	Compute complete	378.983	3274	
-Jacobi method without dynamic relax	1	Compute complete	375.705	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.666	3274	
-Jacobi method without dynamic relax	1	Compute complete	378.403	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.921	3274	
-Jacobi method without dynamic relax	1	Compute complete	375.881	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.774	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.474	3274	
-Jacobi method without dynamic relax	1	Compute complete	405.347	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.433	3274	
-Jacobi method without dynamic relax	1	Compute complete	368.278	3274	
-Jacobi method without dynamic relax	1	Compute complete	384.216	3274	
-Jacobi method without dynamic relax	1	Compute complete	377.033	3274	
-Jacobi method without dynamic relax	1	Compute complete	402.749	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.964	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.145	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.909	3274	
-Jacobi method without dynamic relax	1	Compute complete	367.08	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.692	3274	
-Jacobi method without dynamic relax	1	Compute complete	379.355	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.897	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.448	3274	
-Jacobi method without dynamic relax	1	Compute complete	388.091	3274	
-Jacobi method without dynamic relax	1	Compute complete	360.325	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.106	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.8	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.407	3274	
-Jacobi method without dynamic relax	1	Compute complete	365.635	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.475	3274	
-Jacobi method without dynamic relax	1	Compute complete	360.214	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.019	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.872	3274	
-Jacobi method without dynamic relax	1	Compute complete	374.623	3274	
-Jacobi method without dynamic relax	1	Compute complete	376.797	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.417	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.215	3274	
-Jacobi method without dynamic relax	1	Compute complete	404.714	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.661	3274	
-Jacobi method without dynamic relax	1	Compute complete	401.533	3274	
-Jacobi method without dynamic relax	1	Compute complete	366.092	3274	
-Jacobi method without dynamic relax	1	Compute complete	419.249	3274	
-Jacobi method without dynamic relax	1	Compute complete	383.765	3274	
-Jacobi method without dynamic relax	1	Compute complete	394.755	3274	
-Jacobi method without dynamic relax	1	Compute complete	438.955	3274	
-Jacobi method without dynamic relax	1	Compute complete	429.167	3274	
-Jacobi method without dynamic relax	1	Compute complete	422.038	3274	
-Jacobi method without dynamic relax	1	Compute complete	421.549	3274	
-Jacobi method without dynamic relax	1	Compute complete	358.225	3274	
-Jacobi method without dynamic relax	1	Compute complete	399.038	3274	
-Jacobi method without dynamic relax	1	Compute complete	382.29	3274	
-Jacobi method without dynamic relax	1	Compute complete	403.807	3274	
-Jacobi method without dynamic relax	1	Compute complete	399.185	3274	
-Jacobi method without dynamic relax	1	Compute complete	386.278	3274	
-Jacobi method without dynamic relax	1	Compute complete	358.475	3274	
-Jacobi method without dynamic relax	1	Compute complete	374.685	3274	
-Jacobi method without dynamic relax	1	Compute complete	384.247	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.755	3274	
-Jacobi method without dynamic relax	1	Compute complete	357.979	3274	
-Jacobi method without dynamic relax	1	Compute complete	377.672	3274	
-Jacobi method without dynamic relax	1	Compute complete	375.233	3274	
-Jacobi method without dynamic relax	1	Compute complete	389.618	3274	
-Jacobi method without dynamic relax	1	Compute complete	403.202	3274	
-Jacobi method without dynamic relax	1	Compute complete	390.192	3274	
-Jacobi method without dynamic relax	1	Compute complete	353.671	3274	
-Jacobi method without dynamic relax	1	Compute complete	349.753	3274	
-Jacobi method without dynamic relax	1	Compute complete	352.742	3274	
-Jacobi method without dynamic relax	1	Compute complete	396.881	3274	
-Jacobi method without dynamic relax	1	Compute complete	353.138	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.813	3274	
-Jacobi method without dynamic relax	1	Compute complete	356.191	3274	
-Jacobi method without dynamic relax	1	Compute complete	349.936	3274	
-Jacobi method without dynamic relax	1	Compute complete	361.604	3274	
-Jacobi method without dynamic relax	1	Compute complete	394.111	3274	
-Jacobi method without dynamic relax	1	Compute complete	350.484	3274	
-Jacobi method without dynamic relax	1	Compute complete	354.58	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.26	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.3	3274	
-Jacobi method without dynamic relax	1	Compute complete	351.019	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.133	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.236	3274	
-Jacobi method without dynamic relax	1	Compute complete	350.388	3274	
-Jacobi method without dynamic relax	1	Compute complete	350.056	3274	
-Jacobi method without dynamic relax	1	Compute complete	355.704	3274	
-Jacobi method without dynamic relax	1	Compute complete	359.092	3274	
-Jacobi method with dynamic relax	0.1	Timeout occured!	1000.02	9076	
-Jacobi method with dynamic relax	0.11	Timeout occured!	1000	8977	
-Jacobi method with dynamic relax	0.12	Timeout occured!	1000.02	9171	
-Jacobi method with dynamic relax	0.13	Timeout occured!	1000.05	9016	
-Jacobi method with dynamic relax	0.14	Timeout occured!	1000.05	8934	
-Jacobi method with dynamic relax	0.15	Timeout occured!	1000.01	9447	
-Jacobi method with dynamic relax	0.16	Timeout occured!	1000.08	9225	
-Jacobi method with dynamic relax	0.17	Timeout occured!	1000.03	9483	
-Jacobi method with dynamic relax	0.18	Timeout occured!	1000.08	9312	
-Jacobi method with dynamic relax	0.19	Timeout occured!	1000.04	8843	
-Jacobi method with dynamic relax	0.2	Timeout occured!	1000.06	9335	
-Jacobi method with dynamic relax	0.21	Timeout occured!	1000.08	9533	
-Jacobi method with dynamic relax	0.22	Timeout occured!	1000.02	8531	
-Jacobi method with dynamic relax	0.23	Timeout occured!	1000.03	8936	
-Jacobi method with dynamic relax	0.24	Timeout occured!	1000.15	8557	
-Jacobi method with dynamic relax	0.25	Timeout occured!	1000.17	8318	
-Jacobi method with dynamic relax	0.26	Timeout occured!	1000.13	9204	
-Jacobi method with dynamic relax	0.27	Timeout occured!	1000.05	9399	
-Jacobi method with dynamic relax	0.28	Timeout occured!	1000.03	9450	
-Jacobi method with dynamic relax	0.29	Timeout occured!	1000.17	9120	
-Jacobi method with dynamic relax	0.3	Timeout occured!	1000.04	8573	
-Jacobi method with dynamic relax	0.31	Timeout occured!	1000.06	8710	
-Jacobi method with dynamic relax	0.32	Timeout occured!	1000.02	7669	
-Jacobi method with dynamic relax	0.33	Timeout occured!	1000.06	8663	
-Jacobi method with dynamic relax	0.34	Timeout occured!	1000.01	9127	
-Jacobi method with dynamic relax	0.35	Timeout occured!	1000.15	8866	
-Jacobi method with dynamic relax	0.36	Timeout occured!	1000.08	9325	
-Jacobi method with dynamic relax	0.37	Timeout occured!	1000.2	9341	
-Jacobi method with dynamic relax	0.38	Timeout occured!	1000.18	9025	
-Jacobi method with dynamic relax	0.39	Timeout occured!	1000.12	8933	
-Jacobi method with dynamic relax	0.4	Timeout occured!	1000.09	8541	
-Jacobi method with dynamic relax	0.41	Timeout occured!	1000.02	9288	
-Jacobi method with dynamic relax	0.42	Timeout occured!	1000.04	9077	
-Jacobi method with dynamic relax	0.43	Timeout occured!	1000.06	8713	
-Jacobi method with dynamic relax	0.44	Timeout occured!	1000.12	8948	
-Jacobi method with dynamic relax	0.45	Timeout occured!	1000.05	9074	
-Jacobi method with dynamic relax	0.46	Timeout occured!	1000.02	8663	
-Jacobi method with dynamic relax	0.47	Timeout occured!	1000.1	8744	
-Jacobi method with dynamic relax	0.48	Timeout occured!	1000.15	9072	
-Jacobi method with dynamic relax	0.49	Timeout occured!	1000.04	8578	
-Jacobi method with dynamic relax	0.5	Timeout occured!	1000.06	8987	
-Jacobi method with dynamic relax	0.51	Timeout occured!	1000.06	8376	
-Jacobi method with dynamic relax	0.52	Timeout occured!	1000.02	9549	
-Jacobi method with dynamic relax	0.53	Timeout occured!	1000.07	9261	
-Jacobi method with dynamic relax	0.54	Timeout occured!	1000.06	9096	
-Jacobi method with dynamic relax	0.55	Timeout occured!	1000.02	9355	
-Jacobi method with dynamic relax	0.56	Timeout occured!	1000.07	9392	
-Jacobi method with dynamic relax	0.57	Timeout occured!	1000.04	9145	
-Jacobi method with dynamic relax	0.58	Timeout occured!	1000.13	8997	
-Jacobi method with dynamic relax	0.59	Timeout occured!	1000.06	8616	
-Jacobi method with dynamic relax	0.6	Timeout occured!	1000.05	8894	
-Jacobi method with dynamic relax	0.61	Timeout occured!	1000.07	8338	
-Jacobi method with dynamic relax	0.62	Timeout occured!	1000.02	8765	
-Jacobi method with dynamic relax	0.63	Timeout occured!	1000.04	9026	
-Jacobi method with dynamic relax	0.64	Timeout occured!	1000.01	8837	
-Jacobi method with dynamic relax	0.65	Timeout occured!	1000.05	8914	
-Jacobi method with dynamic relax	0.66	Timeout occured!	1000.07	9457	
-Jacobi method with dynamic relax	0.67	Timeout occured!	1000.06	9073	
-Jacobi method with dynamic relax	0.68	Timeout occured!	1000.07	9433	
-Jacobi method with dynamic relax	0.69	Timeout occured!	1000.03	9160	
-Jacobi method with dynamic relax	0.7	Timeout occured!	1000.04	8914	
-Jacobi method with dynamic relax	0.71	Timeout occured!	1000.03	9447	
-Jacobi method with dynamic relax	0.72	Timeout occured!	1000.12	9117	
-Jacobi method with dynamic relax	0.73	Timeout occured!	1000.04	8629	
-Jacobi method with dynamic relax	0.74	Timeout occured!	1000.12	9240	
-Jacobi method with dynamic relax	0.75	Timeout occured!	1000.03	9118	
-Jacobi method with dynamic relax	0.76	Timeout occured!	1000.07	9257	
-Jacobi method with dynamic relax	0.77	Timeout occured!	1000.05	9086	
-Jacobi method with dynamic relax	0.78	Timeout occured!	1000.09	9327	
-Jacobi method with dynamic relax	0.79	Timeout occured!	1000.12	8857	
-Jacobi method with dynamic relax	0.8	Timeout occured!	1000.07	9431	
-Jacobi method with dynamic relax	0.81	Timeout occured!	1000.04	8832	
-Jacobi method with dynamic relax	0.82	Timeout occured!	1000.01	9360	
-Jacobi method with dynamic relax	0.83	Timeout occured!	1000.06	9406	
-Jacobi method with dynamic relax	0.84	Timeout occured!	1000.08	9382	
-Jacobi method with dynamic relax	0.85	Timeout occured!	1000.1	9121	
-Jacobi method with dynamic relax	0.86	Timeout occured!	1000.08	9211	
-Jacobi method with dynamic relax	0.87	Timeout occured!	1000.07	9259	
-Jacobi method with dynamic relax	0.88	Timeout occured!	1000.03	9159	
-Jacobi method with dynamic relax	0.89	Timeout occured!	1000.05	8609	
-Jacobi method with dynamic relax	0.9	Timeout occured!	1000.05	7955	
-Jacobi method with dynamic relax	0.91	Timeout occured!	1000.03	9103	
-Jacobi method with dynamic relax	0.92	Timeout occured!	1000.1	9357	
-Jacobi method with dynamic relax	0.93	Timeout occured!	1000.09	9285	
-Jacobi method with dynamic relax	0.94	Compute complete	816.667	7525	
-Jacobi method with dynamic relax	0.95	Compute complete	655.286	6132	
-Jacobi method with dynamic relax	0.96	Compute complete	566.756	5191	
-Jacobi method with dynamic relax	0.97	Compute complete	492.823	4512	
-Jacobi method with dynamic relax	0.98	Compute complete	445.79	3999	
-Jacobi method with dynamic relax	0.99	Compute complete	396.025	3597	
-Jacobi method with dynamic relax	1	Compute complete	353.375	3274	
-Jacobi method with dynamic relax	1.01	Compute complete	334.602	3009	
-Jacobi method with dynamic relax	1.02	Compute complete	301.694	2788	
-Jacobi method with dynamic relax	1.03	Compute complete	290.751	2599	
-Jacobi method with dynamic relax	1.04	Compute complete	259.422	2438	
-Jacobi method with dynamic relax	1.05	Compute complete	233.454	2297	
-Jacobi method with dynamic relax	1.06	Compute complete	244.524	2174	
-Jacobi method with dynamic relax	1.07	Compute complete	218.204	2065	
-Jacobi method with dynamic relax	1.08	Compute complete	228.447	1968	
-Jacobi method with dynamic relax	1.09	Compute complete	201.72	1881	
-Jacobi method with dynamic relax	1.1	Compute complete	193.852	1802	
-Jacobi method with dynamic relax	1.11	Compute complete	180.154	1731	
-Jacobi method with dynamic relax	1.12	Compute complete	165.217	1667	
-Jacobi method with dynamic relax	1.13	Compute complete	164.759	1607	
-Jacobi method with dynamic relax	1.14	Compute complete	192.644	1553	
-Jacobi method with dynamic relax	1.15	Compute complete	164.346	1503	
-Jacobi method with dynamic relax	1.16	Compute complete	156.332	1457	
-Jacobi method with dynamic relax	1.17	Compute complete	159.757	1414	
-Jacobi method with dynamic relax	1.18	Compute complete	151.296	1374	
-Jacobi method with dynamic relax	1.19	Compute complete	145.549	1336	
-Jacobi method with dynamic relax	1.2	Compute complete	144.409	1302	
-Jacobi method with dynamic relax	1.21	Compute complete	138.529	1269	
-Jacobi method with dynamic relax	1.22	Compute complete	136.54	1238	
-Jacobi method with dynamic relax	1.23	Compute complete	131.287	1209	
-Jacobi method with dynamic relax	1.24	Compute complete	134.782	1182	
-Jacobi method with dynamic relax	1.25	Compute complete	125.81	1157	
-Jacobi method with dynamic relax	1.26	Compute complete	134.219	1132	
-Jacobi method with dynamic relax	1.27	Compute complete	119.562	1109	
-Jacobi method with dynamic relax	1.28	Compute complete	117.888	1088	
-Jacobi method with dynamic relax	1.29	Compute complete	119.971	1067	
-Jacobi method with dynamic relax	1.3	Compute complete	114.541	1047	
-Jacobi method with dynamic relax	1.31	Compute complete	112.939	1028	
-Jacobi method with dynamic relax	1.32	Compute complete	107.324	1010	
-Jacobi method with dynamic relax	1.33	Compute complete	109.675	993	
-Jacobi method with dynamic relax	1.34	Compute complete	105.944	977	
-Jacobi method with dynamic relax	1.35	Compute complete	104.651	961	
-Jacobi method with dynamic relax	1.36	Compute complete	99.7001	946	
-Jacobi method with dynamic relax	1.37	Compute complete	106.563	932	
-Jacobi method with dynamic relax	1.38	Compute complete	100.465	918	
-Jacobi method with dynamic relax	1.39	Compute complete	96.8592	905	
-Jacobi method with dynamic relax	1.4	Compute complete	99.5572	892	
-Jacobi method with dynamic relax	1.41	Compute complete	96.872	880	
-Jacobi method with dynamic relax	1.42	Compute complete	93.0072	868	
-Jacobi method with dynamic relax	1.43	Compute complete	96.5577	857	
-Jacobi method with dynamic relax	1.44	Compute complete	91.1999	846	
-Jacobi method with dynamic relax	1.45	Compute complete	90.2297	835	
-Jacobi method with dynamic relax	1.46	Compute complete	87.5671	825	
-Jacobi method with dynamic relax	1.47	Compute complete	87.7976	815	
-Jacobi method with dynamic relax	1.48	Compute complete	88.6964	806	
-Jacobi method with dynamic relax	1.49	Compute complete	86.1673	796	
-Jacobi method with dynamic relax	1.5	Compute complete	84.8394	787	
-Jacobi method with dynamic relax	1.51	Compute complete	83.5048	779	
-Jacobi method with dynamic relax	1.52	Compute complete	79.8707	770	
-Jacobi method with dynamic relax	1.53	Compute complete	88.7252	762	
-Jacobi method with dynamic relax	1.54	Compute complete	83.8399	754	
-Jacobi method with dynamic relax	1.55	Compute complete	82.0285	747	
-Jacobi method with dynamic relax	1.56	Compute complete	81.1187	739	
-Jacobi method with dynamic relax	1.57	Compute complete	79.0886	732	
-Jacobi method with dynamic relax	1.58	Compute complete	77.4877	725	
-Jacobi method with dynamic relax	1.59	Compute complete	79.3889	718	
-Jacobi method with dynamic relax	1.6	Compute complete	76.2028	712	
-Jacobi method with dynamic relax	1.61	Compute complete	75.3947	705	
-Jacobi method with dynamic relax	1.62	Compute complete	74.6645	699	
-Jacobi method with dynamic relax	1.63	Compute complete	73.7874	693	
-Jacobi method with dynamic relax	1.64	Compute complete	75.3808	687	
-Jacobi method with dynamic relax	1.65	Compute complete	73.5712	681	
-Jacobi method with dynamic relax	1.66	Compute complete	71.3186	675	
-Jacobi method with dynamic relax	1.67	Compute complete	73.9038	670	
-Jacobi method with dynamic relax	1.68	Compute complete	70.575	664	
-Jacobi method with dynamic relax	1.69	Compute complete	72.248	659	
-Jacobi method with dynamic relax	1.7	Compute complete	63.7889	654	
-Jacobi method with dynamic relax	1.71	Compute complete	64.1913	649	
-Jacobi method with dynamic relax	1.72	Compute complete	63.9435	644	
-Jacobi method with dynamic relax	1.73	Compute complete	64.1128	639	
-Jacobi method with dynamic relax	1.74	Compute complete	84.3958	634	
-Jacobi method with dynamic relax	1.75	Compute complete	79.9348	630	
-Jacobi method with dynamic relax	1.76	Compute complete	68.5815	625	
-Jacobi method with dynamic relax	1.77	Compute complete	70.549	621	
-Jacobi method with dynamic relax	1.78	Compute complete	67.8369	617	
-Jacobi method with dynamic relax	1.79	Compute complete	64.5401	612	
-Jacobi method with dynamic relax	1.8	Compute complete	64.3653	608	
-Jacobi method with dynamic relax	1.81	Compute complete	65.1816	604	
-Jacobi method with dynamic relax	1.82	Compute complete	64.2875	600	
-Jacobi method with dynamic relax	1.83	Compute complete	68.5353	596	
-Jacobi method with dynamic relax	1.84	Compute complete	65.6819	593	
-Jacobi method with dynamic relax	1.85	Compute complete	65.7347	589	
-Jacobi method with dynamic relax	1.86	Compute complete	62.7838	585	
-Jacobi method with dynamic relax	1.87	Compute complete	64.8931	582	
-Jacobi method with dynamic relax	1.88	Compute complete	62.4817	578	
-Jacobi method with dynamic relax	1.89	Compute complete	63.4376	575	
-Jacobi method with dynamic relax	1.9	Compute complete	62.7865	571	
-Jacobi method with dynamic relax	1.91	Compute complete	62.1636	568	
-Jacobi method with dynamic relax	1.92	Compute complete	61.8063	565	
-Jacobi method with dynamic relax	1.93	Compute complete	64.3484	561	
-Jacobi method with dynamic relax	1.94	Compute complete	58.4932	558	
-Jacobi method with dynamic relax	1.95	Compute complete	63.0919	555	
-Jacobi method with dynamic relax	1.96	Compute complete	55.2426	552	
-Jacobi method with dynamic relax	1.97	Compute complete	56.0918	549	
-Jacobi method with dynamic relax	1.98	Compute complete	55.6143	546	
-Jacobi method with dynamic relax	1.99	Compute complete	54.0901	543	
+          Jacobi method without dynamic relax	    1	    Compute complete	   319.531	      3274	
+             Jacobi method with dynamic relax	  0.1	    Timeout occured!	   1000.03	     10549	
+             Jacobi method with dynamic relax	 0.11	    Timeout occured!	   1000.03	     10437	
+             Jacobi method with dynamic relax	 0.12	    Timeout occured!	   1000.03	      9382	
+             Jacobi method with dynamic relax	 0.13	    Timeout occured!	    1000.1	      9568	
+             Jacobi method with dynamic relax	 0.14	    Timeout occured!	   1000.02	      9274	
+             Jacobi method with dynamic relax	 0.15	    Timeout occured!	   1000.02	     10490	
+             Jacobi method with dynamic relax	 0.16	    Timeout occured!	   1000.05	      9074	
+             Jacobi method with dynamic relax	 0.17	    Timeout occured!	   1000.12	      9087	
+             Jacobi method with dynamic relax	 0.18	    Timeout occured!	   1000.11	      8068	
+             Jacobi method with dynamic relax	 0.19	    Timeout occured!	    1000.1	      8203	
+             Jacobi method with dynamic relax	  0.2	    Timeout occured!	   1000.03	     10156	
+             Jacobi method with dynamic relax	 0.21	    Timeout occured!	   1000.07	     10526	
+             Jacobi method with dynamic relax	 0.22	    Timeout occured!	   1000.06	     10291	
+             Jacobi method with dynamic relax	 0.23	    Timeout occured!	   1000.05	      9737	
+             Jacobi method with dynamic relax	 0.24	    Timeout occured!	   1000.05	     10364	
+             Jacobi method with dynamic relax	 0.25	    Timeout occured!	   1000.07	     10735	
+             Jacobi method with dynamic relax	 0.26	    Timeout occured!	   1000.08	     10815	
+             Jacobi method with dynamic relax	 0.27	    Timeout occured!	   1000.09	     10291	
+             Jacobi method with dynamic relax	 0.28	    Timeout occured!	   1000.02	     10320	
+             Jacobi method with dynamic relax	 0.29	    Timeout occured!	   1000.06	     10079	
+             Jacobi method with dynamic relax	  0.3	    Timeout occured!	   1000.07	     10047	
+             Jacobi method with dynamic relax	 0.31	    Timeout occured!	   1000.08	     10569	
+             Jacobi method with dynamic relax	 0.32	    Timeout occured!	   1000.01	     10771	
+             Jacobi method with dynamic relax	 0.33	    Timeout occured!	   1000.07	     10806	
+             Jacobi method with dynamic relax	 0.34	    Timeout occured!	   1000.03	     10376	
+             Jacobi method with dynamic relax	 0.35	    Timeout occured!	   1000.08	      9505	
+             Jacobi method with dynamic relax	 0.36	    Timeout occured!	      1000	      9897	
+             Jacobi method with dynamic relax	 0.37	    Timeout occured!	   1000.02	      9745	
+             Jacobi method with dynamic relax	 0.38	    Timeout occured!	   1000.03	     10084	
+             Jacobi method with dynamic relax	 0.39	    Timeout occured!	   1000.06	     10390	
+             Jacobi method with dynamic relax	  0.4	    Timeout occured!	   1000.05	     10154	
+             Jacobi method with dynamic relax	 0.41	    Timeout occured!	   1000.13	     10071	
+             Jacobi method with dynamic relax	 0.42	    Timeout occured!	   1000.06	     10370	
+             Jacobi method with dynamic relax	 0.43	    Timeout occured!	   1000.12	     10133	
+             Jacobi method with dynamic relax	 0.44	    Timeout occured!	   1000.11	     10476	
+             Jacobi method with dynamic relax	 0.45	    Timeout occured!	      1000	      9664	
+             Jacobi method with dynamic relax	 0.46	    Timeout occured!	   1000.04	      9177	
+             Jacobi method with dynamic relax	 0.47	    Timeout occured!	   1000.04	      9760	
+             Jacobi method with dynamic relax	 0.48	    Timeout occured!	   1000.07	     10237	
+             Jacobi method with dynamic relax	 0.49	    Timeout occured!	   1000.09	      9248	
+             Jacobi method with dynamic relax	  0.5	    Timeout occured!	   1000.01	     10108	
+             Jacobi method with dynamic relax	 0.51	    Timeout occured!	   1000.05	     10211	
+             Jacobi method with dynamic relax	 0.52	    Timeout occured!	   1000.03	     10299	
+             Jacobi method with dynamic relax	 0.53	    Compute complete	    994.04	     10314	
+             Jacobi method with dynamic relax	 0.54	    Compute complete	   973.133	     10129	
+             Jacobi method with dynamic relax	 0.55	    Compute complete	   942.806	      9950	
+             Jacobi method with dynamic relax	 0.56	    Compute complete	   916.535	      9778	
+             Jacobi method with dynamic relax	 0.57	    Compute complete	   899.152	      9612	
+             Jacobi method with dynamic relax	 0.58	    Compute complete	    887.14	      9452	
+             Jacobi method with dynamic relax	 0.59	    Compute complete	   890.664	      9296	
+             Jacobi method with dynamic relax	  0.6	    Compute complete	   902.235	      9146	
+             Jacobi method with dynamic relax	 0.61	    Compute complete	   869.968	      9001	
+             Jacobi method with dynamic relax	 0.62	    Compute complete	   851.764	      8860	
+             Jacobi method with dynamic relax	 0.63	    Compute complete	   866.024	      8724	
+             Jacobi method with dynamic relax	 0.64	    Compute complete	   910.004	      8592	
+             Jacobi method with dynamic relax	 0.65	    Compute complete	   806.254	      8464	
+             Jacobi method with dynamic relax	 0.66	    Compute complete	   816.824	      8340	
+             Jacobi method with dynamic relax	 0.67	    Compute complete	   853.811	      8219	
+             Jacobi method with dynamic relax	 0.68	    Compute complete	   768.948	      8102	
+             Jacobi method with dynamic relax	 0.69	    Compute complete	   770.923	      7988	
+             Jacobi method with dynamic relax	  0.7	    Compute complete	   746.682	      7878	
+             Jacobi method with dynamic relax	 0.71	    Compute complete	   741.334	      7770	
+             Jacobi method with dynamic relax	 0.72	    Compute complete	   736.118	      7665	
+             Jacobi method with dynamic relax	 0.73	    Compute complete	    721.71	      7564	
+             Jacobi method with dynamic relax	 0.74	    Compute complete	   729.147	      7465	
+             Jacobi method with dynamic relax	 0.75	    Compute complete	    721.04	      7368	
+             Jacobi method with dynamic relax	 0.76	    Compute complete	   750.724	      7274	
+             Jacobi method with dynamic relax	 0.77	    Compute complete	   688.483	      7183	
+             Jacobi method with dynamic relax	 0.78	    Compute complete	   694.595	      7093	
+             Jacobi method with dynamic relax	 0.79	    Compute complete	   698.735	      7006	
+             Jacobi method with dynamic relax	  0.8	    Compute complete	   642.222	      6921	
+             Jacobi method with dynamic relax	 0.81	    Compute complete	   653.484	      6839	
+             Jacobi method with dynamic relax	 0.82	    Compute complete	   684.238	      6758	
+             Jacobi method with dynamic relax	 0.83	    Compute complete	   698.888	      6679	
+             Jacobi method with dynamic relax	 0.84	    Compute complete	   631.044	      6602	
+             Jacobi method with dynamic relax	 0.85	    Compute complete	   614.024	      6526	
+             Jacobi method with dynamic relax	 0.86	    Compute complete	   609.823	      6453	
+             Jacobi method with dynamic relax	 0.87	    Compute complete	   616.127	      6381	
+             Jacobi method with dynamic relax	 0.88	    Compute complete	   591.823	      6311	
+             Jacobi method with dynamic relax	 0.89	    Compute complete	    602.94	      6242	
+             Jacobi method with dynamic relax	  0.9	    Timeout occured!	   1000.09	     10393	
+             Jacobi method with dynamic relax	 0.91	    Timeout occured!	   1000.04	     10362	
+             Jacobi method with dynamic relax	 0.92	    Timeout occured!	      1000	      9717	
+             Jacobi method with dynamic relax	 0.93	    Timeout occured!	   1000.09	      9655	
+             Jacobi method with dynamic relax	 0.94	    Compute complete	    734.12	      7525	
+             Jacobi method with dynamic relax	 0.95	    Compute complete	   591.439	      6132	
+             Jacobi method with dynamic relax	 0.96	    Compute complete	   558.835	      5191	
+             Jacobi method with dynamic relax	 0.97	    Compute complete	    458.21	      4512	
+             Jacobi method with dynamic relax	 0.98	    Compute complete	     383.3	      3999	
+             Jacobi method with dynamic relax	 0.99	    Compute complete	   340.753	      3597	
+             Jacobi method with dynamic relax	    1	    Compute complete	   320.574	      3274	
+             Jacobi method with dynamic relax	 1.01	    Compute complete	   289.905	      3009	
+             Jacobi method with dynamic relax	 1.02	    Compute complete	   268.813	      2788	
+             Jacobi method with dynamic relax	 1.03	    Compute complete	   250.203	      2599	
+             Jacobi method with dynamic relax	 1.04	    Compute complete	   231.393	      2438	
+             Jacobi method with dynamic relax	 1.05	    Compute complete	   222.854	      2297	
+             Jacobi method with dynamic relax	 1.06	    Compute complete	   208.129	      2174	
+             Jacobi method with dynamic relax	 1.07	    Compute complete	   199.512	      2065	
+             Jacobi method with dynamic relax	 1.08	    Compute complete	   188.057	      1968	
+             Jacobi method with dynamic relax	 1.09	    Compute complete	    184.02	      1881	
+             Jacobi method with dynamic relax	  1.1	    Compute complete	   172.158	      1802	
+             Jacobi method with dynamic relax	 1.11	    Compute complete	   164.279	      1731	
+             Jacobi method with dynamic relax	 1.12	    Compute complete	    161.91	      1667	
+             Jacobi method with dynamic relax	 1.13	    Compute complete	    153.37	      1607	
+             Jacobi method with dynamic relax	 1.14	    Compute complete	   153.988	      1553	
+             Jacobi method with dynamic relax	 1.15	    Compute complete	   141.724	      1503	
+             Jacobi method with dynamic relax	 1.16	    Compute complete	   139.504	      1457	
+             Jacobi method with dynamic relax	 1.17	    Compute complete	   137.559	      1414	
+             Jacobi method with dynamic relax	 1.18	    Compute complete	   130.028	      1374	
+             Jacobi method with dynamic relax	 1.19	    Compute complete	   132.008	      1336	
+             Jacobi method with dynamic relax	  1.2	    Compute complete	   122.976	      1302	
+             Jacobi method with dynamic relax	 1.21	    Compute complete	    121.23	      1269	
+             Jacobi method with dynamic relax	 1.22	    Compute complete	   119.053	      1238	
+             Jacobi method with dynamic relax	 1.23	    Compute complete	   117.058	      1209	
+             Jacobi method with dynamic relax	 1.24	    Compute complete	   112.359	      1182	
+             Jacobi method with dynamic relax	 1.25	    Compute complete	   114.976	      1157	
+             Jacobi method with dynamic relax	 1.26	    Compute complete	   109.305	      1132	
+             Jacobi method with dynamic relax	 1.27	    Compute complete	   104.738	      1109	
+             Jacobi method with dynamic relax	 1.28	    Compute complete	   106.447	      1088	
+             Jacobi method with dynamic relax	 1.29	    Compute complete	   104.314	      1067	
+             Jacobi method with dynamic relax	  1.3	    Compute complete	   102.826	      1047	
+             Jacobi method with dynamic relax	 1.31	    Compute complete	    112.29	      1028	
+             Jacobi method with dynamic relax	 1.32	    Compute complete	    102.95	      1010	
+             Jacobi method with dynamic relax	 1.33	    Compute complete	   94.6215	       993	
+             Jacobi method with dynamic relax	 1.34	    Compute complete	   92.5451	       977	
+             Jacobi method with dynamic relax	 1.35	    Compute complete	    91.703	       961	
+             Jacobi method with dynamic relax	 1.36	    Compute complete	   90.2993	       946	
+             Jacobi method with dynamic relax	 1.37	    Compute complete	   103.374	       932	
+             Jacobi method with dynamic relax	 1.38	    Compute complete	   95.9013	       918	
+             Jacobi method with dynamic relax	 1.39	    Compute complete	   88.3006	       905	
+             Jacobi method with dynamic relax	  1.4	    Compute complete	   84.5714	       892	
+             Jacobi method with dynamic relax	 1.41	    Compute complete	   83.7211	       880	
+             Jacobi method with dynamic relax	 1.42	    Compute complete	    87.038	       868	
+             Jacobi method with dynamic relax	 1.43	    Compute complete	   82.6435	       857	
+             Jacobi method with dynamic relax	 1.44	    Compute complete	   83.7683	       846	
+             Jacobi method with dynamic relax	 1.45	    Compute complete	   79.1282	       835	
+             Jacobi method with dynamic relax	 1.46	    Compute complete	   79.3308	       825	
+             Jacobi method with dynamic relax	 1.47	    Compute complete	   82.9598	       815	
+             Jacobi method with dynamic relax	 1.48	    Compute complete	   78.4439	       806	
+             Jacobi method with dynamic relax	 1.49	    Compute complete	   77.5351	       796	
+             Jacobi method with dynamic relax	  1.5	    Compute complete	   79.3336	       787	
+             Jacobi method with dynamic relax	 1.51	    Compute complete	   74.7624	       779	
+             Jacobi method with dynamic relax	 1.52	    Compute complete	   79.1464	       770	
+             Jacobi method with dynamic relax	 1.53	    Compute complete	   72.9394	       762	
+             Jacobi method with dynamic relax	 1.54	    Compute complete	   72.3659	       754	
+             Jacobi method with dynamic relax	 1.55	    Compute complete	   74.9034	       747	
+             Jacobi method with dynamic relax	 1.56	    Compute complete	   71.0502	       739	
+             Jacobi method with dynamic relax	 1.57	    Compute complete	   69.2631	       732	
+             Jacobi method with dynamic relax	 1.58	    Compute complete	   73.5635	       725	
+             Jacobi method with dynamic relax	 1.59	    Compute complete	   67.6187	       718	
+             Jacobi method with dynamic relax	  1.6	    Compute complete	   71.0998	       712	
+             Jacobi method with dynamic relax	 1.61	    Compute complete	   66.9514	       705	
+             Jacobi method with dynamic relax	 1.62	    Compute complete	   67.5131	       699	
+             Jacobi method with dynamic relax	 1.63	    Compute complete	   70.8403	       693	
+             Jacobi method with dynamic relax	 1.64	    Compute complete	   66.1407	       687	
+             Jacobi method with dynamic relax	 1.65	    Compute complete	   65.3215	       681	
+             Jacobi method with dynamic relax	 1.66	    Compute complete	    63.892	       675	
+             Jacobi method with dynamic relax	 1.67	    Compute complete	   63.4973	       670	
+             Jacobi method with dynamic relax	 1.68	    Compute complete	   65.0919	       664	
+             Jacobi method with dynamic relax	 1.69	    Compute complete	   62.4237	       659	
+             Jacobi method with dynamic relax	  1.7	    Compute complete	   62.5473	       654	
+             Jacobi method with dynamic relax	 1.71	    Compute complete	   61.7315	       649	
+             Jacobi method with dynamic relax	 1.72	    Compute complete	   63.4033	       644	
+             Jacobi method with dynamic relax	 1.73	    Compute complete	   61.4811	       639	
+             Jacobi method with dynamic relax	 1.74	    Compute complete	   62.7901	       634	
+             Jacobi method with dynamic relax	 1.75	    Compute complete	   59.8026	       630	
+             Jacobi method with dynamic relax	 1.76	    Compute complete	   60.2235	       625	
+             Jacobi method with dynamic relax	 1.77	    Compute complete	   64.1643	       621	
+             Jacobi method with dynamic relax	 1.78	    Compute complete	   58.3631	       617	
+             Jacobi method with dynamic relax	 1.79	    Compute complete	    59.827	       612	
+             Jacobi method with dynamic relax	  1.8	    Compute complete	   59.4188	       608	
+             Jacobi method with dynamic relax	 1.81	    Compute complete	   59.2614	       604	
+             Jacobi method with dynamic relax	 1.82	    Compute complete	   57.7862	       600	
+             Jacobi method with dynamic relax	 1.83	    Compute complete	   59.4421	       596	
+             Jacobi method with dynamic relax	 1.84	    Compute complete	   57.0467	       593	
+             Jacobi method with dynamic relax	 1.85	    Compute complete	    57.037	       589	
+             Jacobi method with dynamic relax	 1.86	    Compute complete	    60.598	       585	
+             Jacobi method with dynamic relax	 1.87	    Compute complete	   55.3116	       582	
+             Jacobi method with dynamic relax	 1.88	    Compute complete	   54.7646	       578	
+             Jacobi method with dynamic relax	 1.89	    Compute complete	   56.8225	       575	
+             Jacobi method with dynamic relax	  1.9	    Compute complete	   54.3152	       571	
+             Jacobi method with dynamic relax	 1.91	    Compute complete	    56.814	       568	
+             Jacobi method with dynamic relax	 1.92	    Compute complete	    56.733	       565	
+             Jacobi method with dynamic relax	 1.93	    Compute complete	   53.5319	       561	
+             Jacobi method with dynamic relax	 1.94	    Compute complete	   52.7996	       558	
+             Jacobi method with dynamic relax	 1.95	    Compute complete	   56.7772	       555	
+             Jacobi method with dynamic relax	 1.96	    Compute complete	   52.5404	       552	
+             Jacobi method with dynamic relax	 1.97	    Compute complete	   53.1043	       549	
+             Jacobi method with dynamic relax	 1.98	    Compute complete	    57.362	       546	
+             Jacobi method with dynamic relax	 1.99	    Compute complete	   51.7844	       543	
