@@ -1,191 +1,101 @@
-    Gauss-Seidel method without dynamic relax	    1	    Compute complete	  0.164455	        15	
-       Gauss-Seidel method with dynamic relax	  0.1	    Compute complete	   1.97792	       206	
-       Gauss-Seidel method with dynamic relax	 0.11	    Compute complete	   1.79971	       188	
-       Gauss-Seidel method with dynamic relax	 0.12	    Compute complete	   1.65134	       172	
-       Gauss-Seidel method with dynamic relax	 0.13	    Compute complete	   1.51563	       159	
-       Gauss-Seidel method with dynamic relax	 0.14	    Compute complete	   1.42776	       148	
-       Gauss-Seidel method with dynamic relax	 0.15	    Compute complete	   1.33845	       139	
-       Gauss-Seidel method with dynamic relax	 0.16	    Compute complete	   1.66102	       130	
-       Gauss-Seidel method with dynamic relax	 0.17	    Compute complete	   1.25832	       122	
-       Gauss-Seidel method with dynamic relax	 0.18	    Compute complete	   1.12458	       116	
-       Gauss-Seidel method with dynamic relax	 0.19	    Compute complete	    1.0644	       110	
-       Gauss-Seidel method with dynamic relax	  0.2	    Compute complete	   1.00461	       104	
-       Gauss-Seidel method with dynamic relax	 0.21	    Compute complete	  0.945087	        99	
-       Gauss-Seidel method with dynamic relax	 0.22	    Compute complete	  0.900799	        94	
-       Gauss-Seidel method with dynamic relax	 0.23	    Compute complete	  0.871617	        90	
-       Gauss-Seidel method with dynamic relax	 0.24	    Compute complete	  0.825722	        86	
-       Gauss-Seidel method with dynamic relax	 0.25	    Compute complete	  0.795302	        83	
-       Gauss-Seidel method with dynamic relax	 0.26	    Compute complete	   0.76826	        80	
-       Gauss-Seidel method with dynamic relax	 0.27	    Compute complete	  0.729293	        77	
-       Gauss-Seidel method with dynamic relax	 0.28	    Compute complete	  0.720203	        74	
-       Gauss-Seidel method with dynamic relax	 0.29	    Compute complete	  0.679183	        71	
-       Gauss-Seidel method with dynamic relax	  0.3	    Compute complete	  0.654202	        69	
-       Gauss-Seidel method with dynamic relax	 0.31	    Compute complete	  0.628376	        66	
-       Gauss-Seidel method with dynamic relax	 0.32	    Compute complete	  0.614743	        64	
-       Gauss-Seidel method with dynamic relax	 0.33	    Compute complete	  0.596833	        62	
-       Gauss-Seidel method with dynamic relax	 0.34	    Compute complete	  0.575519	        60	
-       Gauss-Seidel method with dynamic relax	 0.35	    Compute complete	  0.559196	        58	
-       Gauss-Seidel method with dynamic relax	 0.36	    Compute complete	  0.532157	        56	
-       Gauss-Seidel method with dynamic relax	 0.37	    Compute complete	  0.520807	        55	
-       Gauss-Seidel method with dynamic relax	 0.38	    Compute complete	  0.506915	        53	
-       Gauss-Seidel method with dynamic relax	 0.39	    Compute complete	  0.494206	        52	
-       Gauss-Seidel method with dynamic relax	  0.4	    Compute complete	   0.47988	        50	
-       Gauss-Seidel method with dynamic relax	 0.41	    Compute complete	  0.477837	        49	
-       Gauss-Seidel method with dynamic relax	 0.42	    Compute complete	  0.467605	        48	
-       Gauss-Seidel method with dynamic relax	 0.43	    Compute complete	  0.441889	        46	
-       Gauss-Seidel method with dynamic relax	 0.44	    Compute complete	  0.433931	        45	
-       Gauss-Seidel method with dynamic relax	 0.45	    Compute complete	  0.417678	        44	
-       Gauss-Seidel method with dynamic relax	 0.46	    Compute complete	   0.41916	        43	
-       Gauss-Seidel method with dynamic relax	 0.47	    Compute complete	  0.399618	        42	
-       Gauss-Seidel method with dynamic relax	 0.48	    Compute complete	  0.394049	        41	
-       Gauss-Seidel method with dynamic relax	 0.49	    Compute complete	  0.392673	        40	
-       Gauss-Seidel method with dynamic relax	  0.5	    Compute complete	  0.380218	        39	
-       Gauss-Seidel method with dynamic relax	 0.51	    Compute complete	   0.36105	        38	
-       Gauss-Seidel method with dynamic relax	 0.52	    Compute complete	   0.36418	        37	
-       Gauss-Seidel method with dynamic relax	 0.53	    Compute complete	  0.346713	        36	
-       Gauss-Seidel method with dynamic relax	 0.54	    Compute complete	  0.343304	        36	
-       Gauss-Seidel method with dynamic relax	 0.55	    Compute complete	  0.333198	        35	
-       Gauss-Seidel method with dynamic relax	 0.56	    Compute complete	  0.326096	        34	
-       Gauss-Seidel method with dynamic relax	 0.57	    Compute complete	  0.323416	        33	
-       Gauss-Seidel method with dynamic relax	 0.58	    Compute complete	  0.316961	        33	
-       Gauss-Seidel method with dynamic relax	 0.59	    Compute complete	  0.327661	        32	
-       Gauss-Seidel method with dynamic relax	  0.6	    Compute complete	  0.512074	        31	
-       Gauss-Seidel method with dynamic relax	 0.61	    Compute complete	  0.526411	        31	
-       Gauss-Seidel method with dynamic relax	 0.62	    Compute complete	  0.482878	        30	
-       Gauss-Seidel method with dynamic relax	 0.63	    Compute complete	    0.4731	        29	
-       Gauss-Seidel method with dynamic relax	 0.64	    Compute complete	  0.286187	        29	
-       Gauss-Seidel method with dynamic relax	 0.65	    Compute complete	  0.335516	        28	
-       Gauss-Seidel method with dynamic relax	 0.66	    Compute complete	  0.287837	        28	
-       Gauss-Seidel method with dynamic relax	 0.67	    Compute complete	  0.266116	        27	
-       Gauss-Seidel method with dynamic relax	 0.68	    Compute complete	  0.254439	        27	
-       Gauss-Seidel method with dynamic relax	 0.69	    Compute complete	  0.250994	        26	
-       Gauss-Seidel method with dynamic relax	  0.7	    Compute complete	  0.255059	        26	
-       Gauss-Seidel method with dynamic relax	 0.71	    Compute complete	  0.242706	        25	
-       Gauss-Seidel method with dynamic relax	 0.72	    Compute complete	  0.243129	        25	
-       Gauss-Seidel method with dynamic relax	 0.73	    Compute complete	  0.236359	        24	
-       Gauss-Seidel method with dynamic relax	 0.74	    Compute complete	  0.234485	        24	
-       Gauss-Seidel method with dynamic relax	 0.75	    Compute complete	  0.224682	        23	
-       Gauss-Seidel method with dynamic relax	 0.76	    Compute complete	  0.226519	        23	
-       Gauss-Seidel method with dynamic relax	 0.77	    Compute complete	   0.21782	        23	
-       Gauss-Seidel method with dynamic relax	 0.78	    Compute complete	  0.210281	        22	
-       Gauss-Seidel method with dynamic relax	 0.79	    Compute complete	  0.210238	        22	
-       Gauss-Seidel method with dynamic relax	  0.8	    Compute complete	  0.214958	        21	
-       Gauss-Seidel method with dynamic relax	 0.81	    Compute complete	  0.201813	        21	
-       Gauss-Seidel method with dynamic relax	 0.82	    Compute complete	  0.199725	        21	
-       Gauss-Seidel method with dynamic relax	 0.83	    Compute complete	  0.190003	        20	
-       Gauss-Seidel method with dynamic relax	 0.84	    Compute complete	   0.19094	        20	
-       Gauss-Seidel method with dynamic relax	 0.85	    Compute complete	  0.189268	        20	
-       Gauss-Seidel method with dynamic relax	 0.86	    Compute complete	   0.18664	        19	
-       Gauss-Seidel method with dynamic relax	 0.87	    Compute complete	   0.18049	        19	
-       Gauss-Seidel method with dynamic relax	 0.88	    Compute complete	  0.177511	        18	
-       Gauss-Seidel method with dynamic relax	 0.89	    Compute complete	  0.176205	        18	
-       Gauss-Seidel method with dynamic relax	  0.9	    Compute complete	  0.192786	        18	
-       Gauss-Seidel method with dynamic relax	 0.91	    Compute complete	  0.179199	        18	
-       Gauss-Seidel method with dynamic relax	 0.92	    Compute complete	  0.244661	        17	
-       Gauss-Seidel method with dynamic relax	 0.93	    Compute complete	  0.293942	        17	
-       Gauss-Seidel method with dynamic relax	 0.94	    Compute complete	  0.299661	        17	
-       Gauss-Seidel method with dynamic relax	 0.95	    Compute complete	  0.212652	        16	
-       Gauss-Seidel method with dynamic relax	 0.96	    Compute complete	  0.247358	        16	
-       Gauss-Seidel method with dynamic relax	 0.97	    Compute complete	  0.167054	        16	
-       Gauss-Seidel method with dynamic relax	 0.98	    Compute complete	  0.149925	        15	
-       Gauss-Seidel method with dynamic relax	 0.99	    Compute complete	  0.150954	        15	
-       Gauss-Seidel method with dynamic relax	    1	    Compute complete	  0.144119	        15	
-       Gauss-Seidel method with dynamic relax	 1.01	    Compute complete	  0.144191	        15	
-       Gauss-Seidel method with dynamic relax	 1.02	    Compute complete	  0.132667	        14	
-       Gauss-Seidel method with dynamic relax	 1.03	    Compute complete	  0.140852	        14	
-       Gauss-Seidel method with dynamic relax	 1.04	    Compute complete	  0.139143	        14	
-       Gauss-Seidel method with dynamic relax	 1.05	    Compute complete	  0.135757	        14	
-       Gauss-Seidel method with dynamic relax	 1.06	    Compute complete	  0.129785	        13	
-       Gauss-Seidel method with dynamic relax	 1.07	    Compute complete	  0.131315	        13	
-       Gauss-Seidel method with dynamic relax	 1.08	    Compute complete	  0.131751	        13	
-       Gauss-Seidel method with dynamic relax	 1.09	    Compute complete	  0.115023	        12	
-       Gauss-Seidel method with dynamic relax	  1.1	    Compute complete	  0.116153	        12	
-       Gauss-Seidel method with dynamic relax	 1.11	    Compute complete	  0.120097	        12	
-       Gauss-Seidel method with dynamic relax	 1.12	    Compute complete	  0.116816	        12	
-       Gauss-Seidel method with dynamic relax	 1.13	    Compute complete	  0.130681	        12	
-       Gauss-Seidel method with dynamic relax	 1.14	    Compute complete	  0.123063	        12	
-       Gauss-Seidel method with dynamic relax	 1.15	    Compute complete	  0.127678	        12	
-       Gauss-Seidel method with dynamic relax	 1.16	    Compute complete	  0.117695	        12	
-       Gauss-Seidel method with dynamic relax	 1.17	    Compute complete	  0.113915	        12	
-       Gauss-Seidel method with dynamic relax	 1.18	    Compute complete	  0.131559	        13	
-       Gauss-Seidel method with dynamic relax	 1.19	    Compute complete	  0.133459	        13	
-       Gauss-Seidel method with dynamic relax	  1.2	    Compute complete	  0.136031	        14	
-       Gauss-Seidel method with dynamic relax	 1.21	    Compute complete	  0.132889	        14	
-       Gauss-Seidel method with dynamic relax	 1.22	    Compute complete	   0.14022	        14	
-       Gauss-Seidel method with dynamic relax	 1.23	    Compute complete	    0.1496	        15	
-       Gauss-Seidel method with dynamic relax	 1.24	    Compute complete	  0.149734	        15	
-       Gauss-Seidel method with dynamic relax	 1.25	    Compute complete	  0.152335	        16	
-       Gauss-Seidel method with dynamic relax	 1.26	    Compute complete	  0.153629	        16	
-       Gauss-Seidel method with dynamic relax	 1.27	    Compute complete	  0.151397	        16	
-       Gauss-Seidel method with dynamic relax	 1.28	    Compute complete	  0.174652	        17	
-       Gauss-Seidel method with dynamic relax	 1.29	    Compute complete	  0.169408	        17	
-       Gauss-Seidel method with dynamic relax	  1.3	    Compute complete	  0.178686	        18	
-       Gauss-Seidel method with dynamic relax	 1.31	    Compute complete	  0.176692	        18	
-       Gauss-Seidel method with dynamic relax	 1.32	    Compute complete	  0.201864	        19	
-       Gauss-Seidel method with dynamic relax	 1.33	    Compute complete	  0.179904	        19	
-       Gauss-Seidel method with dynamic relax	 1.34	    Compute complete	  0.191806	        20	
-       Gauss-Seidel method with dynamic relax	 1.35	    Compute complete	  0.194276	        20	
-       Gauss-Seidel method with dynamic relax	 1.36	    Compute complete	  0.200362	        21	
-       Gauss-Seidel method with dynamic relax	 1.37	    Compute complete	  0.199477	        21	
-       Gauss-Seidel method with dynamic relax	 1.38	    Compute complete	  0.214779	        22	
-       Gauss-Seidel method with dynamic relax	 1.39	    Compute complete	  0.209383	        22	
-       Gauss-Seidel method with dynamic relax	  1.4	    Compute complete	   0.22313	        23	
-       Gauss-Seidel method with dynamic relax	 1.41	    Compute complete	  0.224876	        23	
-       Gauss-Seidel method with dynamic relax	 1.42	    Compute complete	   0.24257	        24	
-       Gauss-Seidel method with dynamic relax	 1.43	    Compute complete	  0.243311	        25	
-       Gauss-Seidel method with dynamic relax	 1.44	    Compute complete	  0.249295	        25	
-       Gauss-Seidel method with dynamic relax	 1.45	    Compute complete	  0.250432	        26	
-       Gauss-Seidel method with dynamic relax	 1.46	    Compute complete	  0.272833	        27	
-       Gauss-Seidel method with dynamic relax	 1.47	    Compute complete	  0.260802	        27	
-       Gauss-Seidel method with dynamic relax	 1.48	    Compute complete	  0.271164	        28	
-       Gauss-Seidel method with dynamic relax	 1.49	    Compute complete	  0.277787	        29	
-       Gauss-Seidel method with dynamic relax	  1.5	    Compute complete	  0.292159	        30	
-       Gauss-Seidel method with dynamic relax	 1.51	    Compute complete	  0.298038	        31	
-       Gauss-Seidel method with dynamic relax	 1.52	    Compute complete	  0.307601	        32	
-       Gauss-Seidel method with dynamic relax	 1.53	    Compute complete	  0.305038	        32	
-       Gauss-Seidel method with dynamic relax	 1.54	    Compute complete	  0.317166	        33	
-       Gauss-Seidel method with dynamic relax	 1.55	    Compute complete	   0.33206	        34	
-       Gauss-Seidel method with dynamic relax	 1.56	    Compute complete	   0.33691	        35	
-       Gauss-Seidel method with dynamic relax	 1.57	    Compute complete	  0.361219	        36	
-       Gauss-Seidel method with dynamic relax	 1.58	    Compute complete	  0.365703	        38	
-       Gauss-Seidel method with dynamic relax	 1.59	    Compute complete	  0.370987	        39	
-       Gauss-Seidel method with dynamic relax	  1.6	    Compute complete	  0.384705	        40	
-       Gauss-Seidel method with dynamic relax	 1.61	    Compute complete	  0.389233	        41	
-       Gauss-Seidel method with dynamic relax	 1.62	    Compute complete	  0.412551	        43	
-       Gauss-Seidel method with dynamic relax	 1.63	    Compute complete	  0.424814	        44	
-       Gauss-Seidel method with dynamic relax	 1.64	    Compute complete	  0.443194	        46	
-       Gauss-Seidel method with dynamic relax	 1.65	    Compute complete	  0.450545	        47	
-       Gauss-Seidel method with dynamic relax	 1.66	    Compute complete	  0.478432	        49	
-       Gauss-Seidel method with dynamic relax	 1.67	    Compute complete	  0.516106	        51	
-       Gauss-Seidel method with dynamic relax	 1.68	    Compute complete	  0.511265	        53	
-       Gauss-Seidel method with dynamic relax	 1.69	    Compute complete	  0.547004	        55	
-       Gauss-Seidel method with dynamic relax	  1.7	    Compute complete	  0.597128	        57	
-       Gauss-Seidel method with dynamic relax	 1.71	    Compute complete	  0.630061	        59	
-       Gauss-Seidel method with dynamic relax	 1.72	    Compute complete	  0.612682	        62	
-       Gauss-Seidel method with dynamic relax	 1.73	    Compute complete	  0.607783	        64	
-       Gauss-Seidel method with dynamic relax	 1.74	    Compute complete	  0.673558	        67	
-       Gauss-Seidel method with dynamic relax	 1.75	    Compute complete	   1.11004	        70	
-       Gauss-Seidel method with dynamic relax	 1.76	    Compute complete	  0.907647	        74	
-       Gauss-Seidel method with dynamic relax	 1.77	    Compute complete	  0.773869	        77	
-       Gauss-Seidel method with dynamic relax	 1.78	    Compute complete	  0.771831	        81	
-       Gauss-Seidel method with dynamic relax	 1.79	    Compute complete	  0.822146	        86	
-       Gauss-Seidel method with dynamic relax	  1.8	    Compute complete	  0.858654	        90	
-       Gauss-Seidel method with dynamic relax	 1.81	    Compute complete	  0.932416	        96	
-       Gauss-Seidel method with dynamic relax	 1.82	    Compute complete	  0.971347	       101	
-       Gauss-Seidel method with dynamic relax	 1.83	    Compute complete	   1.02982	       108	
-       Gauss-Seidel method with dynamic relax	 1.84	    Compute complete	   1.10043	       115	
-       Gauss-Seidel method with dynamic relax	 1.85	    Compute complete	   1.20327	       124	
-       Gauss-Seidel method with dynamic relax	 1.86	    Compute complete	   1.27268	       133	
-       Gauss-Seidel method with dynamic relax	 1.87	    Compute complete	   1.37619	       144	
-       Gauss-Seidel method with dynamic relax	 1.88	    Compute complete	   1.51506	       157	
-       Gauss-Seidel method with dynamic relax	 1.89	    Compute complete	   1.68506	       172	
-       Gauss-Seidel method with dynamic relax	  1.9	    Compute complete	   1.82203	       190	
-       Gauss-Seidel method with dynamic relax	 1.91	    Compute complete	   2.02339	       212	
-       Gauss-Seidel method with dynamic relax	 1.92	    Compute complete	   2.30065	       240	
-       Gauss-Seidel method with dynamic relax	 1.93	    Compute complete	    2.6162	       275	
-       Gauss-Seidel method with dynamic relax	 1.94	    Compute complete	   3.77761	       323	
-       Gauss-Seidel method with dynamic relax	 1.95	    Compute complete	   3.70025	       389	
-       Gauss-Seidel method with dynamic relax	 1.96	    Compute complete	    4.6795	       489	
-       Gauss-Seidel method with dynamic relax	 1.97	    Compute complete	   6.22924	       655	
-       Gauss-Seidel method with dynamic relax	 1.98	    Compute complete	   9.38346	       987	
-       Gauss-Seidel method with dynamic relax	 1.99	    Compute complete	   19.8172	      1983	
+    Gauss-Seidel method without dynamic relax	    1	    Compute complete	  0.172826	        15	
+                                          SOR	    1	    Compute complete	  0.165141	        15	
+                                          SOR	 1.01	    Compute complete	  0.180336	        15	
+                                          SOR	 1.02	    Compute complete	  0.157227	        14	
+                                          SOR	 1.03	    Compute complete	  0.162279	        14	
+                                          SOR	 1.04	    Compute complete	  0.143499	        14	
+                                          SOR	 1.05	    Compute complete	  0.134018	        14	
+                                          SOR	 1.06	    Compute complete	  0.123722	        13	
+                                          SOR	 1.07	    Compute complete	  0.130575	        13	
+                                          SOR	 1.08	    Compute complete	  0.130948	        13	
+                                          SOR	 1.09	    Compute complete	  0.116494	        12	
+                                          SOR	  1.1	    Compute complete	  0.166084	        12	
+                                          SOR	 1.11	    Compute complete	  0.195726	        12	
+                                          SOR	 1.12	    Compute complete	  0.201306	        12	
+                                          SOR	 1.13	    Compute complete	  0.201235	        12	
+                                          SOR	 1.14	    Compute complete	  0.177536	        12	
+                                          SOR	 1.15	    Compute complete	  0.191311	        12	
+                                          SOR	 1.16	    Compute complete	  0.166297	        12	
+                                          SOR	 1.17	    Compute complete	  0.116714	        12	
+                                          SOR	 1.18	    Compute complete	  0.131572	        13	
+                                          SOR	 1.19	    Compute complete	  0.134863	        13	
+                                          SOR	  1.2	    Compute complete	  0.132646	        14	
+                                          SOR	 1.21	    Compute complete	  0.140282	        14	
+                                          SOR	 1.22	    Compute complete	  0.139443	        14	
+                                          SOR	 1.23	    Compute complete	  0.151362	        15	
+                                          SOR	 1.24	    Compute complete	  0.150631	        15	
+                                          SOR	 1.25	    Compute complete	  0.159163	        16	
+                                          SOR	 1.26	    Compute complete	  0.152092	        16	
+                                          SOR	 1.27	    Compute complete	   0.17093	        16	
+                                          SOR	 1.28	    Compute complete	  0.167935	        17	
+                                          SOR	 1.29	    Compute complete	  0.172376	        17	
+                                          SOR	  1.3	    Compute complete	  0.178098	        18	
+                                          SOR	 1.31	    Compute complete	   0.18013	        18	
+                                          SOR	 1.32	    Compute complete	  0.187614	        19	
+                                          SOR	 1.33	    Compute complete	  0.192485	        19	
+                                          SOR	 1.34	    Compute complete	  0.189446	        20	
+                                          SOR	 1.35	    Compute complete	  0.191785	        20	
+                                          SOR	 1.36	    Compute complete	  0.205358	        21	
+                                          SOR	 1.37	    Compute complete	  0.199391	        21	
+                                          SOR	 1.38	    Compute complete	  0.207084	        22	
+                                          SOR	 1.39	    Compute complete	  0.217848	        22	
+                                          SOR	  1.4	    Compute complete	  0.223169	        23	
+                                          SOR	 1.41	    Compute complete	  0.224583	        23	
+                                          SOR	 1.42	    Compute complete	  0.231167	        24	
+                                          SOR	 1.43	    Compute complete	  0.248829	        25	
+                                          SOR	 1.44	    Compute complete	  0.242019	        25	
+                                          SOR	 1.45	    Compute complete	  0.310564	        26	
+                                          SOR	 1.46	    Compute complete	  0.267462	        27	
+                                          SOR	 1.47	    Compute complete	  0.259768	        27	
+                                          SOR	 1.48	    Compute complete	  0.268811	        28	
+                                          SOR	 1.49	    Compute complete	  0.279082	        29	
+                                          SOR	  1.5	    Compute complete	  0.290958	        30	
+                                          SOR	 1.51	    Compute complete	  0.301734	        31	
+                                          SOR	 1.52	    Compute complete	  0.304817	        32	
+                                          SOR	 1.53	    Compute complete	  0.307285	        32	
+                                          SOR	 1.54	    Compute complete	  0.389736	        33	
+                                          SOR	 1.55	    Compute complete	  0.326226	        34	
+                                          SOR	 1.56	    Compute complete	  0.341882	        35	
+                                          SOR	 1.57	    Compute complete	   0.34396	        36	
+                                          SOR	 1.58	    Compute complete	  0.366581	        38	
+                                          SOR	 1.59	    Compute complete	  0.370933	        39	
+                                          SOR	  1.6	    Compute complete	  0.385928	        40	
+                                          SOR	 1.61	    Compute complete	  0.391426	        41	
+                                          SOR	 1.62	    Compute complete	  0.406518	        43	
+                                          SOR	 1.63	    Compute complete	  0.435661	        44	
+                                          SOR	 1.64	    Compute complete	  0.438825	        46	
+                                          SOR	 1.65	    Compute complete	  0.470458	        47	
+                                          SOR	 1.66	    Compute complete	  0.469745	        49	
+                                          SOR	 1.67	    Compute complete	   0.48671	        51	
+                                          SOR	 1.68	    Compute complete	  0.512253	        53	
+                                          SOR	 1.69	    Compute complete	  0.568022	        55	
+                                          SOR	  1.7	    Compute complete	  0.547241	        57	
+                                          SOR	 1.71	    Compute complete	  0.562434	        59	
+                                          SOR	 1.72	    Compute complete	  0.586242	        62	
+                                          SOR	 1.73	    Compute complete	   0.61288	        64	
+                                          SOR	 1.74	    Compute complete	  0.645824	        67	
+                                          SOR	 1.75	    Compute complete	  0.664943	        70	
+                                          SOR	 1.76	    Compute complete	  0.747523	        74	
+                                          SOR	 1.77	    Compute complete	  0.758837	        77	
+                                          SOR	 1.78	    Compute complete	  0.773337	        81	
+                                          SOR	 1.79	    Compute complete	  0.828585	        86	
+                                          SOR	  1.8	    Compute complete	  0.860681	        90	
+                                          SOR	 1.81	    Compute complete	  0.950878	        96	
+                                          SOR	 1.82	    Compute complete	    1.7106	       101	
+                                          SOR	 1.83	    Compute complete	   1.18776	       108	
+                                          SOR	 1.84	    Compute complete	   1.10753	       115	
+                                          SOR	 1.85	    Compute complete	   1.17551	       124	
+                                          SOR	 1.86	    Compute complete	    1.2611	       133	
+                                          SOR	 1.87	    Compute complete	   1.38119	       144	
+                                          SOR	 1.88	    Compute complete	   1.48433	       157	
+                                          SOR	 1.89	    Compute complete	   1.71792	       172	
+                                          SOR	  1.9	    Compute complete	   1.89449	       190	
+                                          SOR	 1.91	    Compute complete	   2.07789	       212	
+                                          SOR	 1.92	    Compute complete	   2.31142	       240	
+                                          SOR	 1.93	    Compute complete	   2.64207	       275	
+                                          SOR	 1.94	    Compute complete	   3.08243	       323	
+                                          SOR	 1.95	    Compute complete	   3.72588	       389	
+                                          SOR	 1.96	    Compute complete	   5.48684	       489	
+                                          SOR	 1.97	    Compute complete	   6.41876	       655	
+                                          SOR	 1.98	    Compute complete	   9.42078	       987	
+                                          SOR	 1.99	    Compute complete	   19.9992	      1983	

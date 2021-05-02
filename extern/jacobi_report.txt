@@ -1,191 +1,91 @@
-          Jacobi method without dynamic relax	    1	    Compute complete	  0.058253	        25	
-             Jacobi method with dynamic relax	  0.1	    Compute complete	  0.481076	       260	
-             Jacobi method with dynamic relax	 0.11	    Compute complete	  0.434655	       238	
-             Jacobi method with dynamic relax	 0.12	    Compute complete	  0.429032	       219	
-             Jacobi method with dynamic relax	 0.13	    Compute complete	  0.372672	       203	
-             Jacobi method with dynamic relax	 0.14	    Compute complete	  0.348386	       189	
-             Jacobi method with dynamic relax	 0.15	    Compute complete	  0.325726	       177	
-             Jacobi method with dynamic relax	 0.16	    Compute complete	  0.306195	       166	
-             Jacobi method with dynamic relax	 0.17	    Compute complete	  0.287198	       157	
-             Jacobi method with dynamic relax	 0.18	    Compute complete	   0.27292	       148	
-             Jacobi method with dynamic relax	 0.19	    Compute complete	  0.260868	       141	
-             Jacobi method with dynamic relax	  0.2	    Compute complete	  0.247062	       134	
-             Jacobi method with dynamic relax	 0.21	    Compute complete	  0.236296	       128	
-             Jacobi method with dynamic relax	 0.22	    Compute complete	    0.2312	       122	
-             Jacobi method with dynamic relax	 0.23	    Compute complete	  0.221169	       117	
-             Jacobi method with dynamic relax	 0.24	    Compute complete	  0.207544	       112	
-             Jacobi method with dynamic relax	 0.25	    Compute complete	  0.203488	       108	
-             Jacobi method with dynamic relax	 0.26	    Compute complete	  0.193891	       104	
-             Jacobi method with dynamic relax	 0.27	    Compute complete	  0.184442	       100	
-             Jacobi method with dynamic relax	 0.28	    Compute complete	  0.182534	        96	
-             Jacobi method with dynamic relax	 0.29	    Compute complete	  0.175147	        93	
-             Jacobi method with dynamic relax	  0.3	    Compute complete	  0.167715	        90	
-             Jacobi method with dynamic relax	 0.31	    Compute complete	  0.164117	        87	
-             Jacobi method with dynamic relax	 0.32	    Compute complete	  0.156644	        84	
-             Jacobi method with dynamic relax	 0.33	    Compute complete	  0.151813	        82	
-             Jacobi method with dynamic relax	 0.34	    Compute complete	  0.148277	        79	
-             Jacobi method with dynamic relax	 0.35	    Compute complete	  0.141627	        77	
-             Jacobi method with dynamic relax	 0.36	    Compute complete	  0.141063	        75	
-             Jacobi method with dynamic relax	 0.37	    Compute complete	  0.137947	        73	
-             Jacobi method with dynamic relax	 0.38	    Compute complete	  0.133101	        71	
-             Jacobi method with dynamic relax	 0.39	    Compute complete	   0.13138	        69	
-             Jacobi method with dynamic relax	  0.4	    Compute complete	  0.134627	        67	
-             Jacobi method with dynamic relax	 0.41	    Compute complete	  0.132775	        66	
-             Jacobi method with dynamic relax	 0.42	    Compute complete	  0.121537	        64	
-             Jacobi method with dynamic relax	 0.43	    Compute complete	  0.116491	        63	
-             Jacobi method with dynamic relax	 0.44	    Compute complete	  0.115005	        61	
-             Jacobi method with dynamic relax	 0.45	    Compute complete	  0.111467	        60	
-             Jacobi method with dynamic relax	 0.46	    Compute complete	  0.109634	        58	
-             Jacobi method with dynamic relax	 0.47	    Compute complete	  0.105265	        57	
-             Jacobi method with dynamic relax	 0.48	    Compute complete	  0.106106	        56	
-             Jacobi method with dynamic relax	 0.49	    Compute complete	  0.104905	        55	
-             Jacobi method with dynamic relax	  0.5	    Compute complete	  0.102885	        53	
-             Jacobi method with dynamic relax	 0.51	    Compute complete	  0.096591	        52	
-             Jacobi method with dynamic relax	 0.52	    Compute complete	  0.099115	        51	
-             Jacobi method with dynamic relax	 0.53	    Compute complete	  0.092665	        50	
-             Jacobi method with dynamic relax	 0.54	    Compute complete	  0.095408	        49	
-             Jacobi method with dynamic relax	 0.55	    Compute complete	  0.091575	        48	
-             Jacobi method with dynamic relax	 0.56	    Compute complete	  0.089851	        47	
-             Jacobi method with dynamic relax	 0.57	    Compute complete	  0.087584	        46	
-             Jacobi method with dynamic relax	 0.58	    Compute complete	  0.089819	        46	
-             Jacobi method with dynamic relax	 0.59	    Compute complete	  0.085899	        45	
-             Jacobi method with dynamic relax	  0.6	    Compute complete	  0.087482	        44	
-             Jacobi method with dynamic relax	 0.61	    Compute complete	   0.08253	        43	
-             Jacobi method with dynamic relax	 0.62	    Compute complete	  0.080685	        42	
-             Jacobi method with dynamic relax	 0.63	    Compute complete	  0.079975	        42	
-             Jacobi method with dynamic relax	 0.64	    Compute complete	  0.079219	        41	
-             Jacobi method with dynamic relax	 0.65	    Compute complete	  0.076424	        40	
-             Jacobi method with dynamic relax	 0.66	    Compute complete	  0.078513	        40	
-             Jacobi method with dynamic relax	 0.67	    Compute complete	  0.073727	        39	
-             Jacobi method with dynamic relax	 0.68	    Compute complete	  0.074726	        38	
-             Jacobi method with dynamic relax	 0.69	    Compute complete	  0.072242	        38	
-             Jacobi method with dynamic relax	  0.7	    Compute complete	  0.072631	        37	
-             Jacobi method with dynamic relax	 0.71	    Compute complete	   0.06754	        36	
-             Jacobi method with dynamic relax	 0.72	    Compute complete	  0.076054	        36	
-             Jacobi method with dynamic relax	 0.73	    Compute complete	     0.067	        35	
-             Jacobi method with dynamic relax	 0.74	    Compute complete	  0.067988	        35	
-             Jacobi method with dynamic relax	 0.75	    Compute complete	  0.064388	        34	
-             Jacobi method with dynamic relax	 0.76	    Compute complete	  0.065997	        34	
-             Jacobi method with dynamic relax	 0.77	    Compute complete	  0.062027	        33	
-             Jacobi method with dynamic relax	 0.78	    Compute complete	  0.064976	        33	
-             Jacobi method with dynamic relax	 0.79	    Compute complete	  0.061562	        32	
-             Jacobi method with dynamic relax	  0.8	    Compute complete	  0.062786	        32	
-             Jacobi method with dynamic relax	 0.81	    Compute complete	  0.058259	        31	
-             Jacobi method with dynamic relax	 0.82	    Compute complete	  0.060993	        31	
-             Jacobi method with dynamic relax	 0.83	    Compute complete	  0.056502	        30	
-             Jacobi method with dynamic relax	 0.84	    Compute complete	  0.059597	        30	
-             Jacobi method with dynamic relax	 0.85	    Compute complete	  0.057839	        30	
-             Jacobi method with dynamic relax	 0.86	    Compute complete	  0.058226	        29	
-             Jacobi method with dynamic relax	 0.87	    Compute complete	  0.056067	        29	
-             Jacobi method with dynamic relax	 0.88	    Compute complete	  0.055395	        28	
-             Jacobi method with dynamic relax	 0.89	    Compute complete	  0.054522	        28	
-             Jacobi method with dynamic relax	  0.9	    Compute complete	  0.055534	        28	
-             Jacobi method with dynamic relax	 0.91	    Compute complete	  0.051211	        27	
-             Jacobi method with dynamic relax	 0.92	    Compute complete	  0.053322	        27	
-             Jacobi method with dynamic relax	 0.93	    Compute complete	  0.050602	        26	
-             Jacobi method with dynamic relax	 0.94	    Compute complete	  0.052755	        26	
-             Jacobi method with dynamic relax	 0.95	    Compute complete	  0.050187	        26	
-             Jacobi method with dynamic relax	 0.96	    Compute complete	  0.050068	        25	
-             Jacobi method with dynamic relax	 0.97	    Compute complete	  0.048584	        25	
-             Jacobi method with dynamic relax	 0.98	    Compute complete	  0.050372	        25	
-             Jacobi method with dynamic relax	 0.99	    Compute complete	  0.048145	        25	
-             Jacobi method with dynamic relax	    1	    Compute complete	  0.052449	        25	
-             Jacobi method with dynamic relax	 1.01	    Compute complete	  0.048852	        25	
-             Jacobi method with dynamic relax	 1.02	    Compute complete	  0.052397	        26	
-             Jacobi method with dynamic relax	 1.03	    Compute complete	  0.054659	        28	
-             Jacobi method with dynamic relax	 1.04	    Compute complete	  0.085751	        29	
-             Jacobi method with dynamic relax	 1.05	    Compute complete	   0.05671	        30	
-             Jacobi method with dynamic relax	 1.06	    Compute complete	  0.064625	        32	
-             Jacobi method with dynamic relax	 1.07	    Compute complete	  0.062191	        33	
-             Jacobi method with dynamic relax	 1.08	    Compute complete	  0.069196	        35	
-             Jacobi method with dynamic relax	 1.09	    Compute complete	  0.079821	        37	
-             Jacobi method with dynamic relax	  1.1	    Compute complete	   0.09277	        39	
-             Jacobi method with dynamic relax	 1.11	    Compute complete	  0.078316	        41	
-             Jacobi method with dynamic relax	 1.12	    Compute complete	  0.082953	        43	
-             Jacobi method with dynamic relax	 1.13	    Compute complete	   0.08626	        46	
-             Jacobi method with dynamic relax	 1.14	    Compute complete	  0.093704	        49	
-             Jacobi method with dynamic relax	 1.15	    Compute complete	  0.096757	        52	
-             Jacobi method with dynamic relax	 1.16	    Compute complete	  0.104567	        55	
-             Jacobi method with dynamic relax	 1.17	    Compute complete	  0.109283	        59	
-             Jacobi method with dynamic relax	 1.18	    Compute complete	  0.120569	        64	
-             Jacobi method with dynamic relax	 1.19	    Compute complete	  0.127333	        69	
-             Jacobi method with dynamic relax	  1.2	    Compute complete	  0.141085	        75	
-             Jacobi method with dynamic relax	 1.21	    Compute complete	  0.151568	        82	
-             Jacobi method with dynamic relax	 1.22	    Compute complete	  0.170164	        91	
-             Jacobi method with dynamic relax	 1.23	    Compute complete	  0.198615	       101	
-             Jacobi method with dynamic relax	 1.24	    Compute complete	  0.213171	       114	
-             Jacobi method with dynamic relax	 1.25	    Compute complete	  0.254124	       129	
-             Jacobi method with dynamic relax	 1.26	    Compute complete	  0.301865	       150	
-             Jacobi method with dynamic relax	 1.27	    Compute complete	  0.546394	       178	
-             Jacobi method with dynamic relax	 1.28	    Compute complete	  0.617187	       218	
-             Jacobi method with dynamic relax	 1.29	    Compute complete	  0.713326	       281	
-             Jacobi method with dynamic relax	  1.3	    Compute complete	  0.736315	       392	
-             Jacobi method with dynamic relax	 1.31	    Compute complete	   1.16789	       640	
-             Jacobi method with dynamic relax	 1.32	    Compute complete	   3.13666	      1716	
-             Jacobi method with dynamic relax	 1.33	    Timeout occured!	   100.002	     54174	
-             Jacobi method with dynamic relax	 1.34	    Compute complete	   68.3153	     33771	
-             Jacobi method with dynamic relax	 1.35	    Compute complete	   40.1785	     19835	
-             Jacobi method with dynamic relax	 1.36	    Compute complete	   28.7237	     14101	
-             Jacobi method with dynamic relax	 1.37	    Compute complete	   22.3051	     10973	
-             Jacobi method with dynamic relax	 1.38	    Compute complete	   18.0511	      9005	
-             Jacobi method with dynamic relax	 1.39	    Compute complete	   15.7377	      7651	
-             Jacobi method with dynamic relax	  1.4	    Compute complete	    13.431	      6663	
-             Jacobi method with dynamic relax	 1.41	    Compute complete	   12.2176	      5910	
-             Jacobi method with dynamic relax	 1.42	    Compute complete	   10.7926	      5318	
-             Jacobi method with dynamic relax	 1.43	    Compute complete	   9.61986	      4839	
-             Jacobi method with dynamic relax	 1.44	    Compute complete	    8.9646	      4444	
-             Jacobi method with dynamic relax	 1.45	    Compute complete	    8.6504	      4112	
-             Jacobi method with dynamic relax	 1.46	    Compute complete	    7.7994	      3830	
-             Jacobi method with dynamic relax	 1.47	    Compute complete	   7.20034	      3587	
-             Jacobi method with dynamic relax	 1.48	    Compute complete	    6.7502	      3376	
-             Jacobi method with dynamic relax	 1.49	    Compute complete	   6.82972	      3190	
-             Jacobi method with dynamic relax	  1.5	    Compute complete	   6.05976	      3026	
-             Jacobi method with dynamic relax	 1.51	    Compute complete	   5.73703	      2879	
-             Jacobi method with dynamic relax	 1.52	    Compute complete	   5.47482	      2747	
-             Jacobi method with dynamic relax	 1.53	    Compute complete	   5.28621	      2629	
-             Jacobi method with dynamic relax	 1.54	    Compute complete	   5.41021	      2521	
-             Jacobi method with dynamic relax	 1.55	    Compute complete	   4.93025	      2423	
-             Jacobi method with dynamic relax	 1.56	    Compute complete	   4.70275	      2333	
-             Jacobi method with dynamic relax	 1.57	    Compute complete	   4.48916	      2250	
-             Jacobi method with dynamic relax	 1.58	    Compute complete	   4.34153	      2174	
-             Jacobi method with dynamic relax	 1.59	    Compute complete	   4.19543	      2104	
-             Jacobi method with dynamic relax	  1.6	    Compute complete	   4.48558	      2039	
-             Jacobi method with dynamic relax	 1.61	    Compute complete	   4.09764	      1978	
-             Jacobi method with dynamic relax	 1.62	    Compute complete	   3.83685	      1922	
-             Jacobi method with dynamic relax	 1.63	    Compute complete	   3.72368	      1869	
-             Jacobi method with dynamic relax	 1.64	    Compute complete	   3.61922	      1819	
-             Jacobi method with dynamic relax	 1.65	    Compute complete	   3.54191	      1773	
-             Jacobi method with dynamic relax	 1.66	    Compute complete	   3.45133	      1729	
-             Jacobi method with dynamic relax	 1.67	    Compute complete	   3.44773	      1688	
-             Jacobi method with dynamic relax	 1.68	    Compute complete	   3.50301	      1649	
-             Jacobi method with dynamic relax	 1.69	    Compute complete	   3.42656	      1612	
-             Jacobi method with dynamic relax	  1.7	    Compute complete	    3.1659	      1577	
-             Jacobi method with dynamic relax	 1.71	    Compute complete	   3.08657	      1544	
-             Jacobi method with dynamic relax	 1.72	    Compute complete	   3.02138	      1512	
-             Jacobi method with dynamic relax	 1.73	    Compute complete	   2.98975	      1483	
-             Jacobi method with dynamic relax	 1.74	    Compute complete	   2.91526	      1454	
-             Jacobi method with dynamic relax	 1.75	    Compute complete	   2.85381	      1427	
-             Jacobi method with dynamic relax	 1.76	    Compute complete	   2.84554	      1401	
-             Jacobi method with dynamic relax	 1.77	    Compute complete	   2.75585	      1376	
-             Jacobi method with dynamic relax	 1.78	    Compute complete	   2.71344	      1353	
-             Jacobi method with dynamic relax	 1.79	    Compute complete	   3.01368	      1330	
-             Jacobi method with dynamic relax	  1.8	    Compute complete	   2.69262	      1308	
-             Jacobi method with dynamic relax	 1.81	    Compute complete	   2.62216	      1287	
-             Jacobi method with dynamic relax	 1.82	    Compute complete	   2.62981	      1267	
-             Jacobi method with dynamic relax	 1.83	    Compute complete	    2.4981	      1248	
-             Jacobi method with dynamic relax	 1.84	    Compute complete	   2.46232	      1229	
-             Jacobi method with dynamic relax	 1.85	    Compute complete	   2.42226	      1212	
-             Jacobi method with dynamic relax	 1.86	    Compute complete	   2.39033	      1194	
-             Jacobi method with dynamic relax	 1.87	    Compute complete	   2.36795	      1178	
-             Jacobi method with dynamic relax	 1.88	    Compute complete	   2.38042	      1162	
-             Jacobi method with dynamic relax	 1.89	    Compute complete	   2.29501	      1146	
-             Jacobi method with dynamic relax	  1.9	    Compute complete	   2.28674	      1131	
-             Jacobi method with dynamic relax	 1.91	    Compute complete	   2.63282	      1117	
-             Jacobi method with dynamic relax	 1.92	    Compute complete	   2.29407	      1103	
-             Jacobi method with dynamic relax	 1.93	    Compute complete	   2.19434	      1090	
-             Jacobi method with dynamic relax	 1.94	    Compute complete	   2.17236	      1077	
-             Jacobi method with dynamic relax	 1.95	    Compute complete	   2.15387	      1064	
-             Jacobi method with dynamic relax	 1.96	    Compute complete	   2.11206	      1052	
-             Jacobi method with dynamic relax	 1.97	    Compute complete	    2.1272	      1040	
-             Jacobi method with dynamic relax	 1.98	    Compute complete	   2.05771	      1028	
-             Jacobi method with dynamic relax	 1.99	    Compute complete	   2.09356	      1017	
+          Jacobi method without dynamic relax	    1	    Compute complete	  0.057423	        25	
+            Jacobi method with sub-relaxation	  0.1	    Compute complete	  0.471663	       260	
+            Jacobi method with sub-relaxation	 0.11	    Compute complete	  0.432054	       238	
+            Jacobi method with sub-relaxation	 0.12	    Compute complete	  0.396939	       219	
+            Jacobi method with sub-relaxation	 0.13	    Compute complete	  0.382024	       203	
+            Jacobi method with sub-relaxation	 0.14	    Compute complete	  0.602325	       189	
+            Jacobi method with sub-relaxation	 0.15	    Compute complete	  0.537182	       177	
+            Jacobi method with sub-relaxation	 0.16	    Compute complete	   0.34023	       166	
+            Jacobi method with sub-relaxation	 0.17	    Compute complete	  0.285051	       157	
+            Jacobi method with sub-relaxation	 0.18	    Compute complete	  0.280968	       148	
+            Jacobi method with sub-relaxation	 0.19	    Compute complete	  0.255466	       141	
+            Jacobi method with sub-relaxation	  0.2	    Compute complete	    0.2548	       134	
+            Jacobi method with sub-relaxation	 0.21	    Compute complete	  0.240306	       128	
+            Jacobi method with sub-relaxation	 0.22	    Compute complete	  0.224371	       122	
+            Jacobi method with sub-relaxation	 0.23	    Compute complete	  0.212578	       117	
+            Jacobi method with sub-relaxation	 0.24	    Compute complete	  0.205746	       112	
+            Jacobi method with sub-relaxation	 0.25	    Compute complete	  0.195959	       108	
+            Jacobi method with sub-relaxation	 0.26	    Compute complete	  0.191714	       104	
+            Jacobi method with sub-relaxation	 0.27	    Compute complete	  0.183016	       100	
+            Jacobi method with sub-relaxation	 0.28	    Compute complete	  0.179275	        96	
+            Jacobi method with sub-relaxation	 0.29	    Compute complete	  0.169697	        93	
+            Jacobi method with sub-relaxation	  0.3	    Compute complete	  0.166191	        90	
+            Jacobi method with sub-relaxation	 0.31	    Compute complete	  0.159915	        87	
+            Jacobi method with sub-relaxation	 0.32	    Compute complete	   0.23286	        84	
+            Jacobi method with sub-relaxation	 0.33	    Compute complete	   0.28296	        82	
+            Jacobi method with sub-relaxation	 0.34	    Compute complete	  0.162196	        79	
+            Jacobi method with sub-relaxation	 0.35	    Compute complete	  0.141075	        77	
+            Jacobi method with sub-relaxation	 0.36	    Compute complete	  0.140056	        75	
+            Jacobi method with sub-relaxation	 0.37	    Compute complete	  0.133699	        73	
+            Jacobi method with sub-relaxation	 0.38	    Compute complete	   0.13292	        71	
+            Jacobi method with sub-relaxation	 0.39	    Compute complete	  0.126621	        69	
+            Jacobi method with sub-relaxation	  0.4	    Compute complete	  0.132078	        67	
+            Jacobi method with sub-relaxation	 0.41	    Compute complete	  0.121329	        66	
+            Jacobi method with sub-relaxation	 0.42	    Compute complete	  0.118948	        64	
+            Jacobi method with sub-relaxation	 0.43	    Compute complete	  0.115261	        63	
+            Jacobi method with sub-relaxation	 0.44	    Compute complete	   0.11391	        61	
+            Jacobi method with sub-relaxation	 0.45	    Compute complete	  0.110218	        60	
+            Jacobi method with sub-relaxation	 0.46	    Compute complete	  0.108214	        58	
+            Jacobi method with sub-relaxation	 0.47	    Compute complete	  0.104516	        57	
+            Jacobi method with sub-relaxation	 0.48	    Compute complete	  0.104541	        56	
+            Jacobi method with sub-relaxation	 0.49	    Compute complete	  0.101122	        55	
+            Jacobi method with sub-relaxation	  0.5	    Compute complete	   0.09913	        53	
+            Jacobi method with sub-relaxation	 0.51	    Compute complete	  0.095806	        52	
+            Jacobi method with sub-relaxation	 0.52	    Compute complete	  0.096358	        51	
+            Jacobi method with sub-relaxation	 0.53	    Compute complete	  0.092108	        50	
+            Jacobi method with sub-relaxation	 0.54	    Compute complete	  0.092553	        49	
+            Jacobi method with sub-relaxation	 0.55	    Compute complete	  0.088699	        48	
+            Jacobi method with sub-relaxation	 0.56	    Compute complete	  0.093404	        47	
+            Jacobi method with sub-relaxation	 0.57	    Compute complete	  0.093178	        46	
+            Jacobi method with sub-relaxation	 0.58	    Compute complete	  0.087124	        46	
+            Jacobi method with sub-relaxation	 0.59	    Compute complete	  0.082677	        45	
+            Jacobi method with sub-relaxation	  0.6	    Compute complete	  0.084548	        44	
+            Jacobi method with sub-relaxation	 0.61	    Compute complete	  0.079511	        43	
+            Jacobi method with sub-relaxation	 0.62	    Compute complete	  0.079598	        42	
+            Jacobi method with sub-relaxation	 0.63	    Compute complete	  0.077603	        42	
+            Jacobi method with sub-relaxation	 0.64	    Compute complete	  0.077965	        41	
+            Jacobi method with sub-relaxation	 0.65	    Compute complete	  0.073592	        40	
+            Jacobi method with sub-relaxation	 0.66	    Compute complete	  0.075923	        40	
+            Jacobi method with sub-relaxation	 0.67	    Compute complete	  0.072172	        39	
+            Jacobi method with sub-relaxation	 0.68	    Compute complete	  0.073833	        38	
+            Jacobi method with sub-relaxation	 0.69	    Compute complete	  0.070116	        38	
+            Jacobi method with sub-relaxation	  0.7	    Compute complete	  0.071258	        37	
+            Jacobi method with sub-relaxation	 0.71	    Compute complete	  0.067276	        36	
+            Jacobi method with sub-relaxation	 0.72	    Compute complete	  0.076022	        36	
+            Jacobi method with sub-relaxation	 0.73	    Compute complete	  0.064937	        35	
+            Jacobi method with sub-relaxation	 0.74	    Compute complete	   0.07219	        35	
+            Jacobi method with sub-relaxation	 0.75	    Compute complete	  0.062738	        34	
+            Jacobi method with sub-relaxation	 0.76	    Compute complete	  0.065496	        34	
+            Jacobi method with sub-relaxation	 0.77	    Compute complete	  0.061519	        33	
+            Jacobi method with sub-relaxation	 0.78	    Compute complete	  0.063571	        33	
+            Jacobi method with sub-relaxation	 0.79	    Compute complete	  0.059565	        32	
+            Jacobi method with sub-relaxation	  0.8	    Compute complete	  0.062002	        32	
+            Jacobi method with sub-relaxation	 0.81	    Compute complete	  0.057986	        31	
+            Jacobi method with sub-relaxation	 0.82	    Compute complete	  0.059751	        31	
+            Jacobi method with sub-relaxation	 0.83	    Compute complete	  0.056149	        30	
+            Jacobi method with sub-relaxation	 0.84	    Compute complete	  0.058339	        30	
+            Jacobi method with sub-relaxation	 0.85	    Compute complete	  0.055933	        30	
+            Jacobi method with sub-relaxation	 0.86	    Compute complete	  0.056684	        29	
+            Jacobi method with sub-relaxation	 0.87	    Compute complete	  0.054236	        29	
+            Jacobi method with sub-relaxation	 0.88	    Compute complete	  0.055106	        28	
+            Jacobi method with sub-relaxation	 0.89	    Compute complete	  0.052978	        28	
+            Jacobi method with sub-relaxation	  0.9	    Compute complete	  0.064876	        28	
+            Jacobi method with sub-relaxation	 0.91	    Compute complete	  0.050684	        27	
+            Jacobi method with sub-relaxation	 0.92	    Compute complete	  0.052988	        27	
+            Jacobi method with sub-relaxation	 0.93	    Compute complete	  0.049345	        26	
+            Jacobi method with sub-relaxation	 0.94	    Compute complete	   0.05416	        26	
+            Jacobi method with sub-relaxation	 0.95	    Compute complete	  0.049054	        26	
+            Jacobi method with sub-relaxation	 0.96	    Compute complete	  0.050136	        25	
+            Jacobi method with sub-relaxation	 0.97	    Compute complete	  0.047151	        25	
+            Jacobi method with sub-relaxation	 0.98	    Compute complete	  0.049615	        25	
+            Jacobi method with sub-relaxation	 0.99	    Compute complete	  0.047311	        25	

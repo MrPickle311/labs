@@ -1,191 +1,191 @@
-    Gauss-Seidel method without dynamic relax	    1	    Timeout occured!	   1002.73	       143	
-       Gauss-Seidel method with dynamic relax	  0.1	    Timeout occured!	    1007.7	       130	
-       Gauss-Seidel method with dynamic relax	 0.11	    Timeout occured!	   1004.93	       132	
-       Gauss-Seidel method with dynamic relax	 0.12	    Timeout occured!	   1003.73	       135	
-       Gauss-Seidel method with dynamic relax	 0.13	    Timeout occured!	   1005.37	       143	
-       Gauss-Seidel method with dynamic relax	 0.14	    Timeout occured!	      1002	       143	
-       Gauss-Seidel method with dynamic relax	 0.15	    Timeout occured!	   1005.34	       140	
-       Gauss-Seidel method with dynamic relax	 0.16	    Timeout occured!	   1006.89	       141	
-       Gauss-Seidel method with dynamic relax	 0.17	    Timeout occured!	   1006.36	       137	
-       Gauss-Seidel method with dynamic relax	 0.18	    Timeout occured!	   1005.68	       112	
-       Gauss-Seidel method with dynamic relax	 0.19	    Timeout occured!	   1006.62	       133	
-       Gauss-Seidel method with dynamic relax	  0.2	    Timeout occured!	   1008.72	       128	
-       Gauss-Seidel method with dynamic relax	 0.21	    Timeout occured!	   1003.01	       140	
-       Gauss-Seidel method with dynamic relax	 0.22	    Timeout occured!	   1002.87	       141	
-       Gauss-Seidel method with dynamic relax	 0.23	    Timeout occured!	   1002.49	       142	
-       Gauss-Seidel method with dynamic relax	 0.24	    Timeout occured!	   1006.74	       132	
-       Gauss-Seidel method with dynamic relax	 0.25	    Timeout occured!	   1001.93	       137	
-       Gauss-Seidel method with dynamic relax	 0.26	    Timeout occured!	   1004.59	       140	
-       Gauss-Seidel method with dynamic relax	 0.27	    Timeout occured!	   1001.18	       144	
-       Gauss-Seidel method with dynamic relax	 0.28	    Timeout occured!	   1001.81	       143	
-       Gauss-Seidel method with dynamic relax	 0.29	    Timeout occured!	   1002.93	       143	
-       Gauss-Seidel method with dynamic relax	  0.3	    Timeout occured!	   1000.72	       134	
-       Gauss-Seidel method with dynamic relax	 0.31	    Timeout occured!	   1007.17	       133	
-       Gauss-Seidel method with dynamic relax	 0.32	    Timeout occured!	   1006.06	       143	
-       Gauss-Seidel method with dynamic relax	 0.33	    Timeout occured!	   1004.96	       136	
-       Gauss-Seidel method with dynamic relax	 0.34	    Timeout occured!	   1001.48	       137	
-       Gauss-Seidel method with dynamic relax	 0.35	    Timeout occured!	   1006.43	       114	
-       Gauss-Seidel method with dynamic relax	 0.36	    Timeout occured!	   1000.99	       142	
-       Gauss-Seidel method with dynamic relax	 0.37	    Timeout occured!	   1000.92	       142	
-       Gauss-Seidel method with dynamic relax	 0.38	    Timeout occured!	   1004.03	       141	
-       Gauss-Seidel method with dynamic relax	 0.39	    Timeout occured!	   1003.19	       137	
-       Gauss-Seidel method with dynamic relax	  0.4	    Timeout occured!	   1005.05	       128	
-       Gauss-Seidel method with dynamic relax	 0.41	    Timeout occured!	    1002.6	       142	
-       Gauss-Seidel method with dynamic relax	 0.42	    Timeout occured!	   1000.54	       116	
-       Gauss-Seidel method with dynamic relax	 0.43	    Timeout occured!	   1006.66	       133	
-       Gauss-Seidel method with dynamic relax	 0.44	    Timeout occured!	   1002.73	       137	
-       Gauss-Seidel method with dynamic relax	 0.45	    Timeout occured!	   1004.28	       143	
-       Gauss-Seidel method with dynamic relax	 0.46	    Timeout occured!	    1000.1	       142	
-       Gauss-Seidel method with dynamic relax	 0.47	    Timeout occured!	   1002.23	       143	
-       Gauss-Seidel method with dynamic relax	 0.48	    Timeout occured!	   1004.55	       143	
-       Gauss-Seidel method with dynamic relax	 0.49	    Timeout occured!	   1003.02	       129	
-       Gauss-Seidel method with dynamic relax	  0.5	    Timeout occured!	   1005.77	       141	
-       Gauss-Seidel method with dynamic relax	 0.51	    Timeout occured!	   1002.46	       142	
-       Gauss-Seidel method with dynamic relax	 0.52	    Timeout occured!	   1003.46	       142	
-       Gauss-Seidel method with dynamic relax	 0.53	    Timeout occured!	   1004.13	       142	
-       Gauss-Seidel method with dynamic relax	 0.54	    Timeout occured!	   1006.66	       144	
-       Gauss-Seidel method with dynamic relax	 0.55	    Timeout occured!	   1006.02	       142	
-       Gauss-Seidel method with dynamic relax	 0.56	    Timeout occured!	    1003.2	       143	
-       Gauss-Seidel method with dynamic relax	 0.57	    Timeout occured!	   1004.12	       143	
-       Gauss-Seidel method with dynamic relax	 0.58	    Timeout occured!	   1005.01	       144	
-       Gauss-Seidel method with dynamic relax	 0.59	    Timeout occured!	   1002.71	       139	
-       Gauss-Seidel method with dynamic relax	  0.6	    Timeout occured!	   1002.02	       115	
-       Gauss-Seidel method with dynamic relax	 0.61	    Timeout occured!	   1005.91	       132	
-       Gauss-Seidel method with dynamic relax	 0.62	    Timeout occured!	   1005.37	       142	
-       Gauss-Seidel method with dynamic relax	 0.63	    Timeout occured!	    1002.6	       141	
-       Gauss-Seidel method with dynamic relax	 0.64	    Timeout occured!	   1002.46	       143	
-       Gauss-Seidel method with dynamic relax	 0.65	    Timeout occured!	    1005.5	       143	
-       Gauss-Seidel method with dynamic relax	 0.66	    Timeout occured!	    1005.8	       143	
-       Gauss-Seidel method with dynamic relax	 0.67	    Timeout occured!	   1004.11	       143	
-       Gauss-Seidel method with dynamic relax	 0.68	    Timeout occured!	   1004.17	       143	
-       Gauss-Seidel method with dynamic relax	 0.69	    Timeout occured!	   1005.25	       143	
-       Gauss-Seidel method with dynamic relax	  0.7	    Timeout occured!	   1006.24	       142	
-       Gauss-Seidel method with dynamic relax	 0.71	    Timeout occured!	   1002.88	       143	
-       Gauss-Seidel method with dynamic relax	 0.72	    Timeout occured!	   1003.25	       143	
-       Gauss-Seidel method with dynamic relax	 0.73	    Timeout occured!	   1001.41	       143	
-       Gauss-Seidel method with dynamic relax	 0.74	    Timeout occured!	   1000.55	       143	
-       Gauss-Seidel method with dynamic relax	 0.75	    Timeout occured!	   1001.18	       142	
-       Gauss-Seidel method with dynamic relax	 0.76	    Timeout occured!	   1002.89	       143	
-       Gauss-Seidel method with dynamic relax	 0.77	    Timeout occured!	   1006.64	       144	
-       Gauss-Seidel method with dynamic relax	 0.78	    Timeout occured!	   1004.02	       144	
-       Gauss-Seidel method with dynamic relax	 0.79	    Timeout occured!	   1006.82	       144	
-       Gauss-Seidel method with dynamic relax	  0.8	    Timeout occured!	   1001.67	       143	
-       Gauss-Seidel method with dynamic relax	 0.81	    Timeout occured!	   1006.64	       145	
-       Gauss-Seidel method with dynamic relax	 0.82	    Timeout occured!	   1004.97	       145	
-       Gauss-Seidel method with dynamic relax	 0.83	    Timeout occured!	    1003.7	       145	
-       Gauss-Seidel method with dynamic relax	 0.84	    Timeout occured!	   1004.19	       143	
-       Gauss-Seidel method with dynamic relax	 0.85	    Timeout occured!	   1006.27	       142	
-       Gauss-Seidel method with dynamic relax	 0.86	    Timeout occured!	   1003.44	       141	
-       Gauss-Seidel method with dynamic relax	 0.87	    Timeout occured!	   1004.57	       139	
-       Gauss-Seidel method with dynamic relax	 0.88	    Timeout occured!	   1006.53	       142	
-       Gauss-Seidel method with dynamic relax	 0.89	    Timeout occured!	   1005.48	       133	
-       Gauss-Seidel method with dynamic relax	  0.9	    Timeout occured!	    1007.1	       127	
-       Gauss-Seidel method with dynamic relax	 0.91	    Timeout occured!	    1002.1	       134	
-       Gauss-Seidel method with dynamic relax	 0.92	    Timeout occured!	   1004.98	       141	
-       Gauss-Seidel method with dynamic relax	 0.93	    Timeout occured!	   1000.01	       138	
-       Gauss-Seidel method with dynamic relax	 0.94	    Timeout occured!	   1000.26	       143	
-       Gauss-Seidel method with dynamic relax	 0.95	    Timeout occured!	   1002.66	       141	
-       Gauss-Seidel method with dynamic relax	 0.96	    Timeout occured!	   1003.89	       144	
-       Gauss-Seidel method with dynamic relax	 0.97	    Timeout occured!	   1000.53	       143	
-       Gauss-Seidel method with dynamic relax	 0.98	    Timeout occured!	   1003.51	       133	
-       Gauss-Seidel method with dynamic relax	 0.99	    Timeout occured!	   1001.12	       131	
-       Gauss-Seidel method with dynamic relax	    1	    Timeout occured!	   1001.73	       133	
-       Gauss-Seidel method with dynamic relax	 1.01	    Timeout occured!	   1004.66	       140	
-       Gauss-Seidel method with dynamic relax	 1.02	    Timeout occured!	   1000.39	       133	
-       Gauss-Seidel method with dynamic relax	 1.03	    Timeout occured!	   1003.93	       138	
-       Gauss-Seidel method with dynamic relax	 1.04	    Timeout occured!	   1004.44	       141	
-       Gauss-Seidel method with dynamic relax	 1.05	    Timeout occured!	   1003.69	       141	
-       Gauss-Seidel method with dynamic relax	 1.06	    Timeout occured!	    1005.5	       143	
-       Gauss-Seidel method with dynamic relax	 1.07	    Timeout occured!	   1000.66	       142	
-       Gauss-Seidel method with dynamic relax	 1.08	    Timeout occured!	   1000.68	       144	
-       Gauss-Seidel method with dynamic relax	 1.09	    Timeout occured!	    1000.7	       141	
-       Gauss-Seidel method with dynamic relax	  1.1	    Timeout occured!	   1000.88	       142	
-       Gauss-Seidel method with dynamic relax	 1.11	    Timeout occured!	   1006.66	       131	
-       Gauss-Seidel method with dynamic relax	 1.12	    Timeout occured!	   1007.49	       138	
-       Gauss-Seidel method with dynamic relax	 1.13	    Timeout occured!	    1006.6	       138	
-       Gauss-Seidel method with dynamic relax	 1.14	    Timeout occured!	   1000.21	       143	
-       Gauss-Seidel method with dynamic relax	 1.15	    Timeout occured!	    1003.7	       142	
-       Gauss-Seidel method with dynamic relax	 1.16	    Timeout occured!	   1001.76	       136	
-       Gauss-Seidel method with dynamic relax	 1.17	    Timeout occured!	   1005.71	       134	
-       Gauss-Seidel method with dynamic relax	 1.18	    Timeout occured!	   1003.05	       140	
-       Gauss-Seidel method with dynamic relax	 1.19	    Timeout occured!	   1001.54	       144	
-       Gauss-Seidel method with dynamic relax	  1.2	    Timeout occured!	   1001.56	       134	
-       Gauss-Seidel method with dynamic relax	 1.21	    Timeout occured!	   1003.75	       141	
-       Gauss-Seidel method with dynamic relax	 1.22	    Timeout occured!	   1006.52	       140	
-       Gauss-Seidel method with dynamic relax	 1.23	    Timeout occured!	   1004.72	       139	
-       Gauss-Seidel method with dynamic relax	 1.24	    Timeout occured!	    1006.6	       143	
-       Gauss-Seidel method with dynamic relax	 1.25	    Timeout occured!	   1003.09	       141	
-       Gauss-Seidel method with dynamic relax	 1.26	    Timeout occured!	    1000.7	       137	
-       Gauss-Seidel method with dynamic relax	 1.27	    Timeout occured!	   1003.28	       139	
-       Gauss-Seidel method with dynamic relax	 1.28	    Timeout occured!	   1001.27	       137	
-       Gauss-Seidel method with dynamic relax	 1.29	    Timeout occured!	    1006.2	       140	
-       Gauss-Seidel method with dynamic relax	  1.3	    Timeout occured!	    1003.5	       139	
-       Gauss-Seidel method with dynamic relax	 1.31	    Timeout occured!	   1004.23	       130	
-       Gauss-Seidel method with dynamic relax	 1.32	    Timeout occured!	   1003.66	       137	
-       Gauss-Seidel method with dynamic relax	 1.33	    Timeout occured!	   1004.31	       137	
-       Gauss-Seidel method with dynamic relax	 1.34	    Timeout occured!	   1006.34	       139	
-       Gauss-Seidel method with dynamic relax	 1.35	    Timeout occured!	   1003.56	       137	
-       Gauss-Seidel method with dynamic relax	 1.36	    Timeout occured!	   1005.09	       144	
-       Gauss-Seidel method with dynamic relax	 1.37	    Timeout occured!	   1005.16	       144	
-       Gauss-Seidel method with dynamic relax	 1.38	    Timeout occured!	   1006.71	       144	
-       Gauss-Seidel method with dynamic relax	 1.39	    Timeout occured!	   1001.77	       144	
-       Gauss-Seidel method with dynamic relax	  1.4	    Timeout occured!	   1000.94	       144	
-       Gauss-Seidel method with dynamic relax	 1.41	    Timeout occured!	   1002.65	       144	
-       Gauss-Seidel method with dynamic relax	 1.42	    Timeout occured!	    1005.8	       144	
-       Gauss-Seidel method with dynamic relax	 1.43	    Timeout occured!	   1006.81	       144	
-       Gauss-Seidel method with dynamic relax	 1.44	    Timeout occured!	   1000.98	       144	
-       Gauss-Seidel method with dynamic relax	 1.45	    Timeout occured!	   1004.65	       144	
-       Gauss-Seidel method with dynamic relax	 1.46	    Timeout occured!	   1004.66	       144	
-       Gauss-Seidel method with dynamic relax	 1.47	    Timeout occured!	   1004.73	       144	
-       Gauss-Seidel method with dynamic relax	 1.48	    Timeout occured!	   1001.15	       144	
-       Gauss-Seidel method with dynamic relax	 1.49	    Timeout occured!	   1006.41	       143	
-       Gauss-Seidel method with dynamic relax	  1.5	    Timeout occured!	   1006.73	       138	
-       Gauss-Seidel method with dynamic relax	 1.51	    Timeout occured!	   1003.14	       139	
-       Gauss-Seidel method with dynamic relax	 1.52	    Timeout occured!	   1005.66	       128	
-       Gauss-Seidel method with dynamic relax	 1.53	    Timeout occured!	   1006.34	       138	
-       Gauss-Seidel method with dynamic relax	 1.54	    Timeout occured!	   1000.46	       123	
-       Gauss-Seidel method with dynamic relax	 1.55	    Timeout occured!	   1011.12	       125	
-       Gauss-Seidel method with dynamic relax	 1.56	    Timeout occured!	   1003.84	       133	
-       Gauss-Seidel method with dynamic relax	 1.57	    Timeout occured!	    1005.9	       132	
-       Gauss-Seidel method with dynamic relax	 1.58	    Timeout occured!	    1002.8	       136	
-       Gauss-Seidel method with dynamic relax	 1.59	    Timeout occured!	   1002.97	        89	
-       Gauss-Seidel method with dynamic relax	  1.6	    Timeout occured!	   1003.56	        97	
-       Gauss-Seidel method with dynamic relax	 1.61	    Timeout occured!	   1003.58	       130	
-       Gauss-Seidel method with dynamic relax	 1.62	    Timeout occured!	   1004.69	       138	
-       Gauss-Seidel method with dynamic relax	 1.63	    Timeout occured!	   1006.07	       141	
-       Gauss-Seidel method with dynamic relax	 1.64	    Timeout occured!	   1000.38	       138	
-       Gauss-Seidel method with dynamic relax	 1.65	    Timeout occured!	   1000.78	       140	
-       Gauss-Seidel method with dynamic relax	 1.66	    Timeout occured!	   1004.28	       141	
-       Gauss-Seidel method with dynamic relax	 1.67	    Timeout occured!	   1000.73	       143	
-       Gauss-Seidel method with dynamic relax	 1.68	    Timeout occured!	   1001.35	       140	
-       Gauss-Seidel method with dynamic relax	 1.69	    Timeout occured!	   1000.27	       134	
-       Gauss-Seidel method with dynamic relax	  1.7	    Timeout occured!	   1003.21	       133	
-       Gauss-Seidel method with dynamic relax	 1.71	    Timeout occured!	   1006.72	       137	
-       Gauss-Seidel method with dynamic relax	 1.72	    Timeout occured!	   1005.73	       143	
-       Gauss-Seidel method with dynamic relax	 1.73	    Timeout occured!	   1006.14	       144	
-       Gauss-Seidel method with dynamic relax	 1.74	    Timeout occured!	   1002.52	       138	
-       Gauss-Seidel method with dynamic relax	 1.75	    Timeout occured!	   1001.45	       143	
-       Gauss-Seidel method with dynamic relax	 1.76	    Timeout occured!	   1006.61	       131	
-       Gauss-Seidel method with dynamic relax	 1.77	    Timeout occured!	   1002.58	       123	
-       Gauss-Seidel method with dynamic relax	 1.78	    Timeout occured!	    1003.9	       135	
-       Gauss-Seidel method with dynamic relax	 1.79	    Timeout occured!	   1004.94	       136	
-       Gauss-Seidel method with dynamic relax	  1.8	    Timeout occured!	   1003.88	       136	
-       Gauss-Seidel method with dynamic relax	 1.81	    Timeout occured!	   1004.62	       132	
-       Gauss-Seidel method with dynamic relax	 1.82	    Timeout occured!	   1000.29	       141	
-       Gauss-Seidel method with dynamic relax	 1.83	    Timeout occured!	   1004.15	       142	
-       Gauss-Seidel method with dynamic relax	 1.84	    Timeout occured!	   1000.62	       134	
-       Gauss-Seidel method with dynamic relax	 1.85	    Timeout occured!	    1002.4	       136	
-       Gauss-Seidel method with dynamic relax	 1.86	    Timeout occured!	   1004.48	       141	
-       Gauss-Seidel method with dynamic relax	 1.87	    Timeout occured!	   1000.15	       140	
-       Gauss-Seidel method with dynamic relax	 1.88	    Timeout occured!	    1005.1	       141	
-       Gauss-Seidel method with dynamic relax	 1.89	    Timeout occured!	   1003.77	       120	
-       Gauss-Seidel method with dynamic relax	  1.9	    Timeout occured!	   1000.53	       137	
-       Gauss-Seidel method with dynamic relax	 1.91	    Timeout occured!	   1001.63	       129	
-       Gauss-Seidel method with dynamic relax	 1.92	    Timeout occured!	   1004.35	       137	
-       Gauss-Seidel method with dynamic relax	 1.93	    Timeout occured!	   1001.82	       141	
-       Gauss-Seidel method with dynamic relax	 1.94	    Timeout occured!	   1003.84	       125	
-       Gauss-Seidel method with dynamic relax	 1.95	    Timeout occured!	   1000.44	       139	
-       Gauss-Seidel method with dynamic relax	 1.96	    Timeout occured!	   1004.66	       141	
-       Gauss-Seidel method with dynamic relax	 1.97	    Timeout occured!	   1003.88	       139	
-       Gauss-Seidel method with dynamic relax	 1.98	    Timeout occured!	   1002.11	       137	
-       Gauss-Seidel method with dynamic relax	 1.99	    Timeout occured!	   1005.51	       130	
+    Gauss-Seidel method without dynamic relax	    1	    Timeout occured!	    1001.7	        98	
+                                          SOR	  0.1	    Timeout occured!	   1012.45	       117	
+                                          SOR	 0.11	    Timeout occured!	   1004.24	       125	
+                                          SOR	 0.12	    Timeout occured!	   1001.97	       132	
+                                          SOR	 0.13	    Timeout occured!	   1004.35	       138	
+                                          SOR	 0.14	    Timeout occured!	   1001.49	       141	
+                                          SOR	 0.15	    Timeout occured!	   1001.46	       113	
+                                          SOR	 0.16	    Timeout occured!	   1009.65	       109	
+                                          SOR	 0.17	    Timeout occured!	   1000.24	       121	
+                                          SOR	 0.18	    Timeout occured!	   1000.81	       135	
+                                          SOR	 0.19	    Timeout occured!	   1003.51	       128	
+                                          SOR	  0.2	    Timeout occured!	   1001.41	       121	
+                                          SOR	 0.21	    Timeout occured!	   1004.03	       116	
+                                          SOR	 0.22	    Timeout occured!	   1002.29	       112	
+                                          SOR	 0.23	    Timeout occured!	   1001.72	        97	
+                                          SOR	 0.24	    Timeout occured!	   1004.35	       119	
+                                          SOR	 0.25	    Timeout occured!	   1013.37	       119	
+                                          SOR	 0.26	    Timeout occured!	   1001.62	       118	
+                                          SOR	 0.27	    Timeout occured!	    1004.1	       131	
+                                          SOR	 0.28	    Timeout occured!	   1003.11	       141	
+                                          SOR	 0.29	    Timeout occured!	   1002.78	       136	
+                                          SOR	  0.3	    Timeout occured!	    1000.5	       146	
+                                          SOR	 0.31	    Timeout occured!	   1002.55	       143	
+                                          SOR	 0.32	    Timeout occured!	   1001.18	       145	
+                                          SOR	 0.33	    Timeout occured!	    1002.3	       146	
+                                          SOR	 0.34	    Timeout occured!	   1000.73	       145	
+                                          SOR	 0.35	    Timeout occured!	   1000.35	       145	
+                                          SOR	 0.36	    Timeout occured!	   1000.93	       141	
+                                          SOR	 0.37	    Timeout occured!	   1000.47	       144	
+                                          SOR	 0.38	    Timeout occured!	   1005.61	       147	
+                                          SOR	 0.39	    Timeout occured!	   1002.45	       147	
+                                          SOR	  0.4	    Timeout occured!	   1005.51	       147	
+                                          SOR	 0.41	    Timeout occured!	   1000.65	       146	
+                                          SOR	 0.42	    Timeout occured!	   1003.28	       145	
+                                          SOR	 0.43	    Timeout occured!	   1000.24	       146	
+                                          SOR	 0.44	    Timeout occured!	   1001.98	       146	
+                                          SOR	 0.45	    Timeout occured!	   1004.91	       147	
+                                          SOR	 0.46	    Timeout occured!	    1004.8	       147	
+                                          SOR	 0.47	    Timeout occured!	    1002.2	       146	
+                                          SOR	 0.48	    Timeout occured!	   1005.28	       139	
+                                          SOR	 0.49	    Timeout occured!	   1001.24	       138	
+                                          SOR	  0.5	    Timeout occured!	   1004.88	       135	
+                                          SOR	 0.51	    Timeout occured!	   1003.68	       142	
+                                          SOR	 0.52	    Timeout occured!	    1003.4	       144	
+                                          SOR	 0.53	    Timeout occured!	   1004.05	       141	
+                                          SOR	 0.54	    Timeout occured!	   1000.75	       146	
+                                          SOR	 0.55	    Timeout occured!	   1000.99	       133	
+                                          SOR	 0.56	    Timeout occured!	   1002.14	       138	
+                                          SOR	 0.57	    Timeout occured!	   1005.63	       122	
+                                          SOR	 0.58	    Timeout occured!	   1001.64	       117	
+                                          SOR	 0.59	    Timeout occured!	   1004.35	       135	
+                                          SOR	  0.6	    Timeout occured!	    1002.5	       131	
+                                          SOR	 0.61	    Timeout occured!	   1006.73	       137	
+                                          SOR	 0.62	    Timeout occured!	   1005.68	       133	
+                                          SOR	 0.63	    Timeout occured!	    1006.5	       137	
+                                          SOR	 0.64	    Timeout occured!	   1002.54	       134	
+                                          SOR	 0.65	    Timeout occured!	   1004.92	       134	
+                                          SOR	 0.66	    Timeout occured!	   1006.39	       134	
+                                          SOR	 0.67	    Timeout occured!	   1001.91	       134	
+                                          SOR	 0.68	    Timeout occured!	   1005.35	       133	
+                                          SOR	 0.69	    Timeout occured!	   1004.88	       132	
+                                          SOR	  0.7	    Timeout occured!	   1001.08	       134	
+                                          SOR	 0.71	    Timeout occured!	   1000.15	       134	
+                                          SOR	 0.72	    Timeout occured!	   1000.66	       135	
+                                          SOR	 0.73	    Timeout occured!	   1006.85	       135	
+                                          SOR	 0.74	    Timeout occured!	   1003.59	       135	
+                                          SOR	 0.75	    Timeout occured!	   1006.72	       130	
+                                          SOR	 0.76	    Timeout occured!	   1004.98	       134	
+                                          SOR	 0.77	    Timeout occured!	   1003.88	       134	
+                                          SOR	 0.78	    Timeout occured!	   1005.53	       134	
+                                          SOR	 0.79	    Timeout occured!	    1006.2	       135	
+                                          SOR	  0.8	    Timeout occured!	   1000.54	       133	
+                                          SOR	 0.81	    Timeout occured!	   1004.17	       131	
+                                          SOR	 0.82	    Timeout occured!	   1004.95	       130	
+                                          SOR	 0.83	    Timeout occured!	   1001.93	       132	
+                                          SOR	 0.84	    Timeout occured!	   1003.33	       134	
+                                          SOR	 0.85	    Timeout occured!	   1004.37	       135	
+                                          SOR	 0.86	    Timeout occured!	   1001.04	       134	
+                                          SOR	 0.87	    Timeout occured!	   1000.88	       134	
+                                          SOR	 0.88	    Timeout occured!	   1004.25	       134	
+                                          SOR	 0.89	    Timeout occured!	   1003.12	       138	
+                                          SOR	  0.9	    Timeout occured!	   1005.41	       137	
+                                          SOR	 0.91	    Timeout occured!	   1001.64	       137	
+                                          SOR	 0.92	    Timeout occured!	   1001.56	       138	
+                                          SOR	 0.93	    Timeout occured!	   1001.46	       137	
+                                          SOR	 0.94	    Timeout occured!	   1001.68	       138	
+                                          SOR	 0.95	    Timeout occured!	   1001.82	       136	
+                                          SOR	 0.96	    Timeout occured!	   1001.34	       138	
+                                          SOR	 0.97	    Timeout occured!	   1005.26	       138	
+                                          SOR	 0.98	    Timeout occured!	   1005.34	       135	
+                                          SOR	 0.99	    Timeout occured!	   1005.56	       136	
+                                          SOR	    1	    Timeout occured!	   1006.79	       139	
+                                          SOR	 1.01	    Timeout occured!	   1005.36	       139	
+                                          SOR	 1.02	    Timeout occured!	   1004.48	       139	
+                                          SOR	 1.03	    Timeout occured!	   1006.04	       135	
+                                          SOR	 1.04	    Timeout occured!	   1006.84	       136	
+                                          SOR	 1.05	    Timeout occured!	   1011.38	       127	
+                                          SOR	 1.06	    Timeout occured!	   1000.32	       130	
+                                          SOR	 1.07	    Timeout occured!	   1007.47	       129	
+                                          SOR	 1.08	    Timeout occured!	   1001.22	       132	
+                                          SOR	 1.09	    Timeout occured!	   1006.38	       132	
+                                          SOR	  1.1	    Timeout occured!	   1003.75	       131	
+                                          SOR	 1.11	    Timeout occured!	   1000.79	       134	
+                                          SOR	 1.12	    Timeout occured!	    1002.5	       135	
+                                          SOR	 1.13	    Timeout occured!	   1005.33	       135	
+                                          SOR	 1.14	    Timeout occured!	   1004.98	       135	
+                                          SOR	 1.15	    Timeout occured!	   1002.97	       135	
+                                          SOR	 1.16	    Timeout occured!	   1003.03	       133	
+                                          SOR	 1.17	    Timeout occured!	   1005.84	       135	
+                                          SOR	 1.18	    Timeout occured!	   1000.64	       134	
+                                          SOR	 1.19	    Timeout occured!	   1003.78	       129	
+                                          SOR	  1.2	    Timeout occured!	   1003.54	       111	
+                                          SOR	 1.21	    Timeout occured!	   1005.84	       132	
+                                          SOR	 1.22	    Timeout occured!	   1000.67	       135	
+                                          SOR	 1.23	    Timeout occured!	   1008.59	       132	
+                                          SOR	 1.24	    Timeout occured!	   1000.74	       138	
+                                          SOR	 1.25	    Timeout occured!	   1001.62	       138	
+                                          SOR	 1.26	    Timeout occured!	   1007.49	       136	
+                                          SOR	 1.27	    Timeout occured!	   1001.97	       135	
+                                          SOR	 1.28	    Timeout occured!	   1000.19	       133	
+                                          SOR	 1.29	    Timeout occured!	   1002.69	       132	
+                                          SOR	  1.3	    Timeout occured!	   1004.36	       131	
+                                          SOR	 1.31	    Timeout occured!	   1002.11	       133	
+                                          SOR	 1.32	    Timeout occured!	   1006.21	       136	
+                                          SOR	 1.33	    Timeout occured!	   1002.05	       137	
+                                          SOR	 1.34	    Timeout occured!	   1005.05	       136	
+                                          SOR	 1.35	    Timeout occured!	    1006.4	       137	
+                                          SOR	 1.36	    Timeout occured!	   1001.11	       136	
+                                          SOR	 1.37	    Timeout occured!	   1001.59	       136	
+                                          SOR	 1.38	    Timeout occured!	   1004.92	       136	
+                                          SOR	 1.39	    Timeout occured!	   1006.16	       137	
+                                          SOR	  1.4	    Timeout occured!	   1003.14	       137	
+                                          SOR	 1.41	    Timeout occured!	   1000.15	       136	
+                                          SOR	 1.42	    Timeout occured!	   1005.61	       137	
+                                          SOR	 1.43	    Timeout occured!	   1006.51	       137	
+                                          SOR	 1.44	    Timeout occured!	    1000.7	       137	
+                                          SOR	 1.45	    Timeout occured!	   1003.26	       137	
+                                          SOR	 1.46	    Timeout occured!	   1003.26	       136	
+                                          SOR	 1.47	    Timeout occured!	    1001.3	       136	
+                                          SOR	 1.48	    Timeout occured!	   1006.48	       137	
+                                          SOR	 1.49	    Timeout occured!	   1006.46	       138	
+                                          SOR	  1.5	    Timeout occured!	   1000.74	       137	
+                                          SOR	 1.51	    Timeout occured!	   1003.06	       138	
+                                          SOR	 1.52	    Timeout occured!	   1000.66	       138	
+                                          SOR	 1.53	    Timeout occured!	   1007.32	       129	
+                                          SOR	 1.54	    Timeout occured!	   1004.76	       134	
+                                          SOR	 1.55	    Timeout occured!	   1003.33	       131	
+                                          SOR	 1.56	    Timeout occured!	   1002.05	       137	
+                                          SOR	 1.57	    Timeout occured!	   1000.37	       137	
+                                          SOR	 1.58	    Timeout occured!	   1000.57	       132	
+                                          SOR	 1.59	    Timeout occured!	    1000.7	       138	
+                                          SOR	  1.6	    Timeout occured!	   1006.33	       138	
+                                          SOR	 1.61	    Timeout occured!	    1004.1	       137	
+                                          SOR	 1.62	    Timeout occured!	   1002.49	       137	
+                                          SOR	 1.63	    Timeout occured!	    1003.4	       138	
+                                          SOR	 1.64	    Timeout occured!	   1006.36	       138	
+                                          SOR	 1.65	    Timeout occured!	   1006.14	       137	
+                                          SOR	 1.66	    Timeout occured!	   1005.63	       137	
+                                          SOR	 1.67	    Timeout occured!	   1006.69	       139	
+                                          SOR	 1.68	    Timeout occured!	   1004.43	       138	
+                                          SOR	 1.69	    Timeout occured!	   1007.31	       138	
+                                          SOR	  1.7	    Timeout occured!	    1005.7	       137	
+                                          SOR	 1.71	    Timeout occured!	   1006.02	       136	
+                                          SOR	 1.72	    Timeout occured!	   1000.94	       128	
+                                          SOR	 1.73	    Timeout occured!	   1001.48	       131	
+                                          SOR	 1.74	    Timeout occured!	   1003.14	       135	
+                                          SOR	 1.75	    Timeout occured!	   1004.36	       137	
+                                          SOR	 1.76	    Timeout occured!	   1002.83	       138	
+                                          SOR	 1.77	    Timeout occured!	   1002.88	       138	
+                                          SOR	 1.78	    Timeout occured!	   1003.71	       137	
+                                          SOR	 1.79	    Timeout occured!	   1004.56	       137	
+                                          SOR	  1.8	    Timeout occured!	   1006.21	       138	
+                                          SOR	 1.81	    Timeout occured!	   1003.22	       138	
+                                          SOR	 1.82	    Timeout occured!	   1002.89	       128	
+                                          SOR	 1.83	    Timeout occured!	   1003.22	       122	
+                                          SOR	 1.84	    Timeout occured!	   1005.22	       123	
+                                          SOR	 1.85	    Timeout occured!	   1006.99	       137	
+                                          SOR	 1.86	    Timeout occured!	   1005.34	       136	
+                                          SOR	 1.87	    Timeout occured!	   1011.85	       112	
+                                          SOR	 1.88	    Timeout occured!	   1004.73	       122	
+                                          SOR	 1.89	    Timeout occured!	   1004.05	       133	
+                                          SOR	  1.9	    Timeout occured!	   1002.82	       135	
+                                          SOR	 1.91	    Timeout occured!	   1003.81	       129	
+                                          SOR	 1.92	    Timeout occured!	   1006.59	       136	
+                                          SOR	 1.93	    Timeout occured!	   1001.45	       137	
+                                          SOR	 1.94	    Timeout occured!	   1004.86	       138	
+                                          SOR	 1.95	    Timeout occured!	   1006.38	       138	
+                                          SOR	 1.96	    Timeout occured!	    1000.4	       138	
+                                          SOR	 1.97	    Timeout occured!	      1004	       138	
+                                          SOR	 1.98	    Timeout occured!	   1001.39	       138	
+                                          SOR	 1.99	    Timeout occured!	   1002.08	       138	

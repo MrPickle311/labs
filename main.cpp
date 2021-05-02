@@ -51,6 +51,7 @@ TestData start_benchmark(Solver* solver,
 
 
 //test dla jacobiego w najbiedniejszej wersji
+//oraz z podrelaksacją dla metody jacobiego
 std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,
                                                            double norm_precision,
                                                            double min_relax_value  = 0.99 ,
@@ -62,20 +63,21 @@ std::vector<TestData> jacobi_benchmark_set(EquationPackage const& pack,
     //without dynamic relax
     JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_};
     data.push_back(start_benchmark(&jacobi,"Jacobi method without dynamic relax",norm_precision,timeout));
-    
 
-    //with dynamic relax
+    //sub-relaxation
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
+        data.push_back(start_benchmark(&jacobi,"Jacobi method with sub-relaxation",norm_precision,timeout,false,relax));
     }
 
     return data;
 }
 
-std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,double norm_precision,
-                                                                 double min_relax_value  = 0.99 ,
+//zwykły gauss-seidel oraz SOR
+std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,
+                                                                 double norm_precision,
+                                                                 double min_relax_value  = 1.00 ,
                                                                  double max_relax_value = 1.01,
                                                                  double timeout = 0.1)
 {
@@ -85,11 +87,11 @@ std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,dou
     GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_};
     data.push_back(start_benchmark(&gauss,"Gauss-Seidel method without dynamic relax",norm_precision,timeout));
 
-    //with dynamic relax
+    //SOR
     for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
     {
         GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&gauss,"Gauss-Seidel method with dynamic relax",norm_precision,timeout,true,relax));
+        data.push_back(start_benchmark(&gauss,"SOR",norm_precision,timeout,false,relax));
     }
 
     return data;
@@ -98,22 +100,31 @@ std::vector<TestData> gauss_siedel_benchmark_set(EquationPackage const& pack,dou
 //MINRES przy wykorzystaniu gaussa-seidla oraz jacobiego
 std::vector<TestData> MINRES_benchmark_set(EquationPackage const& pack,
                                                            double norm_precision,
-                                                           double min_relax_value  = 0.99 ,
-                                                           double max_relax_value = 1.01,
+                                                           double min_jacobi_relax_value  = 0.99 ,
+                                                           double max_gauss_relax_value = 1.01,
                                                            double timeout = 0.1)
 {
     std::vector<TestData> data;
 
-    //with dynamic relax
-    for(double relax{min_relax_value}; relax < max_relax_value ; relax += 0.01)
+    //Jacobi
+    for(double relax{min_jacobi_relax_value}; relax < 1.0 ; relax += 0.01)
     {
-        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,false,relax};
-        data.push_back(start_benchmark(&jacobi,"Jacobi method with dynamic relax",norm_precision,timeout,true,relax));
+        JacobiSolver jacobi{pack.cooficient_matrix_,pack.right_side_vector_,true,relax};
+        data.push_back(start_benchmark(&jacobi,"MINRES: Jacobi",norm_precision,timeout,true,relax));
+    }
+
+    //Gauss-Seidel 
+    for(double relax{1.0}; relax < max_gauss_relax_value ; relax += 0.01)
+    {
+        GaussSeidelSolver gauss{pack.cooficient_matrix_,pack.right_side_vector_,true,relax};
+        data.push_back(start_benchmark(&gauss,"MINRES: Gauss-Seidel",norm_precision,timeout,true,relax));
     }
 
     return data;
 }
 
+//Benchmark dla metody gradientów, obu wersji
+//wykorzystane tutaj jest dynamiczne obliczanie alfa 
 std::vector<TestData> gradient_benchmark_set(EquationPackage const& pack,
                                              double norm_precision,
                                              double min_relax_value  = 0.99 ,
@@ -190,10 +201,11 @@ void generateReport(std::string dat , std::filesystem::path dir)
 
 int main()
 {
+    //wczytywanie układu równań z pliku
     MatrixStream str{ std::filesystem::current_path() / "../extern/eq1.txt"};
 
-    EquationPackage pack;
-    pack << str;
+    EquationPackage pack;//układ równań
+    pack << str;//prześlij ze strumienia do obiektu
 
     std::cout << pack.cooficient_matrix_ << std::endl; 
     std::cout << pack.right_side_vector_ << std::endl;
@@ -206,11 +218,14 @@ int main()
     //obliczamy normę z wektora z
     //i jeśli jego norma jest mniejsza od zadanej ,to przerywamy obliczenia
 
-    std::vector<TestData>  jacobi_set {jacobi_benchmark_set(pack,norm_precision,0.1,2.0)};
-    
-    std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,0.1,2.0)};
-    std::vector<TestData>  gradient_set {gradient_benchmark_set(pack,norm_precision,0.1,2.0)};
+    //zadałem tutaj TIMEOUT = 1 sek
+    //zestawy testowe
+    std::vector<TestData>  jacobi_set       {jacobi_benchmark_set(pack,norm_precision,0.1,1)};
+    std::vector<TestData>  gauss_seidel_set {gauss_siedel_benchmark_set(pack,norm_precision,1.0,2.0)};
+    std::vector<TestData>  minres_set       {MINRES_benchmark_set(pack,norm_precision,0.1,2.0)};
+    std::vector<TestData>  gradient_set     {gradient_benchmark_set(pack,norm_precision,0.1,2.0)};
 
+    //parsowanie wyników
     std::string jacobi_dat {parse_test_vector(jacobi_set)};
     std::cout << jacobi_dat ;
     std::cout << std::endl;
@@ -223,15 +238,19 @@ int main()
     std::cout << gradient_dat ;
     std::cout << std::endl << std::endl;
 
+    std::string minres_dat {parse_test_vector(minres_set)};
+    std::cout << minres_dat ;
+    std::cout << std::endl << std::endl;
+
+    //generowanie raportów do plików
     std::filesystem::path save_dir {std::filesystem::current_path() / "../extern"};
 
     generateReport(jacobi_dat,save_dir / "jacobi_report.txt");
     generateReport(gauss_dat,save_dir / "gauss_report.txt");
     generateReport(gradient_dat,save_dir / "gradient_report.txt");
-    
+    generateReport(minres_dat,save_dir / "minres_report.txt");
 
-
-
+    //to samo ,lecz z innym układem równań
     MatrixStream str2{ std::filesystem::current_path() / "../extern/eq2.txt"};
 
     EquationPackage pack2;
@@ -239,21 +258,20 @@ int main()
 
     std::vector<TestData>  jacobi_set2 {jacobi_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
     std::vector<TestData>  gauss_seidel_set2 {gauss_siedel_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
+    std::vector<TestData>  minres_set2     {MINRES_benchmark_set(pack2,norm_precision,0.1,2.0)};
     std::vector<TestData>  gradient_set2 {gradient_benchmark_set(pack2,norm_precision,0.1,2.0,1)};
-
+   
     
     std::string jacobi_dat2 {parse_test_vector(jacobi_set2)};
+    std::string gauss_dat2 {parse_test_vector(gauss_seidel_set2)};
+    std::string gradient_dat2 {parse_test_vector(gradient_set2)};
+    std::string minres_dat2 {parse_test_vector(minres_set2)};
 
     generateReport(jacobi_dat2,save_dir / "jacobi_report2.txt");
-
-    std::string gauss_dat2 {parse_test_vector(gauss_seidel_set2)};
-
     generateReport(gauss_dat2,save_dir / "gauss_report2.txt");
-
-    std::string gradient_dat2 {parse_test_vector(gradient_set2)};
-    
     generateReport(gradient_dat2,save_dir / "gradient_report2.txt");
-
+    generateReport(minres_dat2,save_dir / "minres_report2.txt");
+    
     return 0;
     
 }
